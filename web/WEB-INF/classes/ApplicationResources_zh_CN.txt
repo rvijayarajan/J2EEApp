@@ -1,0 +1,4411 @@
+frameset.title=来华学生管理
+# -- messages used in decorators/default.jsp --
+webapp.prefix=来华学生管理~ 
+user.status=当前用户: 
+user.logout=退出
+
+# -- validator errors --
+errors.invalid='{0}' 无效。
+errors.maxlength='{0}' 不能大于 {1} 个字符。
+errors.minlength='{0}' 不能少于 {1} 个字符。
+errors.range='{0}' 未在 {1} 与 {2} 范围内。
+errors.required='{0}' 为必填项。
+errors.byte='{0}' 必须为byte类型。
+errors.date='{0}' 不是有效日期格式。
+errors.double='{0}' 必须为double类型。
+errors.float='{0}' 必须为float类型。
+errors.integer='{0}' 必须为一数值。
+errors.long='{0}' 必须为long类型。
+errors.short='{0}' 必须为short类型。
+errors.creditcard='{0}' 为无效信用卡号。
+errors.email='{0}' 为无效邮件地址。
+errors.phone='{0}' 为无效电话号码。
+errors.zip='{0}' 为无效邮政编码。
+# -- for field level messages --
+errors.header=<span class="fieldError">
+errors.footer=</span>
+
+# -- other errors --
+errors.cancel=操作被取消。
+errors.detail={0}
+errors.general=<strong>操作未完成。详细原因如下。</strong>
+errors.token=请求未完全处理。操作顺序错误。
+errors.none=无错误消息，请检查服务器日志文件。
+errors.password.mismatch=无效用户名或密码，请重试。
+errors.browser.warning=<strong>注：</strong> 该网站支持所有浏览器类型。不幸，您的浏览器不支持基本web标准，无法有效显示本网站内容。建议，根据Web标准项目的<a href="http://www.webstandards.org/upgrade/">倡议</a>升级您的浏览器。
+errors.conversion=在web层数据到业务层数据的转换过程中，发生了一个错误。
+errors.twofields='{0}' 字段与 '{1}' 字段的值必须一致。
+errors.existing.user=用户名 (<strong>{0}</strong>) 或e-mail地址 (<strong>{1}</strong>) 已存在。请再次尝试不同名称。
+
+# -- success messages --
+user.added=添加“操作员视图”信息成功！
+user.deleted=删除“操作员视图”信息成功！
+user.registered=注册成功，您可以开始使用系统。
+user.saved=保存“操作员视图”信息成功！
+user.updated.byAdmin=用户 <strong>{0}</strong> 的信息已成功更新。
+newuser.email.message={0} 为您成功创建了一个AppFuse帐号。您的用户名和密码信息如下：
+reload.succeeded=已经成功重载.
+
+# -- error page messages --
+errorPage.title=系统错误
+errorPage.heading=哦！
+404.title=页面未找到
+404.message=请求的页面未找到。您可以选择返回到 <a href="{0}">主菜单</a>。或者选择在此休息一下，忘掉刚才的沮丧，欣赏一个美丽的图片？
+403.title=访问被拒绝
+403.message=您当前角色无权限查看此页面。请联系系统管理员，获得相应的权限。此刻，让我们欣赏一个图片，放松一下好吧？
+
+#--mainpage top messages --
+mainpage.download=软件下载
+mainpage.modifypassword=修改密码
+mainpage.logout=用户注销
+mainpage.killsession=退出
+mainpage.nonstandard=不规范数据下载
+mainpage.document=说明书下载
+mainpage.illuminate=请通过退出按钮关闭浏览器
+
+#--sameLogin messages --
+sameLogin.namemessage = 您的登陆帐号为：{0}
+sameLogin.ipmessage = 该帐号登陆ip为： {0}
+
+# -- login --
+login.title=登录
+login.heading=登录
+login.rememberMe=让系统记住我
+login.signup=不是注册用户? <a href="{0}">申请</a> 一个帐号。
+login.passwordHint=忘记了密码?  让系统将 <a href="?" onmouseover="window.status='系统发送密码提示。'; return true" onmouseout="window.status=''; return true" title="系统发送密码提示。" onclick="passwordHint(); return false">密码提示信息已e-mail形式发送给您</a>。
+login.passwordHint.sent=<strong>{0}</strong> 的密码提示已成功发送到 <strong>{1}</strong>。
+login.passwordHint.error=用户名 <strong>{0}</strong> 在系统数据库中未找到。
+    
+# -- welcome --
+welcome.message=该程序用以说明web应用程序的安全设计、Hibernate、Struts以及Struts的一些高级特性。系统的持久层大部分是由xDoclet自动生成。您可以参照下面的README文件获取更多的信息。<span class="attention">若登录该系统，普通用户 (<strong>tomcat</strong>角色)的用户名/密码为：<strong>tomcat/tomcat</strong>；管理员用户(<strong>admin</strong>角色)使用 <strong>mraible/tomcat</strong>。</span>
+
+# -- mainMenu --
+mainMenu.title=主菜单
+mainMenu.heading=欢迎！
+mainMenu.message=恭喜，您登录成功！您可以选择执行以下操作：
+mainMenu.activeUsers=在线用户
+
+# -- menu/link messages --
+menu.admin=系统管理
+menu.admin.users=查看用户
+menu.admin.reload=重载选项
+
+menu.user=编辑信息
+menu.selectFile=上传文件
+menu.flushCache=刷新缓存
+menu.clickstream=访问记录
+
+# -- form labels --
+label.username=用户姓名
+label.password=密码
+
+# -- button labels --
+button.add=添加
+button.cancel=取消
+button.copy=复制
+button.delete=删除
+button.edit=编辑
+button.register=注册
+button.save=保存
+button.search=搜索
+button.upload=上传
+button.view=查看
+button.reset=复位
+button.login=登录
+
+# -- general values --
+icon.information=信息
+icon.information.img=/images/iconInformation.gif
+icon.email=E-Mail
+icon.email.img=/images/iconEmail.gif
+icon.warning=警告
+icon.warning.img=/images/iconWarning.gif
+dateFormat=(mm/dd/yyyy)
+zoom.image=/images/zoom.gif
+
+# -- role form --
+roleForm.name=名称
+
+# -- user profile page --
+userProfile.title=用户设置
+userProfile.heading=用户简要信息
+userProfile.message=请按如下表格更新您的信息。
+userProfile.admin.message=您可以按如下表格，更新用户的信息。
+userProfile.assignRoles=分配角色
+userProfile.cookieLogin=您无法更改密码，因为您选择了 <strong>让系统记住我</strong> 选项。请退出系统，再次登录尝试更改密码。
+
+# -- user form --
+userForm.addressForm.address=地址
+userForm.availableRoles=可用角色
+userForm.addressForm.city=城市
+userForm.addressForm.country=国家
+userForm.email=E-Mail
+userForm.firstName=名
+userForm.id=id
+userForm.lastName=护照姓名
+userForm.password=密码
+userForm.confirmPassword=确认密码
+userForm.phoneNumber=电话
+userForm.addressForm.postalCode=邮编
+userForm.addressForm.province=州省
+userForm.roles=当前角色
+userForm.username=用户名
+userForm.website=网址
+userForm.visitWebsite=打开
+userForm.passwordHint=密码提示
+userForm.updated=Last Updated
+
+# -- user list page --
+userList.title=“操作员视图”列表
+userList.heading=操作员视图
+userList.nousers=<span>没找到用户。</span>
+
+# -- user self-registration --
+signup.title=注册
+signup.heading=新用户注册
+signup.message=请输入用户信息。
+signup.email.subject=AppFuse 帐户信息
+signup.email.message=您已成功注册到 AppFuse。您的用户名和密码信息如下：
+
+# -- upload page messages --
+maxLengthExceeded=选择上传的文件过大。最大允许值为 2 MB。
+upload.title=文件上传
+upload.heading=上传一文件
+upload.message=主要系统允许上传文件的最大值为 2 MB。参见 metadata/web/struts-controller.xml 文件 (或者生成的 struts-config.xml) 更改此项设置。
+uploadForm.name=重命名文件
+uploadForm.file=选择文件
+
+# -- display page messages -- 
+display.title=文件上传成功！
+display.heading=文件信息
+
+# -- flushCache page --
+flushCache.title=刷新缓存
+flushCache.heading=刷新成功！
+flushCache.message=所有缓存成功刷新，2 秒之后，系统自动返回到前面的页面。
+
+# -- clickstreams page --
+clickstreams.title=所有访问记录
+clickstreams.heading=所有访问记录
+
+# -- viewstream page --
+viewstream.title=访问记录详细
+viewstream.heading=访问记录信息
+
+# -- active users page --
+activeUsers.title=活动用户列表
+activeUsers.heading=在线用户
+activeUsers.message=列表为已成功登录的、session为过期的用户。
+activeUsers.fullName=全名
+
+# -- Image
+update.image=/images/update.gif
+view.image=/images/view.gif
+save.image=/images/save.gif
+calendar.image=/images/calendar.gif
+
+work.image=/images/work.gif
+prior.image=/images/prior.gif
+prior_off.image=/images/prior(off).gif
+next.image=/images/next.gif
+next_off.image=/images/next(off).gif
+
+# -- bj form --
+bjForm.id=id
+bjForm.bm=班级编号
+bjForm.mc=班级
+bjForm.ywmc=班级(英)
+bjForm.bzr=班主任姓名
+bjForm.bzr_lxfs=班主任联系方式
+bjForm.xgr=修改人
+bjForm.xgsj=修改时间
+bjForm.xgsjks=修改时间起
+bjForm.xgsjjs=修改时间止
+
+bj.added=添加“班级”信息成功！
+bj.updated=更改“班级”信息成功！
+bj.deleted=删除“班级”信息成功！
+bj.saved=保存“班级”信息成功！
+error.bj.saved=保存“班级”错误，该数据已经存在或者已经被其他人删除！！
+error.bj.selected=选择的“班级”可能已经被删除！
+error.bj.deleted=“班级”可能已经被删除！
+
+# -- bj list page --
+bjList.title=当前位置：数据字典>班级信息>查询结果页面
+bjList.heading=班级
+
+# -- bj detail page --
+bjDetail.title=当前位置：数据字典>班级信息>查看页面
+bjDetail.heading=“班级”信息
+
+
+# -- bj form page --
+bjForm.title=当前位置：数据字典>班级信息>新建页面
+bjEdit.title=当前位置：数据字典>班级信息>修改页面
+
+# -- bj Query page --
+bjQuery.title=当前位置：数据字典>班级信息>查询页面
+
+# -- bm form --
+bmForm.id=id
+bmForm.bm=编码
+bmForm.mc=名称
+bmForm.bmb=编码表
+bmForm.ms=描述
+bmForm.xgr=修改人
+bmForm.xgsj=修改时间
+bmForm.xgsjks=修改时间起
+bmForm.xgsjjs=修改时间止
+
+bm.added=添加“编码表的编码”信息成功！
+bm.updated=更改“编码表的编码”信息成功！
+bm.deleted=删除“编码表的编码”信息成功！
+bm.saved=保存“编码表的编码”信息成功！
+error.bm.saved=保存“编码表的编码”错误，该数据已经存在或者已经被其他人删除！！
+error.bm.selected=选择的“编码表的编码”可能已经被删除！
+error.bm.deleted=“编码表的编码”可能已经被删除！
+
+# -- bm list page --
+bmList.title=“编码表的编码”列表
+bmList.heading=编码表的编码
+
+# -- bm detail page --
+bmDetail.title=“编码表的编码”详细信息
+bmDetail.heading=“编码表的编码”信息
+
+# -- bxlx form --
+bxlxForm.id=id
+bxlxForm.bm=编码
+bxlxForm.mc=名称
+bxlxForm.xgr=修改人
+bxlxForm.xgsj=修改时间
+bxlxForm.xgsjks=修改时间起
+bxlxForm.xgsjjs=修改时间止
+
+bxlx.added=添加“办学类型”信息成功！
+bxlx.updated=更改“办学类型”信息成功！
+bxlx.deleted=删除“办学类型”信息成功！
+bxlx.saved=保存“办学类型”信息成功！
+error.bxlx.saved=保存“办学类型”错误，该数据已经存在或者已经被其他人删除！！
+error.bxlx.selected=选择的“办学类型”可能已经被删除！
+error.bxlx.deleted=“办学类型”可能已经被删除！
+
+# -- bxlx list page --
+bxlxList.title= 当前位置：数据字典>办学类型信息>查询结果页面
+bxlxList.heading=办学类型
+
+# -- bxlx detail page --
+bxlxDetail.title= 当前位置：数据字典>办学类型信息>查看页面
+bxlxDetail.heading=“办学类型”信息
+
+# -- bxlx form page --
+bxlxForm.title= 当前位置：数据字典>办学类型信息>新建页面
+bxlxEdit.title= 当前位置：数据字典>办学类型信息>修改页面
+
+# -- bxlx Query page --
+bxlxQuery.title= 当前位置：数据字典>办学类型信息>查询页面
+
+# -- bz form --
+bzForm.id=id
+bzForm.bm=编码
+bzForm.mc=名称
+bzForm.xgr=修改人
+bzForm.xgsj=修改时间
+bzForm.xgsjks=修改时间起
+bzForm.xgsjjs=修改时间止
+
+bz.added=添加“币种”信息成功！
+bz.updated=更改“币种”信息成功！
+bz.deleted=删除“币种”信息成功！
+bz.saved=保存“币种”信息成功！
+error.bz.saved=保存“币种”错误，该数据已经存在或者已经被其他人删除！！
+error.bz.selected=选择的“币种”可能已经被删除！
+error.bz.deleted=“币种”可能已经被删除！
+
+# -- bz list page --
+bzList.title=“币种”列表
+bzList.heading=币种
+
+# -- bz detail page --
+bzDetail.title=“币种”详细信息
+bzDetail.heading=“币种”信息
+
+# -- cc form --
+ccForm.id=id
+ccForm.bm=编码
+ccForm.mc=名称
+ccForm.xz=学制
+ccForm.ywmc=英文名称
+ccForm.xgr=修改人
+ccForm.xgsj=修改时间
+ccForm.xgsjks=修改时间起
+ccForm.xgsjjs=修改时间止
+
+cc.added=添加“层次”信息成功！
+cc.updated=更改“层次”信息成功！
+cc.deleted=删除“层次”信息成功！
+cc.saved=保存“层次”信息成功！
+error.cc.saved=保存“层次”错误，该数据已经存在或者已经被其他人删除！！
+error.cc.selected=选择的“层次”可能已经被删除！
+error.cc.deleted=“层次”可能已经被删除！
+
+# -- cc list page --
+ccList.title=当前位置：数据字典>层次信息>查询结果页面
+ccList.heading=层次编码
+
+# -- cc detail page --
+ccDetail.title=当前位置：数据字典>层次信息>查看页面
+ccDetail.heading=“层次编码”信息
+
+# -- cc form page --
+ccForm.title=当前位置：数据字典>层次信息>新建页面
+ccEdit.title=当前位置：数据字典>层次信息>修改页面
+
+# -- cc Query page --
+ccQuery.title=当前位置：数据字典>层次信息>查询页面
+
+# -- fylb form --
+fylbForm.id=id
+fylbForm.bm=编码
+fylbForm.mc=名称
+fylbForm.fymc=费用名称
+fylbForm.xslb=学生类别
+fylbForm.xslbid=学生类别
+fylbForm.xslbmc=学生类别
+fylbForm.zy=专业
+fylbForm.zymlid=专业
+fylbForm.zymlmc=专业
+fylbForm.yx=院系
+fylbForm.yxid=院系
+fylbForm.yxmc=院系
+fylbForm.fybz=费用标志
+fylbForm.bzmc=币种
+fylbForm.je=金额
+fylbForm.ybrqq=适用的录取时间起
+fylbForm.ybrqz=适用的录取时间止
+fylbForm.sfyx=是否有效
+fylbForm.bz=备注
+fylbForm.xgr=修改人
+fylbForm.xgsj=修改时间
+fylbForm.xgsjks=修改时间起
+fylbForm.xgsjjs=修改时间止
+
+fylb.added=添加“费用类别”信息成功！
+fylb.updated=更改“费用类别”信息成功！
+fylb.deleted=删除“费用类别”信息成功！
+fylb.saved=保存“费用类别”信息成功！
+error.fylb.saved=保存“费用类别”错误，该数据已经存在或者已经被其他人删除！！
+error.fylb.selected=选择的“费用类别”可能已经被删除！
+error.fylb.deleted=“费用类别”可能已经被删除！
+
+# -- fylb list page --
+fylbList.title=“费用类别”列表
+fylbList.heading=费用类别
+
+# -- fylb detail page --
+fylbDetail.title=“费用类别”详细信息
+fylbDetail.heading=“费用类别”信息
+
+# -- gj form --
+gjForm.id=id
+gjForm.bm=编码
+gjForm.mc=名称
+gjForm.ywmc=英文名称
+gjForm.zm=洲名
+gjForm.xgr=修改人
+gjForm.xgsj=修改时间
+gjForm.xgsjks=修改时间起
+gjForm.xgsjjs=修改时间止
+
+gj.added=添加“国籍”信息成功！
+gj.updated=更改“国籍”信息成功！
+gj.deleted=删除“国籍”信息成功！
+gj.saved=保存“国籍”信息成功！
+error.gj.saved=保存“国籍”错误，该数据已经存在或者已经被其他人删除！！
+error.gj.selected=选择的“国籍”可能已经被删除！
+error.gj.deleted=“国籍”可能已经被删除！
+
+# -- gj list page --
+gjList.title=当前位置：数据字典>国籍信息>查询结果页面
+gjList.heading=国籍编码
+
+# -- gj detail page --
+gjDetail.title=当前位置：数据字典>国籍信息>查看页面
+gjDetail.heading=“国籍编码”信息
+
+# -- gj form page --
+gjForm.title=当前位置：数据字典>国籍信息>新建页面
+gjEdit.title=当前位置：数据字典>国籍信息>修改页面
+
+# -- gj Query page --
+gjQuery.title=当前位置：数据字典>国籍信息>查询页面
+
+# -- grfsxxlb form --
+grfsxxlbForm.id=id
+grfsxxlbForm.bm=编码
+grfsxxlbForm.mc=名称
+grfsxxlbForm.xgr=修改人
+grfsxxlbForm.xgsj=修改时间
+grfsxxlbForm.xgsjks=修改时间起
+grfsxxlbForm.xgsjjs=修改时间止
+
+grfsxxlb.added=添加“个人附属信息类别编码”信息成功！
+grfsxxlb.updated=更改“个人附属信息类别编码”信息成功！
+grfsxxlb.deleted=删除“个人附属信息类别编码”信息成功！
+grfsxxlb.saved=保存“个人附属信息类别编码”信息成功！
+error.grfsxxlb.saved=保存“个人附属信息类别编码”错误，该数据已经存在或者已经被其他人删除！！
+error.grfsxxlb.selected=选择的“个人附属信息类别编码”可能已经被删除！
+error.grfsxxlb.deleted=“个人附属信息类别编码”可能已经被删除！
+
+# -- grfsxxlb list page --
+grfsxxlbList.title=“个人附属信息类别编码”列表
+grfsxxlbList.heading=个人附属信息类别编码
+
+# -- grfsxxlb detail page --
+grfsxxlbDetail.title=“个人附属信息类别编码”详细信息
+grfsxxlbDetail.heading=“个人附属信息类别编码”信息
+
+# -- hskcj form --
+hskcjForm.id=id
+hskcjForm.bm=编码
+hskcjForm.mc=名称
+hskcjForm.xgr=修改人
+hskcjForm.xgsj=修改时间
+hskcjForm.xgsjks=修改时间起
+hskcjForm.xgsjjs=修改时间止
+
+hskcj.added=添加“HSK成绩”信息成功！
+hskcj.updated=更改“HSK成绩”信息成功！
+hskcj.deleted=删除“HSK成绩”信息成功！
+hskcj.saved=保存“HSK成绩”信息成功！
+error.hskcj.saved=保存“HSK成绩”错误，该数据已经存在或者已经被其他人删除！！
+error.hskcj.selected=选择的“HSK成绩”可能已经被删除！
+error.hskcj.deleted=“HSK成绩”可能已经被删除！
+
+# -- hskcj list page --
+hskcjList.title=当前位置：数据字典>HSK成绩信息>查询结果页面
+hskcjList.heading=HSK成绩编码
+
+# -- hskcj detail page --
+hskcjDetail.title=当前位置：数据字典>HSK成绩信息>查看页面
+hskcjDetail.heading=“HSK成绩编码”信息
+
+# -- hskcj form page --
+hskcjForm.title=当前位置：数据字典>HSK成绩信息>新建页面
+hskcjEdit.title=当前位置：数据字典>HSK成绩信息>修改页面
+
+# -- hskcj Query page --
+hskcjQuery.title=当前位置：数据字典>HSK成绩信息>查询页面
+
+# -- hzlb form --
+hzlbForm.id=id
+hzlbForm.bm=编码
+hzlbForm.mc=名称
+hzlbForm.ywmc=英文名称
+hzlbForm.xgr=修改人
+hzlbForm.xgsj=修改时间
+hzlbForm.xgsjks=修改时间起
+hzlbForm.xgsjjs=修改时间止
+
+hzlb.added=添加“护照类别”信息成功！
+hzlb.updated=更改“护照类别”信息成功！
+hzlb.deleted=删除“护照类别”信息成功！
+hzlb.saved=保存“护照类别”信息成功！
+error.hzlb.saved=保存“护照类别”错误，该数据已经存在或者已经被其他人删除！！
+error.hzlb.selected=选择的“护照类别”可能已经被删除！
+error.hzlb.deleted=“护照类别”可能已经被删除！
+
+# -- hzlb list page --
+hzlbList.title=当前位置：数据字典>护照类别信息>查询结果页面
+hzlbList.heading=护照类别编码
+
+# -- hzlb detail page --
+hzlbDetail.title=当前位置：数据字典>护照类别信息>查看页面
+hzlbDetail.heading=“护照类别编码”信息
+
+# -- hzlb form page --
+hzlbForm.title=当前位置：数据字典>护照类别信息>新建页面
+hzlbEdit.title=当前位置：数据字典>护照类别信息>修改页面
+
+# -- hzlb Query page --
+hzlbQuery.title=当前位置：数据字典>护照类别信息>查询页面
+
+# -- hzzjzl form --
+hzzjzlForm.id=id
+hzzjzlForm.bm=编码
+hzzjzlForm.mc=名称
+hzzjzlForm.ywmc=英文名称
+hzzjzlForm.xgr=修改人
+hzzjzlForm.xgsj=修改时间
+hzzjzlForm.xgsjks=修改时间起
+hzzjzlForm.xgsjjs=修改时间止
+
+hzzjzl.added=添加“护照、证件种类”信息成功！
+hzzjzl.updated=更改“护照、证件种类”信息成功！
+hzzjzl.deleted=删除“护照、证件种类”信息成功！
+hzzjzl.saved=保存“护照、证件种类”信息成功！
+error.hzzjzl.saved=保存“护照、证件种类”错误，该数据已经存在或者已经被其他人删除！！
+error.hzzjzl.selected=选择的“护照、证件种类”可能已经被删除！
+error.hzzjzl.deleted=“护照、证件种类”可能已经被删除！
+
+# -- hzzjzl list page --
+hzzjzlList.title=当前位置：数据字典>护照证件种类信息>查询结果页面
+hzzjzlList.heading=护照、证件种类
+
+# -- hzzjzl detail page --
+hzzjzlDetail.title=当前位置：数据字典>护照证件种类信息>查看页面
+hzzjzlDetail.heading=“护照、证件种类”信息
+
+# --  hzzjzl form page --
+hzzjzlForm.title=当前位置：数据字典>护照证件种类信息>新建页面
+hzzjzlEdit.title=当前位置：数据字典>护照证件种类信息>修改页面
+
+# --  hzzjzl Query page --
+hzzjzlQuery.title=当前位置：数据字典>护照证件种类信息>查询页面
+ 
+ 
+# -- jcdw form --
+jcdwForm.id=id
+jcdwForm.bm=单位代码
+jcdwForm.mc=单位名称
+jcdwForm.ywmc=英文名称
+jcdwForm.sjdwmc=上级单位名称
+jcdwForm.xzqid = 行政区id
+jcdwForm.xzqmc = 行政区名称
+jcdwForm.dwxz=单位性质
+jcdwForm.bxlx=办学类型
+jcdwForm.lxfs=联系方式
+jcdwForm.xgr=修改人
+jcdwForm.xgsj=修改时间
+jcdwForm.xgsjks=修改时间起
+jcdwForm.xgsjjs=修改时间止
+
+jcdw.added=添加“基层单位”信息成功！
+jcdw.updated=更改“基层单位”信息成功！
+jcdw.deleted=删除“基层单位”信息成功！
+jcdw.saved=保存“基层单位”信息成功！
+error.jcdw.saved=保存“基层单位”错误，该数据已经存在或者已经被其他人删除！！
+error.jcdw.selected=选择的“基层单位”可能已经被删除！
+error.jcdw.deleted=选择了无法删除的“基层单位”,可能已被删除，可能被关联！
+
+# -- jcdw list page --
+jcdwList.title= 当前位置：基层单位信息>查询结果页面
+jcdwList.heading=基层单位
+
+# -- jcdw detail page --
+jcdwDetail.title= 当前位置：基层单位信息>查看页面
+jcdwDetail.heading=“基层单位”信息
+
+# -- jcdw edit page --
+jcdwEdit.title= 当前位置：基层单位信息>修改页面
+
+# -- jflb form --
+jflbForm.id=id
+jflbForm.bm=编码
+jflbForm.mc=名称
+jflbForm.xgr=修改人
+jflbForm.xgsj=修改时间
+jflbForm.xgsjks=修改时间起
+jflbForm.xgsjjs=修改时间止
+
+jflb.added=添加“交费类别”信息成功！
+jflb.updated=更改“交费类别”信息成功！
+jflb.deleted=删除“交费类别”信息成功！
+jflb.saved=保存“交费类别”信息成功！
+error.jflb.saved=保存“交费类别”错误，该数据已经存在或者已经被其他人删除！！
+error.jflb.selected=选择的“交费类别”可能已经被删除！
+error.jflb.deleted=“交费类别”可能已经被删除！
+
+# -- jflb list page --
+jflbList.title=当前位置：数据字典>交费类别信息>查询结果页面
+jflbList.heading=交费类别
+
+# -- jflb detail page --
+jflbDetail.title=当前位置：数据字典>交费类别信息>查看页面
+jflbDetail.heading=“交费类别”信息
+
+
+# -- jflb form page --
+jflbForm.title=当前位置：数据字典>交费类别信息>新建页面
+jflbEdit.title=当前位置：数据字典>交费类别信息>修改页面
+
+# -- jflb Query page --
+jflbQuery.title=当前位置：数据字典>交费类别信息>查询页面
+
+# -- jfly form --
+jflyForm.id=id
+jflyForm.bm=编码
+jflyForm.mc=名称
+jflyForm.xgr=修改人
+jflyForm.xgsj=修改时间
+jflyForm.xgsjks=修改时间起
+jflyForm.xgsjjs=修改时间止
+
+jfly.added=添加“经费来源”信息成功！
+jfly.updated=更改“经费来源”信息成功！
+jfly.deleted=删除“经费来源”信息成功！
+jfly.saved=保存“经费来源”信息成功！
+error.jfly.saved=保存“经费来源”错误，该数据已经存在或者已经被其他人删除！！
+error.jfly.selected=选择的“经费来源”可能已经被删除！
+error.jfly.deleted=“经费来源”可能已经被删除！
+
+# -- jfly list page --
+jflyList.title=当前位置：数据字典>经费来源信息>查询结果页面
+jflyList.heading=经费来源
+
+# -- jfly detail page --
+jflyDetail.title=当前位置：数据字典>经费来源信息>查看页面
+jflyDetail.heading=“经费来源”信息
+
+# -- jfly form page --
+jflyForm.title=当前位置：数据字典>经费来源信息>新建页面
+jflyEdit.title=当前位置：数据字典>经费来源信息>修改页面
+
+# -- jfly Query page --
+jflyQuery.title=当前位置：数据字典>经费来源信息>查询页面
+
+# -- jglb form --
+jglbForm.id=id
+jglbForm.bm=编码
+jglbForm.mc=名称
+jglbForm.xgr=修改人
+jglbForm.xgsj=修改时间
+jglbForm.xgsjks=修改时间起
+jglbForm.xgsjjs=修改时间止
+
+jglb.added=添加“(申请相关)机构类别编码”信息成功！
+jglb.updated=更改“(申请相关)机构类别编码”信息成功！
+jglb.deleted=删除“(申请相关)机构类别编码”信息成功！
+jglb.saved=保存“(申请相关)机构类别编码”信息成功！
+error.jglb.saved=保存“(申请相关)机构类别编码”错误，该数据已经存在或者已经被其他人删除！！
+error.jglb.selected=选择的“(申请相关)机构类别编码”可能已经被删除！
+error.jglb.deleted=“(申请相关)机构类别编码”可能已经被删除！
+
+# -- jglb list page --
+jglbList.title=“(申请相关)机构类别编码”列表
+jglbList.heading=(申请相关)机构类别编码
+
+# -- jglb detail page --
+jglbDetail.title=“(申请相关)机构类别编码”详细信息
+jglbDetail.heading=“(申请相关)机构类别编码”信息
+
+# -- jxjlb form --
+jxjlbForm.id=id
+jxjlbForm.bm=编码
+jxjlbForm.mc=名称
+jxjlbForm.xgr=修改人
+jxjlbForm.xgsj=修改时间
+jxjlbForm.xgsjks=修改时间起
+jxjlbForm.xgsjjs=修改时间止
+
+jxjlb.added=添加“奖学金类别”信息成功！
+jxjlb.updated=更改“奖学金类别”信息成功！
+jxjlb.deleted=删除“奖学金类别”信息成功！
+jxjlb.saved=保存“奖学金类别”信息成功！
+error.jxjlb.saved=保存“奖学金类别”错误，该数据已经存在或者已经被其他人删除！！
+error.jxjlb.selected=选择的“奖学金类别”可能已经被删除！
+error.jxjlb.deleted=“奖学金类别”可能已经被删除！
+
+# -- jxjlb list page --
+jxjlbList.title=当前位置：数据字典>奖学金类别信息>查询结果页面
+jxjlbList.heading=奖学金类别
+
+# -- jxjlb detail page --
+jxjlbDetail.title=当前位置：数据字典>奖学金类别信息>查看页面
+jxjlbDetail.heading=“奖学金类别”信息
+
+# -- jxjlb form page --
+jxjlbForm.title=当前位置：数据字典>奖学金类别信息>新建页面
+jxjlbEdit.title=当前位置：数据字典>奖学金类别信息>修改页面
+
+# -- jxjlb Query page --
+jxjlbQuery.title=当前位置：数据字典>奖学金类别信息>查询页面
+
+# -- kc form --
+kcForm.id=id
+kcForm.bm=编码
+kcForm.mc=名称
+kcForm.ywmc=英文名称
+kcForm.kclb=课程类别
+kcForm.xgr=修改人
+kcForm.xgsj=修改时间
+kcForm.xgsjks=修改时间起
+kcForm.xgsjjs=修改时间止
+
+kc.added=添加“课程”信息成功！
+kc.updated=更改“课程”信息成功！
+kc.deleted=删除“课程”信息成功！
+kc.saved=保存“课程”信息成功！
+error.kc.saved=保存“课程”错误，该数据已经存在或者已经被其他人删除！！
+error.kc.selected=选择的“课程”可能已经被删除！
+error.kc.deleted=“课程”可能已经被删除！
+
+# -- kc list page --
+kcList.title=“课程”列表
+kcList.heading=课程
+
+# -- kc detail page --
+kcDetail.title=“课程”详细信息
+kcDetail.heading=“课程”信息
+
+# -- lclb form --
+lclbForm.id=id
+lclbForm.bm=编码
+lclbForm.mc=名称
+lclbForm.xgr=修改人
+lclbForm.xgsj=修改时间
+lclbForm.xgsjks=修改时间起
+lclbForm.xgsjjs=修改时间止
+
+lclb.added=添加“另册类别”信息成功！
+lclb.updated=更改“另册类别”信息成功！
+lclb.deleted=删除“另册类别”信息成功！
+lclb.saved=保存“另册类别”信息成功！
+error.lclb.saved=保存“另册类别”错误，该数据已经存在或者已经被其他人删除！！
+error.lclb.selected=选择的“另册类别”可能已经被删除！
+error.lclb.deleted=“另册类别”可能已经被删除！
+
+# -- lclb list page --
+lclbList.title=当前位置：数据字典>另册类别信息>查询结果页面
+lclbList.heading=另册类别
+
+# -- lclb detail page --
+lclbDetail.title=当前位置：数据字典>另册类别信息>查看页面
+lclbDetail.heading=“另册类别”信息
+
+# -- lclb form page --
+lclbForm.title=当前位置：数据字典>另册类别信息>新建页面
+lclbEdit.title=当前位置：数据字典>另册类别信息>修改页面
+
+# -- lclb Query page --
+lclbQuery.title=当前位置：数据字典>另册类别信息>查询页面
+
+# -- my form --
+myForm.id=id
+myForm.bm=编码
+myForm.mc=名称
+myForm.xgr=修改人
+myForm.xgsj=修改时间
+myForm.xgsjks=修改时间起
+myForm.xgsjjs=修改时间止
+
+my.added=添加“母语”信息成功！
+my.updated=更改“母语”信息成功！
+my.deleted=删除“母语”信息成功！
+my.saved=保存“母语”信息成功！
+error.my.saved=保存“母语”错误，该数据已经存在或者已经被其他人删除！！
+error.my.selected=选择的“母语”可能已经被删除！
+error.my.deleted=“母语”可能已经被删除！
+
+# -- my list page --
+myList.title=“母语”列表
+myList.heading=母语
+
+# -- my detail page --
+myDetail.title=“母语”详细信息
+myDetail.heading=“母语”信息
+
+# -- node form --
+nodeForm.id=功能点ID
+nodeForm.nodecode=功能点编码
+nodeForm.parent_id=父节点ID
+nodeForm.func_node_name=功能点名称
+nodeForm.czmc=操作名称
+nodeForm.location=链接
+nodeForm.xgr=修改人
+nodeForm.xgsj=修改时间
+nodeForm.xgsjks=修改时间起
+nodeForm.xgsjjs=修改时间止
+
+node.added=添加“功能节点表”信息成功！
+node.updated=更改“功能节点表”信息成功！
+node.deleted=删除“功能节点表”信息成功！
+node.saved=保存“功能节点表”信息成功！
+error.node.saved=保存“功能节点表”错误，该数据已经存在或者已经被其他人删除！！
+error.node.selected=选择的“功能节点表”可能已经被删除！
+error.node.deleted=“功能节点表”可能已经被删除！
+
+# -- node list page --
+nodeList.title=“功能节点表”列表
+nodeList.heading=功能节点表
+
+# -- node detail page --
+nodeDetail.title=“功能节点表”详细信息
+nodeDetail.heading=“功能节点表”信息
+
+# -- qzlb form --
+qzlbForm.id=id
+qzlbForm.bm=编码
+qzlbForm.mc=名称
+qzlbForm.ywmc=英文名称
+qzlbForm.xgr=修改人
+qzlbForm.xgsj=修改时间
+qzlbForm.xgsjks=修改时间起
+qzlbForm.xgsjjs=修改时间止
+
+qzlb.added=添加“签证类别编码”信息成功！
+qzlb.updated=更改“签证类别编码”信息成功！
+qzlb.deleted=删除“签证类别编码”信息成功！
+qzlb.saved=保存“签证类别编码”信息成功！
+error.qzlb.saved=保存“签证类别编码”错误，该数据已经存在或者已经被其他人删除！！
+error.qzlb.selected=选择的“签证类别编码”可能已经被删除！
+error.qzlb.deleted=“签证类别编码”可能已经被删除！
+
+# -- qzlb list page --
+qzlbList.title=当前位置：数据字典>签证类别信息>查询结果页面
+qzlbList.heading=签证类别编码
+
+# -- qzlb detail page --
+qzlbDetail.title=当前位置：数据字典>签证类别信息>查看页面
+qzlbDetail.heading=“签证类别编码”信息
+
+# -- qzlb form page --
+qzlbForm.title=当前位置：数据字典>签证类别信息>新建页面
+qzlbEdit.title=当前位置：数据字典>签证类别信息>修改页面
+
+# -- qzlb Query page --
+qzlbQuery.title=当前位置：数据字典>签证类别信息>查询页面
+
+# -- tlqx form --
+tlqxForm.id=id
+tlqxForm.bm=编码
+tlqxForm.mc=名称
+tlqxForm.xgr=修改人
+tlqxForm.xgsj=修改时间
+tlqxForm.xgsjks=修改时间起
+tlqxForm.xgsjjs=修改时间止
+
+tlqx.added=添加“停留期限”信息成功！
+tlqx.updated=更改“停留期限”信息成功！
+tlqx.deleted=删除“停留期限”信息成功！
+tlqx.saved=保存“停留期限”信息成功！
+error.tlqx.saved=保存“停留期限”错误，该数据已经存在或者已经被其他人删除！！
+error.tlqx.selected=选择的“停留期限”可能已经被删除！
+error.tlqx.deleted=“停留期限”可能已经被删除！
+
+# -- tlqx list page --
+tlqxList.title=当前位置：数据字典>停留期限信息>查询结果页面
+tlqxList.heading=停留期限
+
+# -- tlqx detail page --
+tlqxDetail.title=当前位置：数据字典>停留期限信息>查看页面
+tlqxDetail.heading=“停留期限”信息
+
+# -- tlqx form page --
+tlqxForm.title=当前位置：数据字典>停留期限信息>新建页面
+tlqxEdit.title=当前位置：数据字典>停留期限信息>修改页面
+
+# -- tlqx Query page --
+tlqxQuery.title=当前位置：数据字典>停留期限信息>查询页面
+
+# -- xgrylb form --
+xgrylbForm.id=id
+xgrylbForm.bm=编码
+xgrylbForm.mc=名称
+xgrylbForm.xgr=修改人
+xgrylbForm.xgsj=修改时间
+xgrylbForm.xgsjks=修改时间起
+xgrylbForm.xgsjjs=修改时间止
+
+xgrylb.added=添加“申请相关人员类别编码”信息成功！
+xgrylb.updated=更改“申请相关人员类别编码”信息成功！
+xgrylb.deleted=删除“申请相关人员类别编码”信息成功！
+xgrylb.saved=保存“申请相关人员类别编码”信息成功！
+error.xgrylb.saved=保存“申请相关人员类别编码”错误，该数据已经存在或者已经被其他人删除！！
+error.xgrylb.selected=选择的“申请相关人员类别编码”可能已经被删除！
+error.xgrylb.deleted=“申请相关人员类别编码”可能已经被删除！
+
+# -- xgrylb list page --
+xgrylbList.title=“申请相关人员类别编码”列表
+xgrylbList.heading=申请相关人员类别编码
+
+# -- xgrylb detail page --
+xgrylbDetail.title=“申请相关人员类别编码”详细信息
+xgrylbDetail.heading=“申请相关人员类别编码”信息
+
+# -- xl form --
+xlForm.id=id
+xlForm.bm=编码
+xlForm.mc=名称
+xlForm.xgr=修改人
+xlForm.xgsj=修改时间
+xlForm.xgsjks=修改时间起
+xlForm.xgsjjs=修改时间止
+
+xl.added=添加“学历编码”信息成功！
+xl.updated=更改“学历编码”信息成功！
+xl.deleted=删除“学历编码”信息成功！
+xl.saved=保存“学历编码”信息成功！
+error.xl.saved=保存“学历编码”错误，该数据已经存在或者已经被其他人删除！！
+error.xl.selected=选择的“学历编码”可能已经被删除！
+error.xl.deleted=“学历编码”可能已经被删除！
+
+# -- xl list page --
+xlList.title= 当前位置：数据字典>学历信息>查询结果页面
+xlList.heading=学历编码
+
+# -- xl detail page --
+xlDetail.title= 当前位置：数据字典>学历信息>查看页面
+xlDetail.heading=“学历编码”信息
+
+
+# -- xl form page --
+xlForm.title= 当前位置：数据字典>学历信息>新建页面
+xlEdit.title= 当前位置：数据字典>学历信息>修改页面
+
+# -- xl Query page --
+xlQuery.title= 当前位置：数据字典>学历信息>查询页面
+
+
+# -- xq form --
+xqForm.id=id
+xqForm.bm=编码
+xqForm.mc=名称
+xqForm.ywmc=学期(英)
+xqForm.xgr=修改人
+xqForm.xgsj=修改时间
+xqForm.xgsjks=修改时间起
+xqForm.xgsjjs=修改时间止
+
+xq.added=添加“学期”信息成功！
+xq.updated=更改“学期”信息成功！
+xq.deleted=删除“学期”信息成功！
+xq.saved=保存“学期”信息成功！
+error.xq.saved=保存“学期”错误，该数据已经存在或者已经被其他人删除！！
+error.xq.selected=选择的“学期”可能已经被删除！
+error.xq.deleted=“学期”可能已经被删除！
+
+# -- xq list page --
+xqList.title=当前位置：数据字典>学期信息>查询结果页面
+xqList.heading=学期
+
+# -- xq detail page --
+xqDetail.title=数据字典>学期信息>查看页面
+xqDetail.heading=“学期”信息
+
+
+# -- xq form page --
+xqForm.title=当前位置：数据字典>学期信息>新建页面
+xqEdit.title=当前位置：数据字典>学期信息>修改页面
+
+# -- xq Query page --
+xqQuery.title=当前位置：数据字典>学期信息>查询页面
+
+# -- xslb form --
+xslbForm.id=id
+xslbForm.bm=编码
+xslbForm.mc=名称
+xslbForm.isxls=学历生
+xslbForm.ywmc=英文名称
+xslbForm.cc=层次
+xslbForm.ccid=层次
+xslbForm.ccmc=层次名称
+xslbForm.xxxs=学习形式
+xslbForm.xgr=修改人
+xslbForm.xgsj=修改时间
+xslbForm.xgsjks=修改时间起
+xslbForm.xgsjjs=修改时间止
+
+xslb.added=添加“学生类别”信息成功！
+xslb.updated=更改“学生类别”信息成功！
+xslb.deleted=删除“学生类别”信息成功！
+xslb.saved=保存“学生类别”信息成功！
+error.xslb.saved=保存“学生类别”错误，该数据已经存在或者已经被其他人删除！！
+error.xslb.selected=选择的“学生类别”可能已经被删除！
+error.xslb.deleted=“学生类别”可能已经被删除！
+
+# -- xslb list page --
+xslbList.title=“学生类别”列表
+xslbList.heading=学生类别
+
+
+# -- xslb detail page --
+xslbDetail.title=当前位置：数据字典>学生类别信息>查看页面
+xslbDetail.heading=“学生类别编码”信息
+
+# -- xslb form page --
+xslbForm.title=当前位置：数据字典>学生类别信息>新建页面
+xslbEdit.title=当前位置：数据字典>学生类别信息>修改页面
+
+# -- xslb Query page --
+xslbQuery.title=当前位置：数据字典>学生类别信息>查询页面
+
+# -- xszt form --
+xsztForm.id=id
+xsztForm.bm=编码
+xsztForm.mc=名称
+xsztForm.xgr=修改人
+xsztForm.xgsj=修改时间
+xsztForm.xgsjks=修改时间起
+xsztForm.xgsjjs=修改时间止
+
+xszt.added=添加“学生状态编码”信息成功！
+xszt.updated=更改“学生状态编码”信息成功！
+xszt.deleted=删除“学生状态编码”信息成功！
+xszt.saved=保存“学生状态编码”信息成功！
+error.xszt.saved=保存“学生状态编码”错误，该数据已经存在或者已经被其他人删除！！
+error.xszt.selected=选择的“学生状态编码”可能已经被删除！
+error.xszt.deleted=“学生状态编码”可能已经被删除！
+
+# -- xszt list page --
+xsztList.title=“学生状态编码”列表
+xsztList.heading=学生状态编码
+
+# -- xszt detail page --
+xsztDetail.title=“学生状态编码”详细信息
+xsztDetail.heading=“学生状态编码”信息
+
+# -- xxxs form --
+xxxsForm.id=id
+xxxsForm.bm=编码
+xxxsForm.mc=名称
+xxxsForm.ywmc=英文名称
+xxxsForm.xgr=修改人
+xxxsForm.xgsj=修改时间
+xxxsForm.xgsjks=修改时间起
+xxxsForm.xgsjjs=修改时间止
+
+xxxs.added=添加“学习形式编码表”信息成功！
+xxxs.updated=更改“学习形式编码表”信息成功！
+xxxs.deleted=删除“学习形式编码表”信息成功！
+xxxs.saved=保存“学习形式编码表”信息成功！
+error.xxxs.saved=保存“学习形式编码表”错误，该数据已经存在或者已经被其他人删除！！
+error.xxxs.selected=选择的“学习形式编码表”可能已经被删除！
+error.xxxs.deleted=“学习形式编码表”可能已经被删除！
+
+# -- xxxs list page --
+xxxsList.title=“学习形式编码表”列表
+xxxsList.heading=学习形式编码表
+
+# -- xxxs detail page --
+xxxsDetail.title=“学习形式编码表”详细信息
+xxxsDetail.heading=“学习形式编码表”信息
+
+# -- xzq form --
+xzqForm.id=id
+xzqForm.bm=编码
+xzqForm.mc=名称
+xzqForm.xgr=修改人
+xzqForm.xgsj=修改时间
+xzqForm.xgsjks=修改时间起
+xzqForm.xgsjjs=修改时间止
+
+xzq.added=添加“行政区”信息成功！
+xzq.updated=更改“行政区”信息成功！
+xzq.deleted=删除“行政区”信息成功！
+xzq.saved=保存“行政区”信息成功！
+error.xzq.saved=保存“行政区”错误，该数据已经存在或者已经被其他人删除！！
+error.xzq.selected=选择的“行政区”可能已经被删除！
+error.xzq.deleted=“行政区”可能已经被删除！
+
+# -- xzq list page --
+xzqList.title=“行政区”列表
+xzqList.heading=行政区
+
+# -- xzq detail page --
+xzqDetail.title=“行政区”详细信息
+xzqDetail.heading=“行政区”信息
+
+# -- yd form --
+ydForm.id=id
+ydForm.bm=编码
+ydForm.mc=名称
+ydForm.zhmdbz=转黑名单标志
+ydForm.xgr=修改人
+ydForm.xgsj=修改时间
+ydForm.xgsjks=修改时间起
+ydForm.xgsjjs=修改时间止
+
+yd.added=添加“异动类别”信息成功！
+yd.updated=更改“异动类别”信息成功！
+yd.deleted=删除“异动类别”信息成功！
+yd.saved=保存“异动类别”信息成功！
+error.yd.saved=保存“异动类别”错误，该数据已经存在或者已经被其他人删除！！
+error.yd.selected=选择的“异动类别”可能已经被删除！
+error.yd.deleted=“异动类别”可能已经被删除！
+
+# -- yd list page --
+ydList.title=当前位置：数据字典>异动类别信息>查询结果页面
+ydList.heading=异动类别
+
+# -- yd detail page --
+ydDetail.title=当前位置：数据字典>异动类别信息>查看页面
+ydDetail.heading=“异动类别”信息
+
+# -- yd form page --
+ydForm.title=当前位置：数据字典>异动类别信息>新建页面
+ydEdit.title=当前位置：数据字典>异动类别信息>修改页面
+
+# -- yd Query page --
+ydQuery.title=当前位置：数据字典>异动类别信息>查询页面
+
+# -- yx form --
+yxForm.id=id
+yxForm.bm=编码
+yxForm.mc=名称
+yxForm.ywmc=英文名称
+yxForm.xgr=修改人
+yxForm.xgsj=修改时间
+yxForm.xgsjks=修改时间起
+yxForm.xgsjjs=修改时间止
+
+yx.added=添加“院系”信息成功！
+yx.updated=更改“院系”信息成功！
+yx.deleted=删除“院系”信息成功！
+yx.saved=保存“院系”信息成功！
+error.yx.saved=保存“院系”错误，该数据已经存在或者已经被其他人删除！！
+error.yx.selected=选择的“院系”可能已经被删除！
+error.yx.deleted=“院系”可能已经被删除！
+
+# -- yx list page --
+yxList.title= 当前位置：数据字典>院系信息>查询结果页面
+yxList.heading=院系
+
+# -- yx detail page --
+yxDetail.title= 当前位置：数据字典>院系信息>查看页面
+yxDetail.heading=“院系”信息
+
+# -- yx form page --
+yxForm.title= 当前位置：数据字典>院系信息>新建页面
+yxEdit.title= 当前位置：数据字典>院系信息>修改页面
+
+# -- yx Query page --
+yxQuery.title= 当前位置：数据字典>院系信息>查询页面
+
+# -- yxzy form --
+yxzyForm.id=id
+yxzyForm.yx=院系
+yxzyForm.yxid=院系
+yxzyForm.yxmc=院系
+yxzyForm.zy=专业
+yxzyForm.zymlid=专业
+yxzyForm.zymlmc=专业
+yxzyForm.xgr=修改人
+yxzyForm.xgsj=修改时间
+yxzyForm.xgsjks=修改时间起
+yxzyForm.xgsjjs=修改时间止
+
+yxzyForm.jiaoyubuzy=放大镜里是否显示教育部所给专业信息
+
+yxzy.added=添加“院系专业对照表”信息成功！
+yxzy.updated=更改“院系专业对照表”信息成功！
+yxzy.deleted=删除“院系专业对照表”信息成功！
+yxzy.saved=保存“院系专业对照表”信息成功！
+error.yxzy.saved=保存“院系专业对照表”错误，该数据已经存在或者已经被其他人删除！！
+error.yxzy.selected=选择的“院系专业对照表”可能已经被删除！
+error.yxzy.deleted=“院系专业对照表”可能已经被删除！
+
+# -- yxzy list page --
+yxzyList.title= 当前位置：数据字典>院系专业对照信息>查询结果页面
+yxzyList.heading=院系专业对照表编码
+
+# -- yxzy detail page --
+yxzyDetail.title= 当前位置：数据字典>院系专业对照信息>查询页面
+yxzyDetail.heading=“院系专业对照表编码”信息
+
+# -- yxzy form page --
+yxzyForm.title= 当前位置：数据字典>院系专业对照信息>新建页面
+yxzyEdit.title= 当前位置：数据字典>院系专业对照信息>修改页面
+
+# -- yxzy Query page --
+yxzyQuery.title= 当前位置：数据字典>院系专业对照信息>查询页面
+
+# -- zdxslb form --
+zdxslbForm.id=id
+zdxslbForm.bm=编码
+zdxslbForm.mc=名称
+zdxslbForm.xgr=修改人
+zdxslbForm.xgsj=修改时间
+zdxslbForm.xgsjks=修改时间起
+zdxslbForm.xgsjjs=修改时间止
+
+zdxslb.added=添加“重点学生类别”信息成功！
+zdxslb.updated=更改“重点学生类别”信息成功！
+zdxslb.deleted=删除“重点学生类别”信息成功！
+zdxslb.saved=保存“重点学生类别”信息成功！
+error.zdxslb.saved=保存“重点学生类别”错误，该数据已经存在或者已经被其他人删除！！
+error.zdxslb.selected=选择的“重点学生类别”可能已经被删除！
+error.zdxslb.deleted=“重点学生类别”可能已经被删除！
+
+# -- zdxslb list page --
+zdxslbList.title=当前位置：数据字典>重点学生类别信息>查询结果页面
+zdxslbList.heading=重点学生类别
+
+# -- zdxslb detail page --
+zdxslbDetail.title=当前位置：数据字典>重点学生类别信息>查看页面
+zdxslbDetail.heading=“重点学生类别”信息
+
+
+# -- zdxslb form page --
+zdxslbForm.title=当前位置：数据字典>重点学生类别信息>新建页面
+zdxslbEdit.title=当前位置：数据字典>重点学生类别信息>修改页面
+
+# -- zdxslb Query page --
+zdxslbQuery.title=当前位置：数据字典>重点学生类别信息>查询页面
+
+# -- zj form --
+zjForm.id=id
+zjForm.bm=编码
+zjForm.mc=名称
+zjForm.xgr=修改人
+zjForm.xgsj=修改时间
+zjForm.xgsjks=修改时间起
+zjForm.xgsjjs=修改时间止
+
+zj.added=添加“宗教”信息成功！
+zj.updated=更改“宗教”信息成功！
+zj.deleted=删除“宗教”信息成功！
+zj.saved=保存“宗教”信息成功！
+error.zj.saved=保存“宗教”错误，该数据已经存在或者已经被其他人删除！！
+error.zj.selected=选择的“宗教”可能已经被删除！
+error.zj.deleted=“宗教”可能已经被删除！
+
+# -- zj list page --
+zjList.title=“宗教”列表
+zjList.heading=宗教
+
+# -- zj detail page --
+zjDetail.title=“宗教”详细信息
+zjDetail.heading=“宗教”信息
+
+# -- zszl form --
+zszlForm.id=id
+zszlForm.bm=编码
+zszlForm.mc=名称
+zszlForm.ywmc=英文名称
+zszlForm.xgr=修改人
+zszlForm.xgsj=修改时间
+zszlForm.xgsjks=修改时间起
+zszlForm.xgsjjs=修改时间止
+
+zszl.added=添加“证书种类”信息成功！
+zszl.updated=更改“证书种类”信息成功！
+zszl.deleted=删除“证书种类”信息成功！
+zszl.saved=保存“证书种类”信息成功！
+error.zszl.saved=保存“证书种类”错误，该数据已经存在或者已经被其他人删除！！
+error.zszl.selected=选择的“证书种类”可能已经被删除！
+error.zszl.deleted=“证书种类”可能已经被删除！
+
+# -- zszl list page --
+zszlList.title=“证书种类”列表
+zszlList.heading=证书种类
+
+# -- zszl detail page --
+zszlDetail.title=“证书种类”详细信息
+zszlDetail.heading=“证书种类”信息
+
+# -- zy form --
+zyForm.id=id
+zyForm.bm=编码
+zyForm.mc=名称
+zyForm.xgr=修改人
+zyForm.xgsj=修改时间
+zyForm.xgsjks=修改时间起
+zyForm.xgsjjs=修改时间止
+
+zy.added=添加“职业编码”信息成功！
+zy.updated=更改“职业编码”信息成功！
+zy.deleted=删除“职业编码”信息成功！
+zy.saved=保存“职业编码”信息成功！
+error.zy.saved=保存“职业编码”错误，该数据已经存在或者已经被其他人删除！！
+error.zy.selected=选择的“职业编码”可能已经被删除！
+error.zy.deleted=“职业编码”可能已经被删除！
+
+# -- zy list page --
+zyList.title= 当前位置：数据字典>职业信息>查询结果页面
+zyList.heading=职业编码
+
+# -- zy detail page --
+zyDetail.title= 当前位置：数据字典>职业信息>查看页面
+zyDetail.heading=“职业编码”信息
+
+# -- zy form page --
+zyForm.title= 当前位置：数据字典>职业信息>新建页面
+zyEdit.title= 当前位置：数据字典>职业信息>修改页面
+
+# -- zy Query page --
+zyQuery.title= 当前位置：数据字典>职业信息>查询页面
+
+# -- zyml form --
+zymlForm.id=id
+zymlForm.bm=编码
+zymlForm.mc=名称
+zymlForm.ywmc=英文名称
+zymlForm.xk=二级门类
+zymlForm.xgr=修改人
+zymlForm.xgsj=修改时间
+zymlForm.xgsjks=修改时间起
+zymlForm.xgsjjs=修改时间止
+
+
+
+zyml.added=添加“专业”信息成功！
+zyml.updated=更改“专业”信息成功！
+zyml.deleted=删除“专业”信息成功！
+zyml.saved=保存“专业”信息成功！
+error.zyml.saved=保存“专业”错误，该数据已经存在或者已经被其他人删除！！
+error.zyml.xksaved=保存"学科"错误,所选学科不在规定范围内!
+error.zyml.selected=选择的“专业”可能已经被删除！
+error.zyml.deleted=“专业”可能已经被删除！
+error.zyml.yjxk.notexist=一级学科不存在！
+error.zyml.xk.mispairing=所选学科与一级学科不匹配！
+
+# -- zyml list page --
+zymlList.title= 当前位置：数据字典>专业信息>查询结果页面
+zymlList.heading=专业
+
+# -- zyml detail page --
+zymlDetail.title= 当前位置：数据字典>专业信息>查看页面
+zymlDetail.heading=“专业”信息
+
+# -- zy form page --
+zymlForm.title= 当前位置：数据字典>专业信息>新建页面
+zymlEdit.title= 当前位置：数据字典>专业信息>修改页面
+
+# -- zy Query page --
+zymlQuery.title= 当前位置：数据字典>专业信息>查询页面
+
+
+# -- bbmb form --
+bbmbForm.id=
+bbmbForm.mc=模板名称
+bbmbForm.sql=查询语句
+bbmbForm.nx=
+bbmbForm.ny=
+bbmbForm.rx=
+bbmbForm.ry=
+bbmbForm.tj=数据条件
+bbmbForm.xmc=行字段
+bbmbForm.ymc=列字段
+
+bbmb.added=添加“长期生报表模板”信息成功！
+bbmb.updated=更改“长期生报表模板”信息成功！
+bbmb.deleted=删除“长期生报表模板”信息成功！
+bbmb.saved=保存“长期生报表模板”信息成功！
+error.bbmb.saved=保存“长期生报表模板”错误，该数据已经存在或者已经被其他人删除！！
+error.bbmb.selected=选择的“长期生报表模板”可能已经被删除！
+error.bbmb.deleted=“长期生报表模板”可能已经被删除！
+
+# -- bbmb list page --
+bbmbList.title=当前位置：长期生报表模板>查询结果页面
+bbmbList.heading=“报表模板”
+
+# -- bbmb detail page --
+bbmbDetail.title=当前位置：长期生报表模板>查看页面
+bbmbDetail.heading=“报表模板”信息
+
+bbmbQuery.title=当前位置：长期生报表模板>查询页面
+
+# -- bx form --
+bxForm.id=id
+bxForm.pid=pid
+bxForm.jbxxid=基本信息
+bxForm.jbxxmc=基本信息
+bxForm.bxdh=保险单号
+bxForm.yxqx=有效期限
+bxForm.bxgsmc=保险公司名称
+bxForm.bxgslxfs=保险公司联系方式
+bxForm.bxje=保险金额
+bxForm.xzmc=险种名称
+bxForm.bxqj=保险期间
+bxForm.bz=备注
+bxForm.xgr=修改人
+bxForm.xgsj=修改时间
+bxForm.xgsjks=修改时间起
+bxForm.xgsjjs=修改时间止
+
+bx.added=添加“保险信息”信息成功！
+bx.updated=更改“保险信息”信息成功！
+bx.deleted=删除“保险信息”信息成功！
+bx.saved=保存“保险信息”信息成功！
+error.bx.saved=保存“保险信息”错误，该数据已经存在或者已经被其他人删除！！
+error.bx.selected=选择的“保险信息”可能已经被删除！
+error.bx.deleted=“保险信息”可能已经被删除！
+
+# -- bx list page --
+bxList.title=当前位置：保险信息>查询结果页面
+bxList.heading=保险信息
+
+# -- bx detail page --
+bxDetail.title=当前位置：保险信息>查看页面
+bxDetail.heading=“保险信息”信息
+
+
+# -- bx form page --
+bxForm1.title=当前位置：保险信息>新建向导一页面
+bxForm2.title=当前位置：保险信息>新建向导二页面
+bxForm3.title=当前位置：保险信息>新建向导三页面
+bxEdit.title=当前位置：保险信息>修改页面
+
+# -- bx Query page --
+bxQuery.title=当前位置：保险信息>查询页面
+
+# -- dqsmb form --
+dqsmbForm.id=
+dqsmbForm.mc=模板名称
+dqsmbForm.sql=
+dqsmbForm.nx=
+dqsmbForm.ny=
+dqsmbForm.rx=
+dqsmbForm.ry=
+dqsmbForm.tj=数据条件
+dqsmbForm.xmc=行字段
+dqsmbForm.ymc=列字段
+dqsmbForm.mdlx=模板类型
+
+dqsmb.added=添加“短期生模板”信息成功！
+dqsmb.updated=更改“短期生模板”信息成功！
+dqsmb.deleted=删除“短期生模板”信息成功！
+dqsmb.saved=保存“短期生模板”信息成功！
+error.dqsmb.saved=保存“短期生模板”错误，该数据已经存在或者已经被其他人删除！！
+error.dqsmb.selected=选择的“短期生模板”可能已经被删除！
+error.dqsmb.deleted=“短期生模板”可能已经被删除！
+
+# -- dqsmb list page --
+dqsmbList.title=当前位置：短期生报表模板>查询结果页面
+dqsmbList.heading=“短期生模板”
+
+# -- dqsmb detail page --
+dqsmbDetail.title=“短期生模板”详细信息
+dqsmbDetail.heading=“短期生模板”信息
+
+dqsmbQuery.title=当前位置：短期生汇总报表模板>查询页面
+
+
+dqshzDetail.heading=“短期生汇总”信息
+dqshzList.heading=“短期生汇总”
+dqshzDetail.title=“短期生汇总”详细信息
+dqshzList.title=当前位置：短期生汇总>查询结果页面
+dqshzQuery.title=当前位置：短期生汇总>查询页面
+
+
+
+# -- dqtz form --
+dqtzForm.id=id
+dqtzForm.tzmc=团组名称
+dqtzForm.gj=国籍
+dqtzForm.gjid=国籍
+dqtzForm.gjmc=国籍
+dqtzForm.dqb=地区别
+dqtzForm.lhrq=来校日期
+dqtzForm.lhrqks=来校日期起
+dqtzForm.lhrqjs=来校日期止
+dqtzForm.xyzs=学员总数
+dqtzForm.yx=院系
+dqtzForm.yxid=院系
+dqtzForm.yxmc=院系
+dqtzForm.zy=专业
+dqtzForm.zymlid=专业
+dqtzForm.zymlmc=专业
+dqtzForm.lxrq=离校日期
+dqtzForm.lxrqks=离校日期起
+dqtzForm.lxrqjs=离校日期止
+dqtzForm.lxrxm=联系人姓名
+dqtzForm.lxrdz=联系人地址
+dqtzForm.lxrzjlx=联系人证件类型
+dqtzForm.lxrzjhm=联系人证件号码
+dqtzForm.lxrzjyxqz=联系人证件有效期至
+dqtzForm.lxrdh=联系人电话
+dqtzForm.lxremail=联系人Email
+dqtzForm.bz=备注
+dqtzForm.xgr=修改人
+dqtzForm.zrs=总人数
+dqtzForm.xgsj=修改时间
+dqtzForm.xgsjks=修改时间起
+dqtzForm.xgsjjs=修改时间止
+
+dqtz.added=添加“短期团组”信息成功！
+dqtz.updated=更改“短期团组”信息成功！
+dqtz.deleted=删除“短期团组”信息成功！
+dqtz.saved=保存“短期团组”信息成功！
+error.dqtzid0.saved =该"短期团组"名称为系统保留，不允许新建
+error.dqtz.saved=保存“短期团组”错误，该数据已经存在或者已经被其他人删除！！
+error.dqtz.selected=选择的“短期团组”可能已经被删除！
+error.dqtz.deleted=“短期团组”可能已经被删除！
+error.dqtz.associated = 选择的“短期团组”已经被引用！
+error.dqtz.yxzy = 所选专业不属于所选院系，院系与专业还未关联！
+error.dqtz.uni = 该院校已存在重复团组，请修改后建立。 
+error.dqtz.jbxxlistbig = 修改的国籍人数已少于基本信息中选择相应团组国籍的人数，请重新修改。
+error.dqtz.gjmc = 国家名称填写错误！请重新修改!
+error.dqtzgj.jbxx = 该国籍的团组已被基本信息引用，请先修改引用该记录的基本信息，才能删除该团组的该国籍信息！
+error.dqtz.gjrepeat = 国籍信息不能重复。
+error.dqtz.gjorrs = 国家或人数未填
+# -- dqtz list page --
+dqtzList.title=当前位置：短期团组>查询结果页面
+dqtzList.heading=短期团组
+
+# -- dqtz detail page --
+dqtzDetail.title=当前位置：短期团组>查看页面
+dqtzDetail.heading=“短期团组”信息
+
+# -- dqtz form page --
+dqtzForm.title=当前位置：短期团组>新建页面
+dqtzEdit.title=当前位置：短期团组>修改页面
+
+# -- dqtz Query page --
+dqtzQuery.title=当前位置：短期团组>查询页面
+
+# -- fb form --
+fbForm.id=id
+fbForm.pid=pid
+fbForm.jbxxid=基本信息
+fbForm.jbxxmc=基本信息
+fbForm.bj=班级
+fbForm.bjid=班级
+fbForm.bjmc=班级
+fbForm.xq=学期
+fbForm.xqid=学期
+fbForm.xqmc=学期
+fbForm.xn=学年
+fbForm.xgr=修改人
+fbForm.xgsj=修改时间
+fbForm.xgsjks=修改时间起
+fbForm.xgsjjs=修改时间止
+
+fb.added=添加“分班”信息成功！
+fb.updated=更改“分班”信息成功！
+fb.deleted=删除“分班”信息成功！
+fb.saved=保存“分班”信息成功！
+error.fb.saved=保存“分班”错误，该数据已经存在或者已经被其他人删除！！
+error.fb.selected=选择的“分班”可能已经被删除！
+error.fb.deleted=“分班”可能已经被删除！
+
+# -- fb list page --
+fbList.title=当前位置：分班信息>查询结果页面
+fbList.heading=分班
+
+# -- fb detail page --
+fbDetail.title=当前位置：分班信息>查看页面
+fbDetail.heading=“分班”信息
+
+# -- fb Query page --
+fbQuery.title=当前位置：分班信息>查询页面
+
+# -- fb form page --
+fbForm1.title=当前位置：分班信息>新建向导一页面
+fbForm2.title=当前位置：分班信息>新建向导二页面
+fbEdit.title=当前位置：分班信息>修改页面
+
+# -- fj form --
+fjForm.id=id
+fjForm.pid=pid
+fjForm.bm=表名
+fjForm.fjmc=附件名称
+pic.toobig=上传相片太大
+pic.saved=成功上传相片
+pic.errorlx=上传相片类型应为gif，jpg
+fjForm.picmc=相片名称
+fjForm.piclj=相片路径
+fjForm.fjlj=附件路径
+fjForm.xglx=相关类型
+fjForm.xgr=修改人
+fjForm.xgsj=修改时间
+fjForm.xgsjks=修改时间起
+fjForm.xgsjjs=修改时间止
+uploadFj.file=附件路径
+
+fj.added=添加“附件”信息成功！
+fj.updated=更改“附件”信息成功！
+fj.deleted=删除“附件”信息成功！
+fj.saved=保存“附件”信息成功！
+pic.added=添加“相片”信息成功！
+pic.updated=更改“相片”信息成功！
+pic.deleted=删除“相片”信息成功！
+pic.saved=保存“相片”信息成功！
+error.fj.saved=保存“附件”错误，该数据已经存在或者已经被其他人删除！！
+error.fj.selected=选择的“附件”可能已经被删除！
+fj.toobig =上传附件过大!
+error.fj.deleted=“附件”可能已经被删除！
+error.fj.repeat=保存“附件”信息时出现错误，请稍猴再试！
+error.fj.path=保存“附件”信息时出现错误，可能是由于“附件”路径填写错误！
+error.pic.repeat=保存“相片”信息时出现错误，请稍猴再试！
+error.pic.path=保存“相片”信息时出现错误，可能是由于“相片”路径填写错误！
+error.fj.toMany = 上传附件已经太多，请删减后再上传。
+error.pic.toMany=上传相片已经太多，请删减后再上传。
+# -- fj list page --
+fjList.title=“附件”列表
+fjList.heading=附件
+
+# -- fj detail page --
+fjDetail.title=“附件”详细信息
+fjDetail.heading=“附件”信息
+jbxxfjDetail.title=当前位置：基本信息>添加附件页面
+tfsjfjDetail.title=当前位置：突发事件>突发事件信息>添加附件页面
+ydjlfjDetail.title=当前位置：学生异动>添加附件页面
+jsfjDetail.title=当前位置：教师信息>添加附件页面
+picDetail.title=当前位置：基本信息>添加相片页面
+
+# -- fpxh form --
+fpxhForm.id=id
+fpxhForm.gdwz=固定文字
+fpxhForm.xhcd=序号长度
+fpxhForm.xhcz=序号初值
+fpxhForm.xgr=修改人
+fpxhForm.xgsj=修改时间
+fpxhForm.xgsjks=修改时间起
+fpxhForm.xgsjjs=修改时间止
+
+fpxh.added=添加“分配学号”信息成功！
+fpxh.updated=更改“分配学号”信息成功！
+fpxh.deleted=删除“分配学号”信息成功！
+fpxh.saved=保存“分配学号”信息成功！
+error.fpxh.saved=保存“分配学号”错误，该数据已经存在或者已经被其他人删除！！
+error.fpxh.selected=选择的“分配学号”可能已经被删除！
+error.fpxh.deleted=“分配学号”可能已经被删除！
+error.fpxh.repeat=保存“分配学号”信息时出现错误，该学号可能重复！
+error.fpxh.topvalue=无法获得初值，该生成规则已经达到最大值。
+xh.deleted=“学号”删除成功！
+
+# -- fpxh list page --
+fpxhList.title=当前位置：分配学号>查询结果页面
+fpxhList.heading=分配学号
+
+# -- fpxh detail page --
+fpxhDetail.title=“分配学号”详细信息
+fpxhDetail.heading=“分配学号”信息
+
+
+# -- fpxh form page --
+
+fpxhForm2.title=当前位置：分配学号>新建向导二页面
+fpxhEdit.title=当前位置：分配学号>修改页面
+
+# -- fpxh Query page --
+fpxhForm1.title=当前位置：分配学号>新建向导一页面
+fpxhQuery.title=当前位置：分配学号>查询页面
+
+# -- funcalloc form --
+funcallocForm.id=权限分配ID
+funcallocForm.username=用户名
+funcallocForm.nodecode=功能点编码
+funcallocForm.xgr=修改人
+funcallocForm.xgsj=修改时间
+funcallocForm.xgsjks=修改时间起
+funcallocForm.xgsjjs=修改时间止
+
+funcalloc.added=添加“权限分配表”信息成功！
+funcalloc.updated=更改“权限分配表”信息成功！
+funcalloc.deleted=删除“权限分配表”信息成功！
+funcalloc.saved=保存“权限分配表”信息成功！
+error.funcalloc.saved=保存“权限分配表”错误，该数据已经存在或者已经被其他人删除！！
+error.funcalloc.selected=选择的“权限分配表”可能已经被删除！
+error.funcalloc.deleted=“权限分配表”可能已经被删除！
+
+# -- funcalloc list page --
+funcallocList.title=“权限分配表”列表
+funcallocList.heading=权限分配表
+
+# -- funcalloc detail page --
+funcallocDetail.title=“权限分配表”详细信息
+funcallocDetail.heading=“权限分配表”信息
+
+# -- hzsq form --
+hzsqForm.id=id
+hzsqForm.sqbh=申请编号
+hzsqForm.zm=洲名
+hzsqForm.gj=国籍
+hzsqForm.dqb=地区别
+hzsqForm.xb=性别
+hzsqForm.jfly=经费来源
+hzsqForm.xslb=学生类别
+hzsqForm.cc=层次
+hzsqForm.xxxs=学习形式
+hzsqForm.zhxl=最后学历
+hzsqForm.hybxxx=补习汉语学校
+hzsqForm.xx_ksrq=学习(专业)开始日期
+hzsqForm.xx_ksrqks=学习(专业)开始日期起
+hzsqForm.xx_ksrqjs=学习(专业)开始日期止
+hzsqForm.xx_jsrq=学习(专业)结束日期
+hzsqForm.xx_jsrqks=学习(专业)结束日期起
+hzsqForm.xx_jsrqjs=学习(专业)结束日期止
+hzsqForm.tlqx=停留期限
+hzsqForm.zj=宗教
+hzsqForm.my=母语
+hzsqForm.sqsj=申请时间
+hzsqForm.sqsjks=申请时间起
+hzsqForm.sqsjjs=申请时间止
+hzsqForm.msg1=本年度学生包括：本年离华的学生、在华的老生和来华的新生。
+
+hzsq.added=添加“汇总申请”信息成功！
+hzsq.updated=更改“汇总申请”信息成功！
+hzsq.deleted=删除“汇总申请”信息成功！
+hzsq.saved=保存“汇总申请”信息成功！
+error.hzsq.nocfwz= 没能获得细节数据的存放位置!
+error.hzsq.saved=保存“汇总申请”错误，该数据已经存在或者已经被其他人删除！！
+error.hzsq.selected=选择的“汇总申请”可能已经被删除！
+error.hzsq.deleted=“汇总申请”可能已经被删除！
+
+# -- hzsq list page --
+hzsqList.title=当前位置：汇总报表>查询结果页面
+hzsqList.heading=汇总申请
+
+# -- hzsq detail page --
+hzsqDetail.title=当前位置：汇总报表>查看页面
+hzsqDetail.heading=“汇总申请”信息
+
+hzsqQuery.title=当前位置：汇总报表>查询页面
+
+# -- jbxx form --
+jbxxForm.id=id
+jbxxForm.no_20x=201/202表编号
+jbxxForm.sqbh=申请编号
+jbxxForm.xh=学号
+jbxxForm.kh=卡号
+jbxxForm.xzq=学制起
+jbxxForm.xzz=学制止
+jbxxForm.xzqks=学制起开始
+jbxxForm.xzqjs=学制起结束
+jbxxForm.xzzks=学制止开始
+jbxxForm.xzzjs=学制止结束
+jbxxForm.zwxm=中文姓名
+jbxxForm.x=护照姓名
+jbxxForm.xk=二级学科
+jbxxForm.zm=洲别
+jbxxForm.ydmc=离校原因
+jbxxForm.m=名
+jbxxForm.gj=国籍
+jbxxForm.gjid=国籍
+jbxxForm.gjmc=国籍
+jbxxForm.pqg=派遣国
+jbxxForm.pqtj=派遣途径
+jbxxForm.dqb=地区别
+jbxxForm.hzhm=护照号码
+jbxxForm.xb=性别
+jbxxForm.hyzk=婚姻状况
+jbxxForm.csrq=出生日期
+jbxxForm.csrqks=出生日期起
+jbxxForm.csrqjs=出生日期止
+jbxxForm.csdd=出生地点
+jbxxForm.jtdz=家庭地址
+jbxxForm.jtdh=家庭电话
+jbxxForm.zhxl=最后学历
+jbxxForm.zy=职业
+jbxxForm.gzhxxdw=工作或学习单位
+jbxxForm.lhxxzy=专业
+jbxxForm.zymlid=专业
+jbxxForm.zymlmc=专业
+jbxxForm.xkmc=二级门类
+jbxxForm.yjxkmc = 一级门类
+jbxxForm.bjmc=班级
+jbxxForm.dqtzmc=短期团组
+jbxxForm.xx_ksrq=专业学习开始日期
+jbxxForm.xx_ksrqks=专业学习开始日期起
+jbxxForm.xx_ksrqjs=专业学习开始日期止
+jbxxForm.xx_jsrq=专业学习结束日期
+jbxxForm.xx_jsrqks=专业学习结束日期起
+jbxxForm.xx_jsrqjs=专业学习结束日期止
+jbxxForm.hybxxx=汉补学校
+jbxxForm.ywhybxxx=汉补学校(英)
+jbxxForm.bxhy_ksrq=汉补开始日期
+jbxxForm.bxhy_ksrqks=汉补开始日期起
+jbxxForm.bxhy_ksrqjs=汉补开始日期止
+jbxxForm.bxhy_jsrq=汉补结束日期
+jbxxForm.bxhy_jsrqks=汉补结束日期起
+jbxxForm.bxhy_jsrqjs=汉补结束日期止
+jbxxForm.xslb=学生类别
+jbxxForm.xslbid=学生类别
+jbxxForm.xslbmc=学生类别
+jbxxForm.csc_no=CSC编号
+jbxxForm.tjdwhdh=推荐单位和电话
+jbxxForm.jfbf=经费办法
+jbxxForm.jfbf_qejxj=全额奖学金
+jbxxForm.jfbf_bf_xf=学费
+jbxxForm.jfbf_bf_zsf=住宿费
+jbxxForm.jfbf_bf_ylf=医疗费
+jbxxForm.jfbf_bf_jcf=教材费
+jbxxForm.jfbf_qt=经费办法201_其他
+jbxxForm.zhswdbrhdh=在华事务担保人和电话
+jbxxForm.jfly_jxj=奖学金
+jbxxForm.jfly_zf=自费
+jbxxForm.jfly_qt=经费202_其他
+jbxxForm.jjdbrhjg=经济担保人或机构
+jbxxForm.jflb=交费类别
+jbxxForm.jflbid=交费类别
+jbxxForm.jflbmc=交费类别
+jbxxForm.jfqk=交费情况
+jbxxForm.jfwb=总费用交完
+jbxxForm.jfly=经费来源
+jbxxForm.jflyid=经费来源
+jbxxForm.jflymc=经费来源
+jbxxForm.tlqx=停留期限
+jbxxForm.tlqxid=停留期限
+jbxxForm.tlqxmc=停留期限
+jbxxForm.zj=宗教
+jbxxForm.my=母语
+jbxxForm.yx=院系
+jbxxForm.yxid=院系
+jbxxForm.yxmc=院系
+jbxxForm.szyx=所在院校
+jbxxForm.szyxid=所在院校
+jbxxForm.szyxmc=所在院校
+jbxxForm.bj=现在班级
+jbxxForm.tc=特长
+jbxxForm.zp=照片
+jbxxForm.zdxslb=重点学生类别
+jbxxForm.zdxslbid=重点学生类别
+jbxxForm.zdxslbmc=重点学生类别
+jbxxForm.zdjs=指导教师
+jbxxForm.ccmc=培养层次
+jbxxForm.xszt=学生状态
+jbxxForm.xsztid=学生状态
+jbxxForm.xsztmc=学生状态
+jbxxForm.hynl=汉语能力
+jbxxForm.hskcj=HSK成绩
+jbxxForm.hskcjid=HSK成绩
+jbxxForm.hskcjmc=HSK成绩
+jbxxForm.yynl=英语能力
+jbxxForm.qtyy=其他语言
+jbxxForm.jhr=监护人(及电话)
+jbxxForm.zhqs=在华亲属(及电话)
+jbxxForm.bz=备注
+jbxxForm.sqsj=申请时间
+jbxxForm.sqsjks=申请时间起
+jbxxForm.sqsjjs=申请时间止
+jbxxForm.lqsj=录取时间
+jbxxForm.lqsjks=录取时间起
+jbxxForm.lqsjjs=录取时间止
+jbxxForm.bdsj=报到时间
+jbxxForm.bdsjks=报到时间起
+jbxxForm.bdsjjs=报到时间止
+jbxxForm.bysj=结(毕)业时间
+jbxxForm.bysjks=结(毕)业时间起
+jbxxForm.bysjjs=结(毕)业时间止
+jbxxForm.buptlabj=离校时间
+jbxxForm.lxrq=来校日期
+jbxxForm.lhsj=来华时间
+jbxxForm.rs=人数
+jbxxForm.buptlabjks=离校时间起
+jbxxForm.buptlabjjs=离校时间止
+jbxxForm.lxyy=离校原因
+jbxxForm.xzzjlxfs=现住址及联系方式
+jbxxForm.jsxx=家属信息
+jbxxForm.ll=履历
+jbxxForm.ywbdyx=报到院校（英）
+jbxxForm.qzlb=签证类别
+jbxxForm.qzlbid=签证类别
+jbxxForm.qzlbmc=签证类别
+jbxxForm.skyy=授课语言
+jbxxForm.bdyx=报到院校
+jbxxForm.ywskyy=授课语言（英）
+jbxxForm.bdksrq=报到开始日期
+jbxxForm.bdksrqks=报到开始日期起
+jbxxForm.bdksrqjs=报到开始日期止
+jbxxForm.bdjzrq=报到截至日期
+jbxxForm.bdjzrqks=报到截至日期起
+jbxxForm.bdjzrqjs=报到截至日期止
+jbxxForm.xgr=修改人
+jbxxForm.xgsj=修改时间
+jbxxForm.xgsjks=修改时间起
+jbxxForm.xgsjjs=修改时间止
+jbxxForm.email=Email
+jbxxForm.yjlxrq=预计离校日期
+
+jbxx.added=添加“基本信息”信息成功！
+jbxx.updated=更改“基本信息”信息成功！
+jbxx.deleted=删除“基本信息”信息成功！若未能成功删除，则可能是由于数据不规范。请先通过修改保存后，再删除！
+jbxx.saved=保存“基本信息”信息成功！ 
+jbxx.copyed=复制“基本信息”信息成功！
+ 
+error.jbxx.bdlx =报到时间不得晚于离校时间
+warn.jbxx.tlqxjfly = 有数据不规范，原因可能是经费来源或者停留期限为空！
+			 
+error.jbxx.ztsj = 该学生与状态有关的时间填写错误，请重新填写。要求该状态必须有对应的时间。
+error.jbxx.saved=保存“基本信息”错误，该数据已经存在或者已经被其他人删除！！
+error.jbxx.selected=选择的“基本信息”可能已经被删除！
+error.jbxx.deleted=“基本信息”可能已经被删除！
+error.jbxx.copyed=选择的“基本信息”可能无法复制！
+error.jbxx.dqtz=所选择短期团组人数已满或无此国籍,请重新选择团组或更改团组信息！
+error.unijbxx.saved = 根据唯一性字段配置，发现您保存的“基本信息”已经存在！
+error.yxzyjbxx.saved = 所选专业不属于所选院系，院系与专业还未关联！
+error.jbxx.dqtzlhrq = 该学生的报到时间与所属团组的来校日期不一致，请修改！
+jbxx.tlqxcq.error = 停留期限为长期时，学生类别为必填，学生类别可能填写错误。
+jbxx.tlqxdq.error = 停留期限为短期时， 短期团组为必填， 短期团组可能填写错误。
+# -- jbxx list page --
+jbxxList.title= 当前位置：基本信息>查询结果页面
+jbxxList.heading=基本信息
+
+# -- jbxx detail page --
+jbxxDetail.title= 当前位置：基本信息>查看页面
+jbxxDetail.heading=“基本信息”信息
+
+# -- jbxx form page --
+jbxxForm.title = 当前位置：基本信息>新建页面
+jbxxEdit.title = 当前位置：基本信息>修改页面
+jbxxCopy.title = 当前位置：基本信息>信息复制页面
+
+# -- jbxx query page --
+jbxxQuery.title = 当前位置：基本信息>查询页面
+
+# -- jbxx status page --
+jbxxStatus.title = 当前位置：基本信息>学生状态修改页面
+
+# -- jc form --
+jcForm.id=id
+jcForm.pid=pid
+jcForm.jbxxid=基本信息
+jcForm.jbxxmc=基本信息
+jcForm.rq=奖惩日期
+jcForm.rqks=奖惩日期起
+jcForm.rqjs=奖惩日期止
+jcForm.lb=类别
+jcForm.ms=描述
+jcForm.bz=备注
+jcForm.xgr=修改人
+jcForm.xgsj=修改时间
+jcForm.xgsjks=修改时间起
+jcForm.xgsjjs=修改时间止
+
+jc.added=添加“奖惩”信息成功！
+jc.updated=更改“奖惩”信息成功！
+jc.deleted=删除“奖惩”信息成功！
+jc.saved=保存“奖惩”信息成功！
+error.jc.saved=保存“奖惩”错误，该数据已经存在或者已经被其他人删除！！
+error.jc.selected=选择的“奖惩”可能已经被删除！
+error.jc.deleted=“奖惩”可能已经被删除！
+
+# -- jc list page --
+jcList.title=当前位置：奖惩信息>查询结果页面
+jcList.heading=奖惩
+
+# -- jc detail page --
+jcDetail.title=当前位置：奖惩信息>查看页面
+jcDetail.heading=“奖惩”信息
+
+# -- jc form page --
+jcForm1.title=当前位置：奖惩信息>新建向导一页面
+jcForm2.title=当前位置：奖惩信息>新建向导二页面
+jcForm3.title=当前位置：奖惩信息>新建向导三页面
+jcEdit.title=当前位置：奖惩信息>修改页面
+
+# -- jc Query page --
+jcQuery.title=当前位置：奖惩信息>查询页面
+
+
+# -- jfmx form --
+jfmxForm.id=id
+jfmxForm.pid=pid
+jfmxForm.jbxxid=基本信息
+jfmxForm.jbxxmc=基本信息
+jfmxForm.fylb=费用类别
+jfmxForm.fylbid=费用类别
+jfmxForm.fylbmc=费用类别
+jfmxForm.jfrq=交费日期
+jfmxForm.jfrqks=交费日期起
+jfmxForm.jfrqjs=交费日期止
+jfmxForm.zk=折扣
+jfmxForm.je=金额
+jfmxForm.hl=汇率
+jfmxForm.sfbm=收费部门
+jfmxForm.jfwb=交费完毕
+jfmxForm.sfr=收费人
+jfmxForm.fph=发票号
+jfmxForm.bz=备注
+jfmxForm.xgr=修改人
+jfmxForm.xgsj=修改时间
+jfmxForm.xgsjks=修改时间起
+jfmxForm.xgsjjs=修改时间止
+
+jfmx.added=添加“交费明细表”信息成功！
+jfmx.updated=更改“交费明细表”信息成功！
+jfmx.deleted=删除“交费明细表”信息成功！
+jfmx.saved=保存“交费明细表”信息成功！
+error.jfmx.saved=保存“交费明细表”错误，该数据已经存在或者已经被其他人删除！！
+error.jfmx.selected=选择的“交费明细表”可能已经被删除！
+error.jfmx.deleted=“交费明细表”可能已经被删除！
+jfmx.mod=修改交费明细出错,确保您所填的金额为正确,请重新选择修改!
+
+
+# -- jfmx list page --
+jfmxList.title=“交费明细表”列表
+jfmxList.heading=交费明细表
+
+# -- jfmx detail page --
+jfmxDetail.title=“交费明细表”详细信息
+jfmxDetail.heading=“交费明细表”信息
+
+# -- jfwb form --
+jfwbForm.id=id
+jfwbForm.xgr=修改人
+jfwbForm.xgsj=修改时间
+jfwbForm.xgsjks=修改时间起
+jfwbForm.xgsjjs=修改时间止
+
+jfwb.added=添加“交费完毕”信息成功！
+jfwb.updated=更改“交费完毕”信息成功！
+jfwb.deleted=删除“交费完毕”信息成功！
+jfwb.saved=保存“交费完毕”信息成功！
+error.jfwb.saved=保存“交费完毕”错误，该数据已经存在或者已经被其他人删除！！
+error.jfwb.selected=选择的“交费完毕”可能已经被删除！
+error.jfwb.deleted=“交费完毕”可能已经被删除！
+
+# -- jfwb list page --
+jfwbList.title=“交费完毕”列表
+jfwbList.heading=交费完毕
+
+# -- jfwb detail page --
+jfwbDetail.title=“交费完毕”详细信息
+jfwbDetail.heading=“交费完毕”信息
+
+# -- jk form --
+jkForm.id=id
+jkForm.pid=pid
+jkForm.jbxxid=基本信息
+jkForm.jbxxmc=基本信息
+jkForm.djrq=登记日期
+jkForm.djrqks=登记日期起
+jkForm.djrqjs=登记日期止
+jkForm.jkzk=健康状况
+jkForm.bz=备注
+jkForm.xgr=修改人
+jkForm.xgsj=修改时间
+jkForm.xgsjks=修改时间起
+jkForm.xgsjjs=修改时间止
+
+jk.added=添加“健康”信息成功！
+jk.updated=更改“健康”信息成功！
+jk.deleted=删除“健康”信息成功！
+jk.saved=保存“健康”信息成功！
+error.jk.saved=保存“健康”错误，该数据已经存在或者已经被其他人删除！！
+error.jk.selected=选择的“健康”可能已经被删除！
+error.jk.deleted=“健康”可能已经被删除！
+
+# -- jk list page --
+jkList.title=当前位置：健康信息>查询结果页面
+jkList.heading=健康
+
+# -- jk detail page --
+jkDetail.title=当前位置：健康信息>查看页面
+jkDetail.heading=“健康”信息
+
+# -- jk form page --
+jkForm1.title=当前位置：健康信息>新建向导一页面
+jkForm2.title=当前位置：健康信息>新建向导二页面
+jkForm3.title=当前位置：健康信息>新建向导三页面
+jkEdit.title=当前位置：健康信息>修改页面
+
+# -- jk Query page --
+jkQuery.title=当前位置：健康信息>查询页面
+
+# -- js form --
+jsForm.id=id
+jsForm.xm=姓名
+jsForm.gj=国籍
+jsForm.sex=性别
+jsForm.pyrq=聘用日期
+jsForm.gzdw=工作单位
+jsForm.txdz=通信地址
+jsForm.lxfs=联系方式
+jsForm.zjhm=证件号码
+jsForm.zjlb=证件类别
+jsForm.zc=职称
+jsForm.wysp=外语水平
+jsForm.zhxl=最后学历
+jsForm.byxx=毕业学校
+jsForm.sxzy=所学专业
+jsForm.grjl=个人简历
+jsForm.jsr=介绍人(姓名)
+jsForm.jsr_lxfs=介绍人联系方式
+jsForm.jsrlxfs=介绍人联系方式
+jsForm.sskc=所授课程
+jsForm.skyy=授课语言
+jsForm.bz=备注
+jsForm.xgr=修改人
+jsForm.xgsj=修改时间
+jsForm.xgsjks=修改时间起
+jsForm.xgsjjs=修改时间止
+
+js.added=添加“教师信息表”信息成功！
+js.updated=更改“教师信息表”信息成功！
+js.deleted=删除“教师信息表”信息成功！
+js.saved=保存“教师信息表”信息成功！
+error.js.saved=保存“教师信息表”错误，该数据已经存在或者已经被其他人删除！！
+error.js.selected=选择的“教师信息表”可能已经被删除！
+error.js.deleted=“教师信息表”可能已经被删除！
+
+# -- js list page --
+jsList.title=当前位置：教师信息>查询结果页面
+jsList.heading=教师信息表
+
+# -- js detail page --
+jsDetail.title=当前位置：教师信息>查看页面
+jsDetail.heading=“教师信息表”信息
+
+# -- js form page --
+jsForm.title=当前位置：教师信息>新建页面
+jsEdit.title=当前位置：教师信息>修改页面
+
+# -- js Query page --
+jsQuery.title=当前位置：教师信息>查询页面
+
+# -- jthd form --
+jthdForm.id=id
+jthdForm.hdmc=活动名称
+jthdForm.hdsj=活动时间
+jthdForm.hdsjks=活动时间起
+jthdForm.hdsjjs=活动时间止
+jthdForm.hddd=活动地点
+jthdForm.yjcjrs=预计参加人数
+jthdForm.fzrxm=负责人姓名
+jthdForm.fzrlxfs=负责人联系方式
+jthdForm.cydw=参与单位
+jthdForm.zzdw=组织单位
+jthdForm.cjry=非学生参加人员
+jthdForm.cxld=出席领导
+jthdForm.nrms=内容描述
+jthdForm.xgr=修改人
+jthdForm.xgsj=修改时间
+jthdForm.xgsjks=修改时间起
+jthdForm.xgsjjs=修改时间止
+
+jthd.added=添加“集体活动”信息成功！
+jthd.updated=更改“集体活动”信息成功！
+jthd.deleted=删除“集体活动”信息成功！
+jthd.saved=保存“集体活动”信息成功！
+error.jthd.saved=保存“集体活动”错误，该数据已经存在或者已经被其他人删除！！
+error.jthd.selected=选择的“集体活动”可能已经被删除！
+error.jthd.deleted=“集体活动”可能已经被删除！
+
+# -- jthd list page --
+jthdList.title=当前位置：活动信息>集体活动信息>查询结果页面
+jthdList.heading=集体活动
+
+# -- jthd detail page --
+jthdDetail.title=当前位置：活动信息>集体活动信息>查看页面
+jthdDetail.heading=“集体活动”信息
+
+# -- jthd Query page --
+jthdQuery.title=当前位置：活动信息>集体活动信息>查询页面
+
+# -- jthd form page --
+jthdForm.title=当前位置：活动信息>集体活动信息>新建页面
+jthdEdit.title=当前位置：活动信息>集体活动信息>修改页面
+
+# -- jthdxsjl form --
+jthdxsjlForm.id=id
+jthdxsjlForm.pid=pid
+jthdxsjlForm.jbxxid=基本信息
+jthdxsjlForm.jbxxmc=基本信息
+jthdxsjlForm.hd=活动名称
+jthdxsjlForm.jthdid=集体活动
+jthdxsjlForm.jthdmc=活动名称
+jthdxsjlForm.bz=备注
+jthdxsjlForm.xgr=修改人
+jthdxsjlForm.xgsj=修改时间
+jthdxsjlForm.xgsjks=修改时间起
+jthdxsjlForm.xgsjjs=修改时间止
+
+jthdxsjl.added=添加“集体活动学生记录”信息成功！
+jthdxsjl.updated=更改“集体活动学生记录”信息成功！
+jthdxsjl.deleted=删除“集体活动学生记录”信息成功！
+jthdxsjl.saved=保存“集体活动学生记录”信息成功！
+error.jthdxsjl.saved=保存“集体活动学生记录”错误，该数据已经存在或者已经被其他人删除！！
+error.jthdxsjl.selected=选择的“集体活动学生记录”可能已经被删除！
+error.jthdxsjl.deleted=“集体活动学生记录”可能已经被删除！
+
+# -- jthdxsjl list page --
+jthdxsjlList.title=当前位置：活动信息>集体活动学生记录信息>查询结果页面
+jthdxsjlList.heading=集体活动学生记录
+
+# -- jthdxsjl detail page --
+jthdxsjlDetail.title=当前位置：活动信息>集体活动学生记录信息>查看页面
+jthdxsjlDetail.heading=“集体活动学生记录”信息
+
+# -- jthdxsjl Query page --
+jthdxsjlQuery.title=当前位置：活动信息>集体活动学生记录信息>查询页面
+
+# -- jthdxsjl form page --
+jthdxsjlForm1.title=当前位置：活动信息>集体活动学生记录信息>新建向导一页面
+jthdxsjlForm2.title=当前位置：活动信息>集体活动学生记录信息>新建向导二页面
+jthdxsjlForm3.title=当前位置：活动信息>集体活动学生记录信息>新建向导三页面
+jthdxsjlEdit.title=当前位置：活动信息>集体活动学生记录信息>修改页面
+
+# -- jxj form --
+jxjForm.id=id
+jxjForm.pid=pid
+jxjForm.jbxxid=基本信息
+jxjForm.jbxxmc=基本信息
+jxjForm.xn=学年
+jxjForm.xq=学期
+jxjForm.jxjmc=奖学金名称
+jxjForm.ffzh=发放帐号
+jxjForm.ffje=发放金额
+jxjForm.ffrq=发放日期
+jxjForm.bz=备注
+jxjForm.xgr=修改人
+jxjForm.xgsj=修改时间
+jxjForm.xgsjks=修改时间起
+jxjForm.xgsjjs=修改时间止
+
+jxj.added=添加“奖学金”信息成功！
+jxj.updated=更改“奖学金”信息成功！
+jxj.deleted=删除“奖学金”信息成功！
+jxj.saved=保存“奖学金”信息成功！
+error.jxj.saved=保存“奖学金”错误，该数据已经存在或者已经被其他人删除！！
+error.jxj.selected=选择的“奖学金”可能已经被删除！
+error.jxj.deleted=“奖学金”可能已经被删除！
+
+# -- jxj list page --
+jxjList.title=当前位置：奖学金信息>查询结果页面
+jxjList.heading=奖学金
+
+# -- jxj detail page --
+jxjDetail.title=当前位置：奖学金信息>查看页面
+jxjDetail.heading=“奖学金”信息
+
+# -- jxj form page --
+jxjForm1.title=当前位置：奖学金信息>新建向导一页面
+jxjForm2.title=当前位置：奖学金信息>新建向导二页面
+jxjForm3.title=当前位置：奖学金信息>新建向导三页面
+jxjEdit.title=当前位置：奖学金信息>修改页面
+
+# -- jxj Query page --
+jxjQuery.title=当前位置：奖学金信息>查询页面
+
+# -- lcxs form --
+lcxsForm.id=id
+lcxsForm.jbxxid=基本信息
+lcxsForm.sqbh=申请编号
+lcxsForm.lclb=另册类别
+lcxsForm.x20_no=201/202表编号
+lcxsForm.hzhm=护照号码
+lcxsForm.zm=洲名
+lcxsForm.gj=国籍
+lcxsForm.x=姓（英文）
+lcxsForm.m=名（英文）
+lcxsForm.zwxm=中文姓名
+lcxsForm.xb=性别
+lcxsForm.csrq=出生日期
+lcxsForm.csrqks=出生日期起
+lcxsForm.csrqjs=出生日期止
+lcxsForm.csdd=出生地点
+lcxsForm.my=母语
+lcxsForm.zj=宗教
+lcxsForm.hyzk=婚姻状况
+lcxsForm.jfly=经费来源
+lcxsForm.xl=学历
+lcxsForm.xslb=学生类别
+lcxsForm.xslbid=学生类别
+lcxsForm.xslbmc=学生类别
+lcxsForm.sqsj=申请时间
+lcxsForm.sqsjks=申请时间起
+lcxsForm.sqsjjs=申请时间止
+lcxsForm.bdsj=报到时间
+lcxsForm.bdsjks=报到时间起
+lcxsForm.bdsjjs=报到时间止
+lcxsForm.xx_ksrq=学习(专业)开始日期
+lcxsForm.xx_ksrqks=学习(专业)开始日期起
+lcxsForm.xx_ksrqjs=学习(专业)开始日期止
+lcxsForm.bz=备注
+lcxsForm.xgr=修改人
+lcxsForm.xgsj=修改时间
+lcxsForm.xgsjks=修改时间起
+lcxsForm.xgsjjs=修改时间止
+
+lcxs.added=添加“另册学生”信息成功！
+lcxs.updated=更改“另册学生”信息成功！
+lcxs.deleted=删除“另册学生”信息成功！
+lcxs.saved=保存“另册学生”信息成功！
+error.lcxs.saved=保存“另册学生”错误，该数据已经存在或者已经被其他人删除！！
+error.lcxs.selected=选择的“另册学生”可能已经被删除！
+error.lcxs.deleted=“另册学生”可能已经被删除！
+
+# -- lcxs list page --
+lcxsList.title=当前位置：另册学生信息>查询结果页面
+lcxsList.heading=另册学生
+
+# -- lcxs detail page --
+lcxsDetail.title=当前位置：另册学生信息>查看页面
+lcxsDetail.heading=“另册学生”信息
+
+# -- lcxs Query page --
+lcxsQuery.title=当前位置：另册学生信息>查询页面
+
+# -- lcxs form page --
+lcxsForm1.title=当前位置：另册学生信息>新建向导一页面
+lcxsForm2.title=当前位置：另册学生信息>新建向导二页面
+lcxsForm3.title=当前位置：另册学生信息>新建向导三页面
+lcxsEdit.title=当前位置：另册学生信息>修改页面
+
+# -- lhjl form --
+lhjlForm.id=id
+lhjlForm.pid=pid
+lhjlForm.jbxxid=基本信息
+lhjlForm.jbxxmc=基本信息
+lhjlForm.lhrq=来华日期
+lhjlForm.lhrqks=来华日期起
+lhjlForm.lhrqjs=来华日期止
+lhjlForm.lkrq=离华(开)日期
+lhjlForm.lkrqks=离华(开)日期起
+lhjlForm.lkrqjs=离华(开)日期止
+lhjlForm.sy=事由
+lhjlForm.ms=描述
+lhjlForm.xgr=修改人
+lhjlForm.xgsj=修改时间
+lhjlForm.xgsjks=修改时间起
+lhjlForm.xgsjjs=修改时间止
+
+lhjl.added=添加“来华记录”信息成功！
+lhjl.updated=更改“来华记录”信息成功！
+lhjl.deleted=删除“来华记录”信息成功！
+lhjl.saved=保存“来华记录”信息成功！
+error.lhjl.saved=保存“来华记录”错误，该数据已经存在或者已经被其他人删除！！
+error.lhjl.selected=选择的“来华记录”可能已经被删除！
+error.lhjl.deleted=“来华记录”可能已经被删除！
+
+# -- lhjl list page --
+lhjlList.title=当前位置：离校信息>来华记录信息>查询结果页面
+lhjlList.heading=来华记录
+
+# -- lhjl detail page --
+lhjlDetail.title=当前位置：离校信息>来华记录信息>查看页面
+lhjlDetail.heading=“来华记录”信息
+
+# -- lhjl Query page --
+lhjlQuery.title=当前位置：离校信息>来华记录信息>查询页面
+
+# -- lhjl form page --
+lhjlForm1.title=当前位置：离校信息>来华记录信息>新建向导一页面
+lhjlForm2.title=当前位置：离校信息>来华记录信息>新建向导二页面
+lhjlForm3.title=当前位置：离校信息>来华记录信息>新建向导三页面
+lhjlEdit.title=当前位置：离校信息>来华记录信息>修改页面
+
+# -- llh form --
+llhForm.myid=
+llhForm.name=
+llhForm.age=
+
+llh.added=添加“”信息成功！
+llh.updated=更改“”信息成功！
+llh.deleted=删除“”信息成功！
+llh.saved=保存“”信息成功！
+error.llh.saved=保存“”错误，该数据已经存在或者已经被其他人删除！！
+error.llh.selected=选择的“”可能已经被删除！
+error.llh.deleted=“”可能已经被删除！
+
+# -- llh list page --
+llhList.title=“”列表
+llhList.heading=
+
+# -- llh detail page --
+llhDetail.title=“”详细信息
+llhDetail.heading=“”信息
+
+# -- mbdy form --
+mbdyForm.id=id
+mbdyForm.pid=pid
+mbdyForm.mbmsid=模板描述
+mbdyForm.mbmsmc=模板描述名称
+mbdyForm.zdmc=字段名称
+mbdyForm.ywm=字段名
+mbdyForm.hwz=行位置
+mbdyForm.lwz=列位置
+mbdyForm.bz=备注
+mbdyForm.xgr=修改人
+mbdyForm.xgsj=修改时间
+mbdyForm.xgsjks=修改时间起
+mbdyForm.xgsjjs=修改时间止
+
+mbdy.added=添加“模板定义”信息成功！
+mbdy.updated=更改“模板定义”信息成功！
+mbdy.deleted=删除“模板定义”信息成功！
+mbdy.saved=保存“模板定义”信息成功！
+error.mbdy.saved=保存“模板定义”错误，该数据已经存在或者已经被其他人删除！！
+error.mbdy.selected=选择的“模板定义”可能已经被删除！
+error.mbdy.deleted=“模板定义”可能已经被删除！
+
+# -- mbdy list page --
+mbdyList.title=“模板定义”列表
+mbdyList.heading=模板定义
+
+# -- mbdy detail page --
+mbdyDetail.title=“模板定义”详细信息
+mbdyDetail.heading=“模板定义”信息
+
+# -- mbms form --
+mbmsForm.id=id
+mbmsForm.mbmc=模板名称
+mbmsForm.dyst=对应视图
+mbmsForm.mbwj=模板文件
+mbmsForm.ms=描述
+mbmsForm.xgr=修改人
+mbmsForm.xgsj=修改时间
+mbmsForm.xgsjks=修改时间起
+mbmsForm.xgsjjs=修改时间止
+
+mbms.added=添加“模板描述”信息成功！
+mbms.updated=更改“模板描述”信息成功！
+mbms.deleted=删除“模板描述”信息成功！
+mbms.saved=保存“模板描述”信息成功！
+error.mbms.saved=保存“模板描述”错误，该数据已经存在或者已经被其他人删除！！
+error.mbms.selected=选择的“模板描述”可能已经被删除！
+error.mbms.deleted=“模板描述”可能已经被删除！
+
+# -- mbms list page --
+mbmsList.title=“模板描述”列表
+mbmsList.heading=模板描述
+
+# -- mbms detail page --
+mbmsDetail.title=“模板描述”详细信息
+mbmsDetail.heading=“模板描述”信息
+
+# -- rchd form --
+rchdForm.id=id
+rchdForm.zt=主题
+rchdForm.zjr=主讲人
+rchdForm.sj=时间
+rchdForm.sjks=时间起
+rchdForm.sjjs=时间止
+rchdForm.dd=地点
+rchdForm.ms=描述
+rchdForm.xgr=修改人
+rchdForm.xgsj=修改时间
+rchdForm.xgsjks=修改时间起
+rchdForm.xgsjjs=修改时间止
+
+rchd.added=添加“日常活动”信息成功！
+rchd.updated=更改“日常活动”信息成功！
+rchd.deleted=删除“日常活动”信息成功！
+rchd.saved=保存“日常活动”信息成功！
+error.rchd.saved=保存“日常活动”错误，该数据已经存在或者已经被其他人删除！！
+error.rchd.selected=选择的“日常活动”可能已经被删除！
+error.rchd.deleted=“日常活动”可能已经被删除！
+
+# -- rchd list page --
+rchdList.title=当前位置：活动信息>日常活动信息>查询结果页面
+rchdList.heading=日常活动
+
+# -- rchd detail page --
+rchdDetail.title=当前位置：活动信息>日常活动信息>查看页面
+rchdDetail.heading=“日常活动”信息
+
+# -- rchd form page --
+rchdForm.title=当前位置：活动信息>日常活动信息>新建页面
+rchdEdit.title=当前位置：活动信息>日常活动信息>修改页面
+
+# -- rchd Query page --
+rchdQuery.title=当前位置：活动信息>日常活动信息>查询页面
+
+# -- rchdxsjl form --
+rchdxsjlForm.id=id
+rchdxsjlForm.pid=pid
+rchdxsjlForm.jbxxid=基本信息
+rchdxsjlForm.jbxxmc=基本信息
+rchdxsjlForm.hd=活动名称
+rchdxsjlForm.rchdid=日常活动
+rchdxsjlForm.rchdmc=活动名称
+rchdxsjlForm.bz=备注
+rchdxsjlForm.xgr=修改人
+rchdxsjlForm.xgsj=修改时间
+rchdxsjlForm.xgsjks=修改时间起
+rchdxsjlForm.xgsjjs=修改时间止
+
+rchdxsjl.added=添加“日常活动学生记录”信息成功！
+rchdxsjl.updated=更改“日常活动学生记录”信息成功！
+rchdxsjl.deleted=删除“日常活动学生记录”信息成功！
+rchdxsjl.saved=保存“日常活动学生记录”信息成功！
+error.rchdxsjl.saved=保存“日常活动学生记录”错误，该数据已经存在或者已经被其他人删除！！
+error.rchdxsjl.selected=选择的“日常活动学生记录”可能已经被删除！
+error.rchdxsjl.deleted=“日常活动学生记录”可能已经被删除！
+
+# -- rchdxsjl list page --
+rchdxsjlList.title=当前位置：活动信息>日常活动学生记录信息>查询结果页面
+rchdxsjlList.heading=日常活动学生记录
+
+# -- rchdxsjl detail page --
+rchdxsjlDetail.title=当前位置：活动信息>日常活动学生记录信息>查看页面
+rchdxsjlDetail.heading=“日常活动学生记录”信息
+
+# -- rchdxsjl Query page --
+rchdxsjlQuery.title=当前位置：活动信息>日常活动学生记录信息>查询页面
+
+# -- rchdxsjl form page --
+rchdxsjlForm1.title=当前位置：活动信息>日常活动学生记录信息>新建向导一页面
+rchdxsjlForm2.title=当前位置：活动信息>日常活动学生记录信息>新建向导二页面
+rchdxsjlForm3.title=当前位置：活动信息>日常活动学生记录信息>新建向导三页面
+rchdxsjlEdit.title=当前位置：活动信息>日常活动学生记录信息>修改页面
+
+# -- sysuser form --
+sysuserForm.id=用户ID
+sysuserForm.username=用户名
+sysuserForm.name=用户姓名
+sysuserForm.yx=院系
+sysuserForm.yxid=院系
+sysuserForm.yxmc=院系
+sysuserForm.password=密码
+sysuserForm.role_name=岗位名称
+sysuserForm.memo=备注
+sysuserForm.xgr=修改人
+sysuserForm.xgsj=修改时间
+sysuserForm.xgsjks=修改时间起
+sysuserForm.xgsjjs=修改时间止
+sysuserForm.szyx=所在院校
+sysuserForm.szyxid=所在院校编码
+sysuserForm.szyxmc=所在院校
+sysuserForm.sydwid=使用单位编码
+sysuserForm.sydwmc=使用单位
+sysuserForm.yhfl=用户分类
+
+sysuser.added=添加“系统用户表”信息成功！
+sysuser.updated=更改“系统用户表”信息成功！
+sysuser.deleted=删除“系统用户表”信息成功！
+sysuser.saved=保存“系统用户表”信息成功！
+error.sysuser.saved=保存“系统用户表”错误，该数据已经存在或者已经被其他人删除！！
+error.sysuser.selected=选择的“系统用户表”可能已经被删除！
+error.sysuser.deleted=“系统用户表”可能已经被删除！
+
+# -- sysuser list page --
+sysuserList.title=当前位置：系统用户信息>查询结果页面
+sysuserList.heading=系统用户表
+
+# -- sysuser detail page --
+sysuserDetail.title=当前位置：系统用户信息>查看页面
+sysuserDetail.heading=“系统用户表”信息
+
+# -- sysuser form page --
+sysuserForm.title=当前位置：系统用户信息>新建页面
+sysuserEdit.title=当前位置：系统用户信息>修改页面
+
+# -- sysuser Query page --
+sysuserQuery.title=当前位置：系统用户信息>查询页面
+
+# -- temp form --
+tempForm.col1=
+tempForm.col2=
+
+temp.added=添加“”信息成功！
+temp.updated=更改“”信息成功！
+temp.deleted=删除“”信息成功！
+temp.saved=保存“”信息成功！
+error.temp.saved=保存“”错误，该数据已经存在或者已经被其他人删除！！
+error.temp.selected=选择的“”可能已经被删除！
+error.temp.deleted=“”可能已经被删除！
+
+# -- temp list page --
+tempList.title=“”列表
+tempList.heading=
+
+# -- temp detail page --
+tempDetail.title=“”详细信息
+tempDetail.heading=“”信息
+
+# -- tfsj form --
+tfsjForm.id=id
+tfsjForm.fssj=发生时间
+tfsjForm.fssjks=发生时间起
+tfsjForm.fssjjs=发生时间止
+tfsjForm.sjgjc=事件关键词
+tfsjForm.fsdd=发生地点
+tfsjForm.yy=原因
+tfsjForm.clzt=处理状态
+tfsjForm.qkms=情况描述
+tfsjForm.xgr=修改人
+tfsjForm.xgsj=修改时间
+tfsjForm.xgsjks=修改时间起
+tfsjForm.xgsjjs=修改时间止
+
+tfsj.added=添加“突发事件”信息成功！
+tfsj.updated=更改“突发事件”信息成功！
+tfsj.deleted=删除“突发事件”信息成功！
+tfsj.saved=保存“突发事件”信息成功！
+error.tfsj.saved=保存“突发事件”错误，该数据已经存在或者已经被其他人删除！！
+error.tfsj.selected=选择的“突发事件”可能已经被删除！
+error.tfsj.deleted=“突发事件”可能已经被删除！
+
+# -- tfsj list page --
+tfsjList.title=当前位置：突发事件>突发事件信息>查询结果页面
+tfsjList.heading=突发事件
+
+# -- tfsj detail page --
+tfsjDetail.title=当前位置：突发事件>突发事件信息>查看页面
+tfsjDetail.heading=“突发事件”信息
+
+
+# -- tfsj form page --
+tfsjForm.title=当前位置：突发事件>突发事件信息>新建页面
+tfsjEdit.title=当前位置：突发事件>突发事件信息>修改页面
+
+# -- tfsj Query page --
+tfsjQuery.title=当前位置：突发事件>突发事件信息>查询页面
+
+# -- tfsjxsjl form --
+tfsjxsjlForm.id=id
+tfsjxsjlForm.pid=pid
+tfsjxsjlForm.jbxxid=基本信息
+tfsjxsjlForm.jbxxmc=基本信息
+tfsjxsjlForm.tfsj=突发事件
+tfsjxsjlForm.tfsjid=突发事件
+tfsjxsjlForm.tfsjmc=事件名称
+tfsjxsjlForm.jlsj=记录时间
+tfsjxsjlForm.jlsjks=记录时间起
+tfsjxsjlForm.jlsjjs=记录时间止
+tfsjxsjlForm.bx=表现
+tfsjxsjlForm.xgr=修改人
+tfsjxsjlForm.xgsj=修改时间
+tfsjxsjlForm.xgsjks=修改时间起
+tfsjxsjlForm.xgsjjs=修改时间止
+
+tfsjxsjl.added=添加“突发事件学生记录”信息成功！
+tfsjxsjl.updated=更改“突发事件学生记录”信息成功！
+tfsjxsjl.deleted=删除“突发事件学生记录”信息成功！
+tfsjxsjl.saved=保存“突发事件学生记录”信息成功！
+error.tfsjxsjl.saved=保存“突发事件学生记录”错误，该数据已经存在或者已经被其他人删除！！
+error.tfsjxsjl.selected=选择的“突发事件学生记录”可能已经被删除！
+error.tfsjxsjl.deleted=“突发事件学生记录”可能已经被删除！
+
+# -- tfsjxsjl list page --
+tfsjxsjlList.title=当前位置：突发事件>突发事件学生记录信息>查询结果页面
+tfsjxsjlList.heading=突发事件学生记录
+
+# -- tfsjxsjl detail page --
+tfsjxsjlDetail.title=当前位置：突发事件>突发事件学生记录信息>查看页面
+tfsjxsjlDetail.heading=“突发事件学生记录”信息
+
+# -- tfsjxsjl form page --
+tfsjxsjlForm1.title=当前位置：突发事件>突发事件学生记录信息>新建向导一页面
+tfsjxsjlForm2.title=当前位置：突发事件>突发事件学生记录信息>新建向导二页面
+tfsjxsjlForm3.title=当前位置：突发事件>突发事件学生记录信息>新建向导三页面
+tfsjxsjlEdit.title=当前位置：突发事件>突发事件学生记录信息>修改页面
+
+# -- tfsjxsjl Query page --
+tfsjxsjlQuery.title=当前位置：突发事件>突发事件学生记录信息>查询页面
+
+# -- xk form --
+xkForm.id=id
+xkForm.pid=pid
+xkForm.jbxxid=基本信息
+xkForm.jbxxmc=基本信息
+xkForm.kcmc=课程名称
+xkForm.xn=学年
+xkForm.ks=课时
+xkForm.xq=学期
+xkForm.xqid=学期
+xkForm.xqmc=学期
+xkForm.xf=学分
+xkForm.kscj=考试成绩
+xkForm.kccj=考查成绩
+xkForm.bkcj=补考成绩
+xkForm.cdcs=迟到次数
+xkForm.ztcs=早退次数
+xkForm.bjcs=病假次数
+xkForm.sjcs=事假次数
+xkForm.kkcs=旷课次数
+xkForm.xgr=修改人
+xkForm.xgsj=修改时间
+xkForm.xgsjks=修改时间起
+xkForm.xgsjjs=修改时间止
+
+xk.added=添加“选课”信息成功！
+xk.updated=更改“选课”信息成功！
+xk.deleted=删除“选课”信息成功！
+xk.saved=保存“选课”信息成功！
+xk.exist=部分“选课”信息与已选课程信息重复，其他“选课”信息已成功保存！
+error.xk.saved=保存“选课”信息时出现错误！
+error.saved.xk=保存"选课"信息错误,可能由于该条信息已经存在!
+error.xk.selected=选择的“学科视图”可能已经被删除！
+error.xk.deleted=“学科视图”可能已经被删除！
+
+# -- xk list page --
+xkList.title=当前位置：选课信息>查询结果页面
+xkList.heading=选课
+
+# -- xk detail page --
+xkDetail.title=当前位置：选课信息>查看页面
+xkDetail.heading=“选课”信息
+
+# -- xk Query page --
+xkQuery.title=当前位置：选课信息>查询页面
+
+# -- xk form page --
+xkForm1.title=当前位置：选课信息>新建向导一页面
+xkForm2.title=当前位置：选课信息>新建向导二页面
+xkForm3.title=当前位置：选课信息>新建向导三页面
+xkEdit.title=当前位置：选课信息>修改页面
+
+# -- xshd form --
+xshdForm.id=id
+xshdForm.zt=主题
+xshdForm.zjr=主讲人
+xshdForm.sj=时间
+xshdForm.sjks=时间起
+xshdForm.sjjs=时间止
+xshdForm.dd=地点
+xshdForm.ms=描述
+xshdForm.xgr=修改人
+xshdForm.xgsj=修改时间
+xshdForm.xgsjks=修改时间起
+xshdForm.xgsjjs=修改时间止
+
+xshd.added=添加“学术活动”信息成功！
+xshd.updated=更改“学术活动”信息成功！
+xshd.deleted=删除“学术活动”信息成功！
+xshd.saved=保存“学术活动”信息成功！
+error.xshd.saved=保存“学术活动”错误，该数据已经存在或者已经被其他人删除！！
+error.xshd.selected=选择的“学术活动”可能已经被删除！
+error.xshd.deleted=“学术活动”可能已经被删除！
+
+# -- xshd list page --
+xshdList.title=当前位置：活动信息>学术活动信息>查询结果页面
+xshdList.heading=学术活动
+
+# -- xshd detail page --
+xshdDetail.title=当前位置：活动信息>学术活动信息>查看页面
+xshdDetail.heading=“学术活动”信息
+
+# -- xshd form page --
+xshdForm.title=当前位置：活动信息>学术活动信息>新建页面
+xshdEdit.title=当前位置：活动信息>学术活动信息>修改页面
+
+# -- xshd Query page --
+xshdQuery.title=当前位置：活动信息>学术活动信息>查询页面
+
+# -- xshdxsjl form --
+xshdxsjlForm.id=id
+xshdxsjlForm.pid=pid
+xshdxsjlForm.jbxxid=基本信息
+xshdxsjlForm.jbxxmc=基本信息
+xshdxsjlForm.hd=活动名称
+xshdxsjlForm.xshdid=学术活动
+xshdxsjlForm.xshdmc=活动名称
+xshdxsjlForm.bz=备注
+xshdxsjlForm.xgr=修改人
+xshdxsjlForm.xgsj=修改时间
+xshdxsjlForm.xgsjks=修改时间起
+xshdxsjlForm.xgsjjs=修改时间止
+
+xshdxsjl.added=添加“学术活动学生记录”信息成功！
+xshdxsjl.updated=更改“学术活动学生记录”信息成功！
+xshdxsjl.deleted=删除“学术活动学生记录”信息成功！
+xshdxsjl.saved=保存“学术活动学生记录”信息成功！
+error.xshdxsjl.saved=保存“学术活动学生记录”错误，该数据已经存在或者已经被其他人删除！！
+error.xshdxsjl.selected=选择的“学术活动学生记录”可能已经被删除！
+error.xshdxsjl.deleted=“学术活动学生记录”可能已经被删除！
+
+# -- xshdxsjl list page --
+xshdxsjlList.title=当前位置：活动信息>学术活动信息>查询结果页面
+xshdxsjlList.heading=学术活动学生记录
+
+# -- xshdxsjl detail page --
+xshdxsjlDetail.title=当前位置：活动信息>学术活动信息>查看页面
+xshdxsjlDetail.heading=“学术活动学生记录”信息
+
+# -- xshdxsjl Query page --
+xshdxsjlQuery.title=当前位置：活动信息>学术活动学生记录信息>查询页面
+
+# -- xshdxsjl form page --
+xshdxsjlForm1.title=当前位置：活动信息>学术活动学生记录信息>新建向导一页面
+xshdxsjlForm2.title=当前位置：活动信息>学术活动学生记录信息>新建向导二页面
+xshdxsjlForm3.title=当前位置：活动信息>学术活动学生记录信息>新建向导三页面
+xshdxsjlEdit.title=当前位置：活动信息>学术活动学生记录信息>修改页面
+
+# -- xyl form --
+xylForm.id=id
+xylForm.pid=pid
+xylForm.jbxxid=基本信息
+xylForm.jbxxmc=基本信息
+xylForm.dwmc=单位名称
+xylForm.zw=职务
+xylForm.lxdz=联系地址
+xylForm.lxdh=联系电话
+xylForm.email=EMAIL
+xylForm.xgr=修改人
+xylForm.xgsj=修改时间
+xylForm.xgsjks=修改时间起
+xylForm.xgsjjs=修改时间止
+
+xyl.added=添加“校友录”信息成功！
+xyl.updated=更改“校友录”信息成功！
+xyl.deleted=删除“校友录”信息成功！
+xyl.saved=保存“校友录”信息成功！
+error.xyl.saved=保存“校友录”错误，该数据已经存在或者已经被其他人删除！！
+error.xyl.selected=选择的“校友录”可能已经被删除！
+error.xyl.deleted=“校友录”可能已经被删除！
+
+# -- xyl list page --
+xylList.title=当前位置：离校信息>校友录信息>查询结果页面
+xylList.heading=校友录
+
+# -- xyl detail page --
+xylDetail.title=当前位置：离校信息>校友录信息>查看页面
+xylDetail.heading=“校友录”信息
+
+# -- xyl Query page --
+xylQuery.title=当前位置：离校信息>校友录信息>查询页面
+
+# -- xyl form page --
+xylForm1.title=当前位置：离校信息>校友录信息>新建向导一页面
+xylForm2.title=当前位置：离校信息>校友录信息>新建向导二页面
+xylForm3.title=当前位置：离校信息>校友录信息>新建向导三页面
+xylEdit.title=当前位置：离校信息>校友录信息>修改页面
+
+# -- ydjl form --
+ydjlForm.id=id
+ydjlForm.pid=pid
+ydjlForm.jbxxid=基本信息
+ydjlForm.jbxxmc=基本信息
+ydjlForm.yd=异动类别
+ydjlForm.ydid=异动类别
+ydjlForm.ydmc=异动类别
+ydjlForm.zxrq=异动开始日期
+ydjlForm.zxrqks=异动开始日期起
+ydjlForm.zxrqjs=异动开始日期止
+ydjlForm.ydjsrq=异动结束日期
+ydjlForm.ydjsrqks=异动结束日期起
+ydjlForm.ydjsrqjs=异动结束日期止
+ydjlForm.yyms=原因描述
+ydjlForm.bz=备注
+ydjlForm.xgr=修改人
+ydjlForm.xgsj=修改时间
+ydjlForm.xgsjks=修改时间起
+ydjlForm.xgsjjs=修改时间止
+
+ydjl.added=添加“异动记录”信息成功！
+ydjl.updated=更改“异动记录”信息成功！
+ydjl.deleted=删除“异动记录”信息成功！
+ydjl.saved=保存“异动记录”信息成功！
+error.ydjl.saved=保存“异动记录”错误，该数据已经存在或者已经被其他人删除！！
+error.ydjl.selected=选择的“异动记录”可能已经被删除！
+error.ydjl.deleted=“异动记录”可能已经被删除！
+
+# -- ydjl list page --
+ydjlList.title=当前位置：学生异动>查询结果页面
+ydjlList.heading=异动记录
+
+# -- ydjl detail page --
+ydjlDetail.title=当前位置：学生异动>查看页面
+ydjlDetail.heading=“异动记录”信息
+
+# -- ydjl Query page --
+ydjlQuery.title=当前位置：学生异动>查询页面
+
+# -- ydjl form page --
+ydjlForm1.title=当前位置：学生异动>新建向导一页面
+ydjlForm2.title=当前位置：学生异动>新建向导二页面
+ydjlForm3.title=当前位置：学生异动>新建向导三页面
+ydjlEdit.title=当前位置：学生异动>修改页面
+
+# -- ywbyz form --
+ywbyzForm.id=id
+ywbyzForm.pid=pid
+ywbyzForm.jbxxid=基本信息
+ywbyzForm.jbxxmc=基本信息
+ywbyzForm.zsmb=证书模板
+ywbyzForm.zsmbid=证书模板表
+ywbyzForm.zsmbmc=证书模板表名称
+ywbyzForm.zsbh=证书编号
+ywbyzForm.ywxz=英文校长
+ywbyzForm.ywdw=英文单位
+ywbyzForm.fzrq=发证日期
+ywbyzForm.fzrqks=发证日期起
+ywbyzForm.fzrqjs=发证日期止
+ywbyzForm.zp=相片
+ywbyzForm.xwlb=学位类别
+ywbyzForm.xz=学制
+ywbyzForm.xgr=修改人
+ywbyzForm.xgsj=修改时间
+ywbyzForm.xgsjks=修改时间起
+ywbyzForm.xgsjjs=修改时间止
+
+ywbyz.added=添加“英文毕业证”信息成功！
+ywbyz.updated=更改“英文毕业证”信息成功！
+ywbyz.deleted=删除“英文毕业证”信息成功！
+ywbyz.saved=保存“英文毕业证”信息成功！
+error.ywbyz.saved=保存“英文毕业证”错误，该数据已经存在或者已经被其他人删除！！
+error.ywbyz.selected=选择的“英文毕业证”可能已经被删除！
+error.ywbyz.deleted=“英文毕业证”可能已经被删除！
+
+# -- ywbyz list page --
+ywbyzList.title=“英文毕业证”列表
+ywbyzList.heading=英文毕业证
+
+# -- ywbyz detail page --
+ywbyzDetail.title=“英文毕业证”详细信息
+ywbyzDetail.heading=“英文毕业证”信息
+
+# -- zc form --
+zcForm.id=id
+zcForm.pid=pid
+zcForm.jbxxid=基本信息
+zcForm.jbxxmc=基本信息
+zcForm.xn=学年
+zcForm.xq=学期
+zcForm.zcsj=注册时间
+zcForm.zcsjks=注册时间起
+zcForm.zcsjjs=注册时间止
+zcForm.xgr=修改人
+zcForm.xgsj=修改时间
+zcForm.xgsjks=修改时间起
+zcForm.xgsjjs=修改时间止
+
+zc.added=添加“注册”信息成功！
+zc.updated=更改“注册”信息成功！
+zc.deleted=删除“注册”信息成功！
+zc.saved=保存“注册”信息成功！
+error.zc.saved=保存“注册”错误，该数据已经存在或者已经被其他人删除！！
+error.zc.selected=选择的“注册”可能已经被删除！
+error.zc.deleted=“注册”可能已经被删除！
+
+# -- zc list page --
+zcList.title=当前位置：注册信息>查询结果页面
+zcList.heading=注册
+
+# -- zc detail page --
+zcDetail.title=当前位置：注册信息>查看页面
+zcDetail.heading=“注册”信息
+
+# -- zc Query page --
+zcQuery.title=当前位置：注册信息>查询页面
+
+# -- zc form page --
+zcForm1.title=当前位置：注册信息>新建向导一页面
+zcForm2.title=当前位置：注册信息>新建向导二页面
+zcEdit.title=当前位置：注册信息>修改页面
+
+
+# -- zs form --
+zsForm.id=id
+zsForm.pid=pid
+zsForm.jbxxid=基本信息
+zsForm.jbxxmc=基本信息
+zsForm.lb=类别
+zsForm.fh=房号
+zsForm.dj=单价
+zsForm.yj=押金
+zsForm.zk=折扣
+zsForm.shypzy=生活用品租用
+zsForm.rzsj=入住时间
+zsForm.rzsjks=入住时间起
+zsForm.rzsjjs=入住时间止
+zsForm.yjtfsj=预计退房时间
+zsForm.yjtfsjks=预计退房时间起
+zsForm.yjtfsjjs=预计退房时间止
+zsForm.tfsj=退房时间
+zsForm.tfsjks=退房时间起
+zsForm.tfsjjs=退房时间止
+zsForm.ssf=实收费
+zsForm.jfwb=交费完毕
+zsForm.dh=电话(/手机)
+zsForm.qx=区(/县)
+zsForm.zsdd=住宿地点
+zsForm.fdxm=房东姓名
+zsForm.fdlxdh=房东联系电话
+zsForm.pcsmc=派出所名称
+zsForm.pcsdz=派出所地址
+zsForm.pcsdh=派出所电话
+zsForm.bz=备注
+zsForm.xgr=修改人
+zsForm.xgsj=修改时间
+zsForm.xgsjks=修改时间起
+zsForm.xgsjjs=修改时间止
+
+zs.added=添加“住宿”信息成功！
+zs.updated=更改“住宿”信息成功！
+zs.deleted=删除“住宿”信息成功！
+zs.saved=保存“住宿”信息成功！
+error.zs.saved=保存“住宿”错误，该数据已经存在或者已经被其他人删除！！
+error.zs.selected=选择的“住宿”可能已经被删除！
+error.zs.deleted=“住宿”可能已经被删除！
+error.zs.firstsave=此条记录已建立过“住宿”信息！
+
+# -- zs list page --
+zsList.title=当前位置：住宿信息>查询结果页面
+zsList.heading=住宿
+
+# -- zs detail page --
+zsDetail.title=当前位置：住宿信息>查看页面
+zsDetail.heading=“住宿”信息
+
+# -- zs form page --
+zsForm1.title=当前位置：住宿信息>新建向导一页面
+zsForm2.title=当前位置：住宿信息>新建向导二页面
+zsForm3.title=当前位置：住宿信息>新建向导三页面
+zsEdit.title=当前位置：住宿信息>修改页面
+
+# -- zs Query page --
+zsQuery.title=当前位置：住宿信息>查询页面
+
+
+# -- zsmb form --
+zsmbForm.id=id
+zsmbForm.xslb=学生类别
+zsmbForm.xslbid=学生类别
+zsmbForm.xslbmc=学生类别
+zsmbForm.zszl=证书种类
+zsmbForm.zszlid=证书种类
+zsmbForm.zszlmc=证书种类名称
+zsmbForm.zwmblj=中文模板路径
+zsmbForm.ywmblj=英文模板路径
+zsmbForm.xgr=修改人
+zsmbForm.xgsj=修改时间
+zsmbForm.xgsjks=修改时间起
+zsmbForm.xgsjjs=修改时间止
+
+zsmb.added=添加“证书模板表”信息成功！
+zsmb.updated=更改“证书模板表”信息成功！
+zsmb.deleted=删除“证书模板表”信息成功！
+zsmb.saved=保存“证书模板表”信息成功！
+error.zsmb.saved=保存“证书模板表”错误，该数据已经存在或者已经被其他人删除！！
+error.zsmb.selected=选择的“证书模板表”可能已经被删除！
+error.zsmb.deleted=“证书模板表”可能已经被删除！
+
+# -- zsmb list page --
+zsmbList.title=“证书模板表”列表
+zsmbList.heading=证书模板表
+
+# -- zsmb detail page --
+zsmbDetail.title=“证书模板表”详细信息
+zsmbDetail.heading=“证书模板表”信息
+
+# -- zsxc form --
+zsxcForm.id=id
+zsxcForm.lb=类别
+zsxcForm.gjz=关键字
+zsxcForm.ms=描述
+zsxcForm.xgr=修改人
+zsxcForm.xgsj=修改时间
+zsxcForm.xgsjks=修改时间起
+zsxcForm.xgsjjs=修改时间止
+
+zsxc.added=添加“招生宣传”信息成功！
+zsxc.updated=更改“招生宣传”信息成功！
+zsxc.deleted=删除“招生宣传”信息成功！
+zsxc.saved=保存“招生宣传”信息成功！
+error.zsxc.saved=保存“招生宣传”错误，该数据已经存在或者已经被其他人删除！！
+error.zsxc.selected=选择的“招生宣传”可能已经被删除！
+error.zsxc.deleted=“招生宣传”可能已经被删除！
+
+# -- zsxc list page --
+zsxcList.title=“招生宣传”列表
+zsxcList.heading=招生宣传
+
+# -- zsxc detail page --
+zsxcDetail.title=“招生宣传”详细信息
+zsxcDetail.heading=“招生宣传”信息
+
+# -- zwbyz form --
+zwbyzForm.id=id
+zwbyzForm.pid=pid
+zwbyzForm.jbxxid=基本信息
+zwbyzForm.jbxxmc=基本信息
+zwbyzForm.zsmb=证书模板
+zwbyzForm.zsmbid=证书模板表
+zwbyzForm.zsmbmc=证书模板表名称
+zwbyzForm.zsbh=证书编号
+zwbyzForm.xysz=校（院、所）长
+zwbyzForm.pydw=培养单位
+zwbyzForm.fzrq=发证日期
+zwbyzForm.fzrqks=发证日期起
+zwbyzForm.fzrqjs=发证日期止
+zwbyzForm.zp=照片
+zwbyzForm.xwlb=学位类别
+zwbyzForm.xz=学制
+zwbyzForm.xgr=修改人
+zwbyzForm.xgsj=修改时间
+zwbyzForm.xgsjks=修改时间起
+zwbyzForm.xgsjjs=修改时间止
+
+zwbyz.added=添加“中文毕业证”信息成功！
+zwbyz.updated=更改“中文毕业证”信息成功！
+zwbyz.deleted=删除“中文毕业证”信息成功！
+zwbyz.saved=保存“中文毕业证”信息成功！
+error.zwbyz.saved=保存“中文毕业证”错误，该数据已经存在或者已经被其他人删除！！
+error.zwbyz.selected=选择的“中文毕业证”可能已经被删除！
+error.zwbyz.deleted=“中文毕业证”可能已经被删除！
+
+# -- zwbyz list page --
+zwbyzList.title=“中文毕业证”列表
+zwbyzList.heading=中文毕业证
+
+# -- zwbyz detail page --
+zwbyzDetail.title=“中文毕业证”详细信息
+zwbyzDetail.heading=“中文毕业证”信息
+
+# -- zxr form --
+zxrForm.id=id
+zxrForm.zxfs=咨询方式
+zxrForm.zxrq=咨询日期
+zxrForm.zxrqks=咨询日期起
+zxrForm.zxrqjs=咨询日期止
+zxrForm.gjm=国家名
+zxrForm.x=姓（英文）
+zxrForm.m=名（英文）
+zxrForm.xb=性别
+zxrForm.txdz=通讯地址
+zxrForm.lxfs=联系方式
+zxrForm.xwrxsj=希望入学时间
+zxrForm.rxlb=入学类别
+zxrForm.bz=备注
+zxrForm.xgr=修改人
+zxrForm.xgsj=修改时间
+zxrForm.xgsjks=修改时间起
+zxrForm.xgsjjs=修改时间止
+
+zxr.added=添加“咨询人”信息成功！
+zxr.updated=更改“咨询人”信息成功！
+zxr.deleted=删除“咨询人”信息成功！
+zxr.saved=保存“咨询人”信息成功！
+error.zxr.saved=保存“咨询人”错误，该数据已经存在或者已经被其他人删除！！
+error.zxr.selected=选择的“咨询人”可能已经被删除！
+error.zxr.deleted=“咨询人”可能已经被删除！
+
+# -- zxr list page --
+zxrList.title=“咨询人”列表
+zxrList.heading=咨询人
+
+# -- zxr detail page --
+zxrDetail.title=“咨询人”详细信息
+zxrDetail.heading=“咨询人”信息
+
+# -- zz form --
+zzForm.id=id
+zzForm.pid=pid
+zzForm.jbxxid=基本信息
+zzForm.jbxxmc=基本信息
+zzForm.hzhm=护照号码
+zzForm.hzlb=护照类别
+zzForm.hzlbid=护照类别
+zzForm.hzlbmc=护照类别
+zzForm.hz_qfrq=护照签发日期
+zzForm.hz_qfrqks=护照签发日期起
+zzForm.hz_qfrqjs=护照签发日期止
+zzForm.hz_dqrq=护照到期日期
+zzForm.hz_dqrqks=护照到期日期起
+zzForm.hz_dqrqjs=护照到期日期止
+zzForm.qzlb=签证类别
+zzForm.qzlbid=签证类别编码
+zzForm.qzlbmc=签证类别
+zzForm.qzhm=签证号码
+zzForm.qz_qfrq=签证签发日期
+zzForm.qz_qfrqks=签证签发日期起
+zzForm.qz_qfrqjs=签证签发日期止
+zzForm.qz_dqrq=签证到期日期
+zzForm.qz_dqrqks=签证到期日期起
+zzForm.qz_dqrqjs=签证到期日期止
+zzForm.jlxk_hm=居留许可号码
+zzForm.jlxk_qfrq=居留许可签发日期
+zzForm.jlxk_qfrqks=居留许可签发日期起
+zzForm.jlxk_qfrqjs=居留许可签发日期止
+zzForm.jlxk_dqrq=居留许可到期日期
+zzForm.jlxk_dqrqks=居留许可到期日期起
+zzForm.jlxk_dqrqjs=居留许可到期日期止
+zzForm.hxzhm=回乡证号码
+zzForm.hxz_qfrq=回乡证签发日期
+zzForm.hxz_qfrqks=回乡证签发日期起
+zzForm.hxz_qfrqjs=回乡证签发日期止
+zzForm.hxz_dqrq=回乡证到期日期
+zzForm.hxz_dqrqks=回乡证到期日期起
+zzForm.hxz_dqrqjs=回乡证到期日期止
+zzForm.zzzhm=暂住证号码
+zzForm.zzz_qfrq=暂住证签发日期
+zzForm.zzz_qfrqks=暂住证签发日期起
+zzForm.zzz_qfrqjs=暂住证签发日期止
+zzForm.zzz_dqrq=暂住证到期日期
+zzForm.zzz_dqrqks=暂住证到期日期起
+zzForm.zzz_dqrqjs=暂住证到期日期止
+zzForm.qzqfjg=签证签发机关
+zzForm.qzrjcs=签证入境次数
+zzForm.xgr=修改人
+zzForm.xgsj=修改时间
+zzForm.xgsjks=修改时间起
+zzForm.xgsjjs=修改时间止
+
+zz.added=添加“证照”信息成功！
+zz.updated=更改“证照”信息成功！
+zz.deleted=删除“证照”信息成功！
+zz.saved=保存“证照”信息成功！
+error.zz.saved=保存“证照”错误，该数据已经存在或者已经被其他人删除！！
+error.zz.selected=选择的“证照”可能已经被删除！
+error.zz.deleted=“证照”可能已经被删除！
+error.zz.firstsave=此条记录已建立过“证照”信息！
+
+# -- zz list page --
+zzList.title=当前位置：证照信息>查询结果页面
+zzList.heading=证照
+
+# -- zz detail page --
+zzDetail.title=当前位置：证照信息>查看页面
+zzDetail.heading=“证照”信息
+
+# -- zzgj list page --
+zzgjList.title=当前位置：证照告警>告警显示页面
+
+# -- zz form page --
+zzForm1.title=当前位置：证照信息>新建向导一页面
+zzForm2.title=当前位置：证照信息>新建向导二页面
+zzForm3.title=当前位置：证照信息>新建向导三页面
+zzEdit.title=当前位置：证照信息>修改页面
+
+# -- zz Query page --
+zzQuery.title=当前位置：证照信息>查询页面
+
+# -- zzbq form --
+zzbqForm.id=id
+zzbqForm.pid=pid
+zzbqForm.jbxxid=基本信息
+zzbqForm.jbxxmc=基本信息
+zzbqForm.crjgljm=出入境管理局名称
+zzbqForm.ccrjgljdz=出入境管理局地址（中）
+zzbqForm.ecrjgljdz=出入境管理局地址（英）
+zzbqForm.jhrxm=监护人姓名
+zzbqForm.jhrzjhm=监护人证件号码
+zzbqForm.jhrgjm=监护人国籍
+zzbqForm.yhzhm=原护照号码
+zzbqForm.yhzyxqz=原护照有效期至
+zzbqForm.yjlzhm=原居留证号码
+zzbqForm.yjlzyxqz=原居留证有效期至
+zzbqForm.yqzhm=原签证号码
+zzbqForm.yqzlb=原签证类别
+zzbqForm.qzlbid=签证类别编码
+zzbqForm.qzlbmc=原签证类别
+zzbqForm.hzlb=护照类别
+zzbqForm.hzlbid=护照类别
+zzbqForm.hzlbmc=护照类别
+zzbqForm.yqzyxqz=原签证有效期至
+zzbqForm.yqzrjcs=原签证入境次数
+zzbqForm.yqzqfjg=原签证签发机关
+zzbqForm.pdjs=陪读家属
+zzbqForm.jsqzyqz=家属签证延期至
+zzbqForm.qzyqz=签证延期至
+zzbqForm.qzyqsy=签证延期事由
+zzbqForm.bgqzlbbm=变更后的签证类别
+zzbqForm.bgqzrjcs=变更后的签证再入境次数
+zzbqForm.bgqzyxqz=变更后的签证有限期至
+zzbqForm.lsjlzsqz=临时居留证申请至
+zzbqForm.jlzsqz=居留证申请至
+zzbqForm.ljyqz=临居延期至
+zzbqForm.jlzyqz=居留证延期至
+zzbqForm.bghzhmw=变更护照号码为
+zzbqForm.bgzzw=变更住址为
+zzbqForm.bgsfw=变更身份为
+zzbqForm.bgxxmcw=变更学校名称为
+zzbqForm.qwwsssm=迁往外省市说明
+zzbqForm.qtlxdjjzbg=其他类型的居留证变更
+zzbqForm.qt=其他
+zzbqForm.sqr=申请人
+zzbqForm.dbr=代办人
+zzbqForm.dbrdh=代办人电话
+zzbqForm.yqztlts=原签证每次在华停留天数
+zzbqForm.hzxxr1c=同一护照偕行人1(格式:姓名	性别	出生日期	与同一护照偕行人关系)
+zzbqForm.hzxxr2c=同一护照偕行人2(格式:同其他偕行人)
+zzbqForm.hzxxr3c=同一护照偕行人3(格式:同其他偕行人)
+zzbqForm.hzxxr4c=同一护照偕行人4(格式:同其他偕行人)
+zzbqForm.hzxxr1=同一护照偕行人1 
+zzbqForm.hzxxr2=同一护照偕行人2
+zzbqForm.hzxxr3=同一护照偕行人3 
+zzbqForm.hzxxr4=同一护照偕行人4 
+zzbqForm.sqqzsy=申请签证事由
+zzbqForm.sqqzrjcs=申请签证入境次数
+zzbqForm.sqqzyxqz=申请签证有效期至
+zzbqForm.ttqzsqlb=团体签证申请类别
+zzbqForm.ttqzsqyxqz=团体签证申请有效期至
+zzbqForm.ttqzflcy=团体签证分离成员
+zzbqForm.ttqzflyxqz=团体签证分离有效期至
+zzbqForm.ttqzzxcy=团体签证注销成员
+zzbqForm.ttqzyhzhm=团体签证原护照号码
+zzbqForm.ttqzbghhzhm=团体签证变更后护照号码
+zzbqForm.gftxpznr=官方填写：批准内容
+zzbqForm.gftxtxm=官方填写：条形码
+zzbqForm.gftxjdrq=官方填写：接待日期
+zzbqForm.gftxjdrqks=官方填写：接待日期起
+zzbqForm.gftxjdrqjs=官方填写：接待日期止
+zzbqForm.gftxjdz=官方填写：接待者
+zzbqForm.gftxjdy=官方填写：校对员
+zzbqForm.gftxdah=官方填写：档案号
+zzbqForm.hzzjzl=护照、证件种类
+zzbqForm.hzzjzlqt=护照种类其他内容
+zzbqForm.hzzjzlid=护照、证件种类
+zzbqForm.hzzjzlmc=护照、证件种类
+zzbqForm.jlzsqsy=居留证申请事由
+zzbqForm.jlzyqsy=居留证延期事由
+zzbqForm.jlzxxrzj=居留证偕行人增减
+zzbqForm.jlzxxrzjrs=居留证偕行人增减人数
+zzbqForm.qzxxrzj=签证偕行人增减
+zzbqForm.qzxxrzjrs=签证偕行人增减人数
+zzbqForm.zhzysf=在华职业或身份
+zzbqForm.zhdw=在华单位
+zzbqForm.zhzz=在华住址
+zzbqForm.sqrq=申请日期
+zzbqForm.sqrqks=申请日期起
+zzbqForm.sqrqjs=申请日期止
+zzbqForm.xgr=修改人
+zzbqForm.xgsj=修改时间
+zzbqForm.xgsjks=修改时间起
+zzbqForm.xgsjjs=修改时间止
+zzbqForm.sqqtzjlx=申请其他证件类型
+zzbqForm.lxdd=旅行地点
+zzbqForm.sqzjyxcs=申请证件有效次数
+zzbqForm.sqzjxzlx=申请证件限制类型
+zzbqForm.sqzjyxq=申请证件有效期
+zzbqForm.jzdpcs=居住地派出所名称
+zzbqForm.jlzsqsylx=居留证申请事由类型
+zzbqForm.sqjlqkbgdj=申请居留情况变更登记  
+zzbqForm.sqjlqkbgdjlx=申请居留情况变更登记类型
+
+zzbq.added=添加“证照变迁”信息成功！
+zzbq.updated=更改“证照变迁”信息成功！
+zzbq.deleted=删除“证照变迁”信息成功！
+zzbq.saved=保存“证照变迁”信息成功！
+error.zzbq.saved=保存“证照变迁”信息时出现错误，该记录可能已经被删除！
+error.zzbq.selected=选择的“证照变迁”可能已经被删除！
+error.zzbq.deleted=“证照变迁”可能已经被删除！
+
+# -- zzbq list page --
+zzbqList.title=当前位置：证书证明>证照变迁>查询结果页面
+zzbqList.heading=证照变迁
+
+# -- zzbq detail page --
+zzbqDetail.title=当前位置：证书证明>证照变迁>查看页面
+zzbqDetail.heading=“证照变迁”信息
+
+# -- zzbq Query page --
+zzbqQuery.title=当前位置：证书证明>证照变迁>查询页面
+
+# -- zzbq form page --
+zzbqForm1.title=当前位置：证书证明>证照变迁>新建向导一页面
+zzbqForm2.title=当前位置：证书证明>证照变迁>新建向导二页面
+zzbqForm3.title=当前位置：证书证明>证照变迁>新建向导三页面
+zzbqEdit.title=当前位置：证书证明>证照变迁>修改页面
+
+# -- hmd form --
+hmdForm.id=
+hmdForm.bm=
+hmdForm.mc=
+hmdForm.xgr=
+hmdForm.xgsj=
+hmdForm.xgsjks=起
+hmdForm.xgsjjs=止
+
+hmd.added=添加“”信息成功！
+hmd.updated=更改“”信息成功！
+hmd.deleted=删除“”信息成功！
+hmd.saved=保存“”信息成功！
+error.hmd.saved=保存“”错误，该数据已经存在或者已经被其他人删除！！
+error.hmd.selected=选择的“”可能已经被删除！
+error.hmd.deleted=“”可能已经被删除！
+
+# -- hmd list page --
+hmdList.title=“”列表
+hmdList.heading=
+
+# -- hmd detail page --
+hmdDetail.title=“”详细信息
+hmdDetail.heading=“”信息
+jxjForm.bm=
+jxjForm.mc=
+
+# -- xgjg form --
+xgjgForm.id=
+xgjgForm.bm=
+xgjgForm.mc=
+xgjgForm.xgr=
+xgjgForm.xgsj=
+xgjgForm.xgsjks=起
+xgjgForm.xgsjjs=止
+
+xgjg.added=添加“”信息成功！
+xgjg.updated=更改“”信息成功！
+xgjg.deleted=删除“”信息成功！
+xgjg.saved=保存“”信息成功！
+error.xgjg.saved=保存“”错误，该数据已经存在或者已经被其他人删除！！
+error.xgjg.selected=选择的“”可能已经被删除！
+error.xgjg.deleted=“”可能已经被删除！
+
+# -- xgjg list page --
+xgjgList.title=“”列表
+xgjgList.heading=
+
+# -- xgjg detail page --
+xgjgDetail.title=“”详细信息
+xgjgDetail.heading=“”信息
+
+# -- bmxslb form --
+bmxslbForm.id=id
+bmxslbForm.id2=原始的ID字段
+bmxslbForm.bm=编码
+bmxslbForm.mc=名称
+bmxslbForm.emc=英文名称
+bmxslbForm.ccbm=层次
+bmxslbForm.xxxsbm=学习形式编码
+bmxslbForm.xgr=修改人
+bmxslbForm.xgsj=修改时间
+bmxslbForm.xgsjks=修改时间起
+bmxslbForm.xgsjjs=修改时间止
+
+bmxslb.added=添加“学生类别”信息成功！
+bmxslb.updated=更改“学生类别”信息成功！
+bmxslb.deleted=删除“学生类别”信息成功！
+bmxslb.saved=保存“学生类别”信息成功！
+error.bmxslb.saved=保存“学生类别”错误，该数据已经存在或者已经被其他人删除！！
+error.bmxslb.selected=选择的“学生类别”可能已经被删除！
+error.bmxslb.deleted=“学生类别”可能已经被删除！
+
+# -- bmxslb list page --
+bmxslbList.title=“学生类别”列表
+bmxslbList.heading=学生类别
+
+# -- bmxslb detail page --
+bmxslbDetail.title=“学生类别”详细信息
+bmxslbDetail.heading=“学生类别”信息
+
+# -- jbxxmy form --
+jbxxmyForm.id=id
+jbxxmyForm.x=
+jbxxmyForm.m=
+
+jbxxmy.added=添加“”信息成功！
+jbxxmy.updated=更改“”信息成功！
+jbxxmy.deleted=删除“”信息成功！
+jbxxmy.saved=保存“”信息成功！
+error.jbxxmy.saved=保存“”错误，该数据已经存在或者已经被其他人删除！！
+error.jbxxmy.selected=选择的“”可能已经被删除！
+error.jbxxmy.deleted=“”可能已经被删除！
+
+# -- jbxxmy list page --
+jbxxmyList.title=“”列表
+jbxxmyList.heading=
+
+# -- jbxxmy detail page --
+jbxxmyDetail.title=“”详细信息
+jbxxmyDetail.heading=“”信息
+
+# -- sbbx form --
+sbbxForm.id=id
+sbbxForm.id2=原始的ID字段
+sbbxForm.bxdh=申请编号
+sbbxForm.sxrq=生效时间
+sbbxForm.tbrxm=投保人姓名
+sbbxForm.tbrxb=投保人性别
+sbbxForm.tbrcsrq=投保人出生日期
+sbbxForm.tbrzjlx=投保人证件类型
+sbbxForm.tbrzjhm=投保人证件号码
+sbbxForm.bbrxm=被保人姓名
+sbbxForm.bbrxb=被保人性别
+sbbxForm.bbrzjlx=被保人证件类型
+sbbxForm.bbrzjhm=被保人证件号码
+sbbxForm.xzmc=险种名称
+sbbxForm.bxgs=保险公司名称
+sbbxForm.bxqj=保险期间
+sbbxForm.jfqj=交费期间
+sbbxForm.bxje=保险金额
+sbbxForm.syrxm=受益人姓名
+sbbxForm.ybbrgx=与被保险人关系
+sbbxForm.syrdh=受益人电话
+sbbxForm.syrdz=受益人地址
+sbbxForm.syryx=受益人邮箱
+sbbxForm.xgsj=修改时间
+sbbxForm.yxxgsj=院系修改时间
+sbbxForm.yxxgsjks=院系修改时间起
+sbbxForm.yxxgsjjs=院系修改时间止
+
+sbbx.added=添加“上报保险信息”信息成功！
+sbbx.updated=更改“上报保险信息”信息成功！
+sbbx.deleted=删除“上报保险信息”信息成功！
+sbbx.saved=保存“上报保险信息”信息成功！
+error.sbbx.saved=保存“上报保险信息”错误，该数据已经存在或者已经被其他人删除！！
+error.sbbx.selected=选择的“上报保险信息”可能已经被删除！
+error.sbbx.deleted=“上报保险信息”可能已经被删除！
+
+# -- sbbx list page --
+sbbxList.title=“上报保险信息”列表
+sbbxList.heading=上报保险信息
+
+# -- sbbx detail page --
+sbbxDetail.title=“上报保险信息”详细信息
+sbbxDetail.heading=“上报保险信息”信息
+
+# -- sbdw form --
+sbdwForm.id=id
+sbdwForm.bm=编码
+sbdwForm.mc=名称
+
+sbdw.added=添加“查询基层单位信息”信息成功！
+sbdw.updated=更改“查询基层单位信息”信息成功！
+sbdw.deleted=删除“查询基层单位信息”信息成功！
+sbdw.saved=保存“查询基层单位信息”信息成功！
+error.sbdw.saved=保存“查询基层单位信息”错误，该数据已经存在或者已经被其他人删除！！
+error.sbdw.selected=选择的“查询基层单位信息”可能已经被删除！
+error.sbdw.deleted=“查询基层单位信息”可能已经被删除！
+
+# -- sbdw list page --
+sbdwList.title=“查询基层单位信息”列表
+sbdwList.heading=查询基层单位信息
+
+# -- sbdw detail page --
+sbdwDetail.title=“查询基层单位信息”详细信息
+sbdwDetail.heading=“查询基层单位信息”信息
+
+# -- sbhmd form --
+sbhmdForm.id=id
+sbhmdForm.id2=原始的ID字段
+sbhmdForm.sqbh=申请编号
+sbhmdForm.gj=国籍
+sbhmdForm.hzhm=护照号码
+sbhmdForm.dwbm=单位编码
+sbhmdForm.szyxmc=所在院系名称
+sbhmdForm.ywx=英文姓
+sbhmdForm.ywm=英文名
+sbhmdForm.xb=性别
+sbhmdForm.csrq=出生日期
+sbhmdForm.csrqks=出生日期起
+sbhmdForm.csrqjs=出生日期止
+sbhmdForm.csdd=出生地点
+sbhmdForm.lbbm=学生类别
+sbhmdForm.x20=201/202表编号
+sbhmdForm.zwm=中文姓名
+sbhmdForm.hyzk=婚姻状况
+sbhmdForm.jfly=经费来源
+sbhmdForm.bz=备注
+sbhmdForm.sqsj=申请时间
+sbhmdForm.sqsjks=申请时间起
+sbhmdForm.sqsjjs=申请时间止
+sbhmdForm.bdsj=报到时间
+sbhmdForm.bdsjks=报到时间起
+sbhmdForm.bdsjjs=报到时间止
+sbhmdForm.zykssj=学习(专业)开始日期
+sbhmdForm.zykssjks=学习(专业)开始日期起
+sbhmdForm.zykssjjs=学习(专业)开始日期止
+sbhmdForm.xgsj=修改时间
+
+sbhmd.added=添加“上报黑名单”信息成功！
+sbhmd.updated=更改“上报黑名单”信息成功！
+sbhmd.deleted=删除“上报黑名单”信息成功！
+sbhmd.saved=保存“上报黑名单”信息成功！
+error.sbhmd.saved=保存“上报黑名单”错误，该数据已经存在或者已经被其他人删除！！
+error.sbhmd.selected=选择的“上报黑名单”可能已经被删除！
+error.sbhmd.deleted=“上报黑名单”可能已经被删除！
+
+# -- sbhmd list page --
+sbhmdList.title=“上报黑名单”列表
+sbhmdList.heading=上报黑名单
+
+# -- sbhmd detail page --
+sbhmdDetail.title=“上报黑名单”详细信息
+sbhmdDetail.heading=“上报黑名单”信息
+
+# -- sbjbxx form --
+sbjbxxForm.id=id
+sbjbxxForm.id2=原始的ID字段
+sbjbxxForm.sqbh=申请编号
+sbjbxxForm.gjbm=国籍编码
+sbjbxxForm.csrq=出生日期
+sbjbxxForm.csrqks=出生日期起
+sbjbxxForm.csrqjs=出生日期止
+sbjbxxForm.csdd=出生地点
+sbjbxxForm.xb=性别
+sbjbxxForm.ywx=英文姓
+sbjbxxForm.ywm=英文名
+sbjbxxForm.dwbm=单位编码
+sbjbxxForm.szyxmc=所在院校名称
+sbjbxxForm.mybm=母语编码
+sbjbxxForm.zjbm=宗教编码
+sbjbxxForm.jfly=经费来源
+sbjbxxForm.hskcj=HSK成绩
+sbjbxxForm.x20=201/202表编号
+sbjbxxForm.hybxxx=补习汉语学校
+sbjbxxForm.ehybxxx=补习汉语学校(英)
+sbjbxxForm.xszt=学生状态
+sbjbxxForm.dw=工作或学习单位
+sbjbxxForm.zymc=职业名称
+sbjbxxForm.xlbm=最后学历编码
+sbjbxxForm.hyzk=婚姻状况
+sbjbxxForm.csc=CSC编号
+sbjbxxForm.xslbbm=学生类别编码
+sbjbxxForm.dqb=地区别
+sbjbxxForm.tlqx=停留期限
+sbjbxxForm.hbks=补习汉语开始日期
+sbjbxxForm.hbjs=补习汉语结束日期
+sbjbxxForm.zyks=学习(专业)开始日期
+sbjbxxForm.zyjs=学习(专业)结束日期
+sbjbxxForm.sqsj=申请时间
+sbjbxxForm.sqsjks=申请时间起
+sbjbxxForm.sqsjjs=申请时间止
+sbjbxxForm.bdsj=报到时间
+sbjbxxForm.bdsjks=报到时间起
+sbjbxxForm.bdsjjs=报到时间止
+sbjbxxForm.lqsj=录取时间
+sbjbxxForm.lqsjks=录取时间起
+sbjbxxForm.lqsjjs=录取时间止
+sbjbxxForm.bysj=结(毕)业时间
+sbjbxxForm.bysjks=结(毕)业时间起
+sbjbxxForm.bysjjs=结(毕)业时间止
+sbjbxxForm.buptlabj=离校时间
+sbjbxxForm.buptlabjks=离校时间起
+sbjbxxForm.buptlabjjs=离校时间止
+sbjbxxForm.xgsj=修改时间
+
+sbjbxx.added=添加“上报基本信息”信息成功！
+sbjbxx.updated=更改“上报基本信息”信息成功！
+sbjbxx.deleted=删除“上报基本信息”信息成功！
+sbjbxx.saved=保存“上报基本信息”信息成功！
+error.sbjbxx.saved=保存“上报基本信息”错误，该数据已经存在或者已经被其他人删除！！
+error.sbjbxx.selected=选择的“上报基本信息”可能已经被删除！
+error.sbjbxx.deleted=“上报基本信息”可能已经被删除！
+
+# -- sbjbxx list page --
+sbjbxxList.title=“上报基本信息”列表
+sbjbxxList.heading=上报基本信息
+
+# -- sbjbxx detail page --
+sbjbxxDetail.title=“上报基本信息”详细信息
+sbjbxxDetail.heading=“上报基本信息”信息
+
+# -- sbjc form --
+sbjcForm.id=id
+sbjcForm.id2=原始的ID字段
+sbjcForm.rq=日期
+sbjcForm.rqks=日期起
+sbjcForm.rqjs=日期止
+sbjcForm.lb=类别
+sbjcForm.yy=描述
+sbjcForm.je=金额
+sbjcForm.bz=备注
+sbjcForm.xgsj=修改时间
+sbjcForm.yxxgsj=院系修改时间
+sbjcForm.yxxgsjks=院系修改时间起
+sbjcForm.yxxgsjjs=院系修改时间止
+
+sbjc.added=添加“上报奖惩”信息成功！
+sbjc.updated=更改“上报奖惩”信息成功！
+sbjc.deleted=删除“上报奖惩”信息成功！
+sbjc.saved=保存“上报奖惩”信息成功！
+error.sbjc.saved=保存“上报奖惩”错误，该数据已经存在或者已经被其他人删除！！
+error.sbjc.selected=选择的“上报奖惩”可能已经被删除！
+error.sbjc.deleted=“上报奖惩”可能已经被删除！
+
+# -- sbjc list page --
+sbjcList.title=“上报奖惩”列表
+sbjcList.heading=上报奖惩
+
+# -- sbjc detail page --
+sbjcDetail.title=“上报奖惩”详细信息
+sbjcDetail.heading=“上报奖惩”信息
+
+# -- sbjk form --
+sbjkForm.id=id
+sbjkForm.id2=原始的ID字段
+sbjkForm.jkzk=健康状况
+sbjkForm.sg=身高
+sbjkForm.tz=体重
+sbjkForm.jwbs=既往病史
+sbjkForm.crbs=传染病史
+sbjkForm.jzbs=家族病史
+sbjkForm.bz=备注
+sbjkForm.xgsj=修改时间
+sbjkForm.yxxgsj=院系修改时间
+sbjkForm.yxxgsjks=院系修改时间起
+sbjkForm.yxxgsjjs=院系修改时间止
+
+sbjk.added=添加“上报健康”信息成功！
+sbjk.updated=更改“上报健康”信息成功！
+sbjk.deleted=删除“上报健康”信息成功！
+sbjk.saved=保存“上报健康”信息成功！
+error.sbjk.saved=保存“上报健康”错误，该数据已经存在或者已经被其他人删除！！
+error.sbjk.selected=选择的“上报健康”可能已经被删除！
+error.sbjk.deleted=“上报健康”可能已经被删除！
+
+# -- sbjk list page --
+sbjkList.title=“上报健康”列表
+sbjkList.heading=上报健康
+
+# -- sbjk detail page --
+sbjkDetail.title=“上报健康”详细信息
+sbjkDetail.heading=“上报健康”信息
+
+# -- sbjlb form --
+sbjlbForm.id=id
+sbjlbForm.id2=原始的ID字段
+sbjlbForm.hzhm=护照号码
+sbjlbForm.zwxm=中文姓名
+sbjlbForm.bz=备注
+sbjlbForm.qtyy=其他语言
+sbjlbForm.yynl=英语能力
+sbjlbForm.zdjs=指导教师
+sbjlbForm.yxmc=院系名称
+sbjlbForm.zydm=专业
+sbjlbForm.hynl=汉语能力
+sbjlbForm.tc=特长
+sbjlbForm.xgsj=修改时间
+sbjlbForm.yxxgsj=院系修改时间
+sbjlbForm.yxxgsjks=院系修改时间起
+sbjlbForm.yxxgsjjs=院系修改时间止
+
+sbjlb.added=添加“上报记录”信息成功！
+sbjlb.updated=更改“上报记录”信息成功！
+sbjlb.deleted=删除“上报记录”信息成功！
+sbjlb.saved=保存“上报记录”信息成功！
+error.sbjlb.saved=保存“上报记录”错误，该数据已经存在或者已经被其他人删除！！
+error.sbjlb.selected=选择的“上报记录”可能已经被删除！
+error.sbjlb.deleted=“上报记录”可能已经被删除！
+
+# -- sbjlb list page --
+sbjlbList.title=“上报记录”列表
+sbjlbList.heading=上报记录
+
+# -- sbjlb detail page --
+sbjlbDetail.title=“上报记录”详细信息
+sbjlbDetail.heading=“上报记录”信息
+
+# -- sbjxj form --
+sbjxjForm.id=id
+sbjxjForm.id2=原始的ID字段
+sbjxjForm.psyj=评审意见
+sbjxjForm.ffje=发放金额
+sbjxjForm.ffsj=发放日期
+sbjxjForm.mc=奖学金名称
+sbjxjForm.xgsj=修改时间
+sbjxjForm.yxxgsj=院系修改时间
+sbjxjForm.yxxgsjks=院系修改时间起
+sbjxjForm.yxxgsjjs=院系修改时间止
+
+sbjxj.added=添加“上报奖学金”信息成功！
+sbjxj.updated=更改“上报奖学金”信息成功！
+sbjxj.deleted=删除“上报奖学金”信息成功！
+sbjxj.saved=保存“上报奖学金”信息成功！
+error.sbjxj.saved=保存“上报奖学金”错误，该数据已经存在或者已经被其他人删除！！
+error.sbjxj.selected=选择的“上报奖学金”可能已经被删除！
+error.sbjxj.deleted=“上报奖学金”可能已经被删除！
+
+# -- sbjxj list page --
+sbjxjList.title=“上报奖学金”列表
+sbjxjList.heading=上报奖学金
+
+# -- sbjxj detail page --
+sbjxjDetail.title=“上报奖学金”详细信息
+sbjxjDetail.heading=“上报奖学金”信息
+
+# -- sbtfsj form --
+sbtfsjForm.id=id
+sbtfsjForm.id2=原始的ID字段
+sbtfsjForm.gjc=事件关键词
+sbtfsjForm.sj=发生时间
+sbtfsjForm.dd=发生地点
+sbtfsjForm.yy=原因
+sbtfsjForm.zt=处理状态
+sbtfsjForm.ms=情况描述
+sbtfsjForm.bx=表现
+sbtfsjForm.xgsj=修改时间
+sbtfsjForm.yxxgsj=院系修改时间
+sbtfsjForm.yxxgsjks=院系修改时间起
+sbtfsjForm.yxxgsjjs=院系修改时间止
+
+sbtfsj.added=添加“上报突发事件”信息成功！
+sbtfsj.updated=更改“上报突发事件”信息成功！
+sbtfsj.deleted=删除“上报突发事件”信息成功！
+sbtfsj.saved=保存“上报突发事件”信息成功！
+error.sbtfsj.saved=保存“上报突发事件”错误，该数据已经存在或者已经被其他人删除！！
+error.sbtfsj.selected=选择的“上报突发事件”可能已经被删除！
+error.sbtfsj.deleted=“上报突发事件”可能已经被删除！
+
+# -- sbtfsj list page --
+sbtfsjList.title=“上报突发事件”列表
+sbtfsjList.heading=上报突发事件
+
+# -- sbtfsj detail page --
+sbtfsjDetail.title=“上报突发事件”详细信息
+sbtfsjDetail.heading=“上报突发事件”信息
+
+# -- sbzdxs form --
+sbzdxsForm.id=id
+sbzdxsForm.id2=原始的ID字段
+sbzdxsForm.lbbm=重点学生类别
+sbzdxsForm.bz=备注
+sbzdxsForm.xgsj=修改人
+sbzdxsForm.yxxgsj=修改时间
+sbzdxsForm.yxxgsjks=修改时间起
+sbzdxsForm.yxxgsjjs=修改时间止
+
+sbzdxs.added=添加“上报重点学生”信息成功！
+sbzdxs.updated=更改“上报重点学生”信息成功！
+sbzdxs.deleted=删除“上报重点学生”信息成功！
+sbzdxs.saved=保存“上报重点学生”信息成功！
+error.sbzdxs.saved=保存“上报重点学生”错误，该数据已经存在或者已经被其他人删除！！
+error.sbzdxs.selected=选择的“上报重点学生”可能已经被删除！
+error.sbzdxs.deleted=“上报重点学生”可能已经被删除！
+
+# -- sbzdxs list page --
+sbzdxsList.title=“上报重点学生”列表
+sbzdxsList.heading=上报重点学生
+
+# -- sbzdxs detail page --
+sbzdxsDetail.title=“上报重点学生”详细信息
+sbzdxsDetail.heading=“上报重点学生”信息
+userForm.yh=用户名
+userForm.mm=密码
+userForm.xm=用户姓名
+userForm.mk=功能点编码
+userForm.mkmc=功能点名称
+user.updated=更改“操作员视图”信息成功！
+error.user.saved=保存“操作员视图”错误，该数据已经存在或者已经被其他人删除！！
+error.user.selected=选择的“操作员视图”可能已经被删除！
+error.user.deleted=“操作员视图”可能已经被删除！
+
+# -- user detail page --
+userDetail.title=“操作员视图”详细信息
+userDetail.heading=“操作员视图”信息
+xkForm.bm=编码
+xkForm.mc=名称
+
+xgsjks=修改时间起
+xgsjjs=修改时间止
+jfwbForm.pid=pid
+jfwbForm.jbxxid=基本信息
+jfwbForm.jbxxmc=基本信息名称
+# -- jfmx form --
+jfmxForm.id=id
+jfmxForm.pid=pid
+jfmxForm.jbxxid=基本信息
+jfmxForm.jbxxmc=基本信息名称
+jfmxForm.fylb=费用类别
+jfmxForm.fylbid=费用类别
+jfmxForm.fylbmc=费用类别名称
+jfmxForm.jfrq=交费日期
+jfmxForm.jfrqks=交费日期起
+jfmxForm.jfrqjs=交费日期止
+jfmxForm.zk=折扣
+jfmxForm.je=实缴金额
+jfmxForm.qfje=欠费金额
+jfmxForm.hl=汇率
+jfmxForm.sfbm=收费部门
+jfmxForm.jfwb=交费完毕
+jfmxForm.sfr=收费人
+jfmxForm.fph=发票号
+jfmxForm.bz=备注
+jfmxForm.xgr=修改人
+jfmxForm.xgsj=修改时间
+jfmxForm.xgsjks=修改时间起
+jfmxForm.xgsjjs=修改时间止
+
+jfmx.added=添加“交费明细表”信息成功！
+jfmx.updated=更改“交费明细表”信息成功！
+jfmx.deleted=删除“交费明细表”信息成功！
+jfmx.saved=保存“交费明细表”信息成功！
+error.jfmx.saved=保存“交费明细表”信息时出现错误！
+error.jfmx.selected=选择的“交费明细表”可能已经被删除！
+
+# -- jfmx list page --
+jfmxList.title=“交费明细表”列表
+jfmxList.heading=交费明细表
+
+# -- jfmx detail page --
+jfmxDetail.title=“交费明细表”详细信息
+jfmxDetail.heading=“交费明细表”信息
+
+gj.error=国籍填写错误！
+bj.error=班级填写错误！
+yx.error=院系填写错误！
+xzq.error= 行政区填写错误！
+zyml.error=专业门类填写错误！
+xslb.error=学生类别填写错误！
+cc.error=层次填写错误！
+tfsj.error=突发事件名称填写错误！
+jthd.error=活动名称填写错误！
+rchd.error=活动名称填写错误！
+xshd.error=活动名称填写错误！
+fylb.error=费用类别填写错误！
+lclb.error=另册类别填写错误！
+kcmc.error=选课保存错误，请确保打开的备选课程都填写了课程名称！
+
+# -- export excel file --
+exportexcel.title= 查询结果
+
+chose=选择
+choose.user=选择用户
+p.s=选择用户，则当前用户权限与被选用户相同
+func.list=权限列表
+choose.alloc=选择权限
+sysuser.error=添加用户信息错误，请确保用户名唯一，院系从放大镜获取！
+sysuser.delerror=删除一用户信息错误，可能该用户已被删除，请重新查询！
+sysuser.delcurrentuser=不允许删除当前用户!
+sysuser.adminerror=不允许修改管理员的权限
+sysuser.usererror=请指定用户所在院校
+
+# -- valuelist controls title --
+vlh.controls.title.modify=修改
+vlh.controls.title.browse=查看
+
+# -- xxzm form --
+xxzmForm.id=id
+xxzmForm.pid=pid
+xxzmForm.jbxxid=基本信息
+xxzmForm.jbxxmc=基本信息名称
+xxzmForm.zwxm=中文姓名
+xxzmForm.x=姓
+xxzmForm.m=名
+xxzmForm.xb=性别
+xxzmForm.csrq=出生日期
+xxzmForm.csrqks=出生日期起
+xxzmForm.csrqjs=出生日期止
+xxzmForm.gj=国籍
+xxzmForm.ywgj=英文国籍
+xxzmForm.xxqxks=学习期限开始
+xxzmForm.xxqxjs=学习期限结束
+xxzmForm.xxzy=学习专业
+xxzmForm.ywxxzy=英文学习专业
+xxzmForm.xxmc=学校名称
+xxzmForm.xxywmc=学校英文名称
+xxzmForm.xgr=修改人
+xxzmForm.xgsj=修改时间
+xxzmForm.xgsjks=修改时间起
+xxzmForm.xgsjjs=修改时间止
+xxzmForm.msg=特别提示：在打印各文件之前,请先把打印机的进纸挡板调节到最右端。
+
+xxzm.added=添加“打印证书”信息成功！
+xxzm.updated=更改“打印证书”信息成功！
+xxzm.deleted=删除“打印证书”信息成功！
+xxzm.saved=保存“打印证书”信息成功！
+error.xxzm.saved=保存“打印证书”错误，该数据已经存在或者已经被其他人删除！
+error.xxzm.selected=选择的“打印证书”可能已经被删除！
+error.xxzm.deleted=“打印证书”可能已经被删除！
+
+# -- xxzm list page --
+xxzmList.title=当前位置：证书证明>证书证明>查询结果页面
+xxzmList.heading=打印证书
+
+# -- xxzm detail page --
+xxzmDetail.title=当前位置：证书证明>证书证明>查看页面
+xxzmDetail.heading=“打印证书”信息
+
+# -- xxzm Query page --
+xxzmQuery.title=当前位置：证书证明>证书证明>查询页面
+
+# -- xxzm form page --
+xxzmForm1.title=当前位置：证书证明>证书证明>新建向导一页面
+xxzmForm2.title=当前位置：证书证明>证书证明>新建向导二页面
+xxzmForm3.title=当前位置：证书证明>证书证明>新建向导三页面
+xxzmEdit.title=当前位置：证书证明>证书证明>修改页面
+
+
+# -- qtcx 其他查询中的基本信息查询（未注册、未报到）(又名综合查询)
+qtcxForm.kind=查询种类
+qtcxForm.xq=学期
+qtcxForm.xqmc=学期
+qtcxForm.xqid=学期
+qtcxForm.xn=学年
+qtcxForm.xgsjks=报到开始日期
+qtcxForm.xgsjjs=报到截至日期
+qtcxForm.msg1=本模块只针对单个学生信息查询。
+qtcxForm.msg2=本年度学生包括：本年离华的学生、在华的老生和来华的新生。
+
+qtcxDetail.title=当前位置：综合查询>基本信息>查看页面
+qtcxDetail.heading=其他查询
+qtcxList.heading=其他查询
+qtcxList.title=其他查询
+
+qtcxQuery.title=当前位置：数据查询>基本信息>查询页面
+
+qtcxList.title=当前位置：数据查询>基本信息>查询结果页面
+
+# -- qtcxDqtz 其他查询中的短期团组查询（未注册、未报到）(又名综合查询)
+qtcxDqtzForm.kind=查询种类
+qtcxDqtzForm.xq=学期
+qtcxDqtzForm.xqmc=学期
+qtcxDqtzForm.xqid=学期
+qtcxDqtzForm.xn=学年
+qtcxDqtzForm.xgsjks=报到开始日期
+qtcxDqtzForm.xgsjjs=报到截至日期
+qtcxDqtzForm.msg1=本模块只针对单个学生信息查询。
+qtcxDqtzForm.msg2=本年度学生包括：本年离华的学生、在华的老生和来华的新生。
+
+qtcxDqtzDetail.title=当前位置：综合查询>短期团组>查看页面
+qtcxDqtzDetail.heading=其他查询
+qtcxDqtzList.heading=其他查询
+qtcxDqtzList.title=其他查询
+
+qtcxDqtzQuery.title=当前位置：数据查询>短期团组>查询页面
+
+qtcxDqtzList.title=当前位置：数据查询>短期团组>查询结果页面
+
+# -- gjsz form --
+gjszForm.id=id
+gjszForm.before=提前告警天数
+gjszForm.after=过期不再告警天数
+gjszForm.xgr=修改人
+gjszForm.xgsj=修改时间
+gjszForm.xgsjks=修改时间起
+gjszForm.xgsjjs=修改时间止
+
+gjsz.added=添加“证照告警设置”信息成功！
+gjsz.updated=更改“证照告警设置”信息成功！
+gjsz.deleted=删除“证照告警设置”信息成功！
+gjsz.saved=保存“证照告警设置”信息成功！
+error.gjsz.saved=保存“证照告警设置”错误，该数据已经存在或者已经被其他人删除！
+error.gjsz.selected=选择的“证照告警设置”可能已经被删除！
+error.gjsz.deleted=“证照告警设置”可能已经被删除！
+
+# -- gjsz list page --
+gjszList.title=当前位置：告警设置>查询结果页面
+gjszList.heading=证照告警设置
+
+# -- gjsz detail page --
+gjszDetail.title=当前位置：告警设置>查看页面
+gjszDetail.heading=“证照告警设置”信息
+
+# -- gjsz form page --
+gjszForm.title=当前位置：告警设置>新建页面
+gjszEdit.title=当前位置：告警设置>修改页面
+
+# -- gjsz Query page --
+gjszQuery.title=当前位置：告警设置>查询页面
+
+# -- 用户校验文字 --
+user.input=请输入
+xslbForm.xxxsmc=学习形式
+deleted.ref=选择的记录被其他数据引用，不能删除！
+
+# -- zzbqsh form --
+zzbqshForm.id=id
+zzbqshForm.pid=pid
+zzbqshForm.jbxxid=基本信息
+zzbqshForm.jbxxmc=基本信息名称
+zzbqshForm.sqbh=申请编号
+zzbqshForm.xh=学号
+zzbqshForm.gj=国籍
+zzbqshForm.ywxm=英文姓名
+zzbqshForm.zwxm=中文姓名
+zzbqshForm.xxqxq=学习期限起
+zzbqshForm.xxqxz=学习期限至
+zzbqshForm.jsywm=家属英文名
+zzbqshForm.jszwm=家属中文名
+zzbqshForm.xslb=学生类别
+zzbqshForm.zsqk=住宿情况
+zzbqshForm.xn_qx=校内_区县
+zzbqshForm.xn_pcs=校内_派出所
+zzbqshForm.xn_xsss=校内_学生宿舍
+zzbqshForm.xw_qx=校外_区县
+zzbqshForm.xw_pcs=校外_派出所
+zzbqshForm.xw_l=校外_路
+zzbqshForm.xw_n=校外_弄
+zzbqshForm.xw_h=校外_号
+zzbqshForm.xw_sz=校外_室座
+zzbqshForm.blnrlx=办理内容类型
+zzbqshForm.blnr_jlxkbgjnr=办理内容_居留许可变更及内容
+zzbqshForm.blnryxqz=办理内容有效期至
+zzbqshForm.hzhm=护照号码
+zzbqshForm.jlxkyxqz=居留许可有效期至
+zzbqshForm.qfr=签发人
+zzbqshForm.qfrq=签发日期
+zzbqshForm.qfrqks=签发日期起
+zzbqshForm.qfrqjs=签发日期止
+zzbqshForm.zz=住址
+zzbqshForm.sqqzjlxkxmlx=申请签证居留许可项目类型
+zzbqshForm.jlxksqyxqz=居留许可申请有效期至
+zzbqshForm.jlxkbgsqlx=居留许可变更申请类型
+zzbqshForm.jlsq_bgdz_qx=居留申请_变更地址_区县
+zzbqshForm.jlsq_bgdz_pcs=居留申请_变更地址_派出所
+zzbqshForm.jlsq_bgdz_l=居留申请_变更地址_路
+zzbqshForm.jlsq_bgdz_n=居留申请_变更地址_弄
+zzbqshForm.jlsq_bgdz_h=居留申请_变更地址_号
+zzbqshForm.jlsq_bgdz_sz=居留申请_变更地址_室座
+zzbqshForm.jlsq_bgxxmc=居留申请_变更学校名称
+zzbqshForm.jlsq_sf=居留申请_变更身份
+zzbqshForm.jlsq_hzhm=居留申请_变更护照号码
+zzbqshForm.jlsq_qwwss=居留申请_迁往外省市
+zzbqshForm.jlsq_qt=居留申请_其他
+zzbqshForm.qzsq_qzzl=签证申请_签证种类
+zzbqshForm.qzsq_cs=签证申请_次数
+zzbqshForm.qzsq_yxqz=签证申请_有效期至
+zzbqshForm.jsqzsq_qzzl=家属签证申请_签证种类
+zzbqshForm.jsqzsq_cs=家属签证申请_次数
+zzbqshForm.jsqzsq_yxqz=家属签证申请_有效期至
+zzbqshForm.jhr=监护人
+zzbqshForm.jhr_gj=监护人国籍
+zzbqshForm.jhr_zjhm=监护人证件号码
+zzbqshForm.qt=其他
+zzbqshForm.xxgzrq=学校盖章日期
+zzbqshForm.xxgzrqks=学校盖章日期起
+zzbqshForm.xxgzrqjs=学校盖章日期止
+zzbqshForm.xgr=修改人
+zzbqshForm.xgsj=修改时间
+zzbqshForm.xgsjks=修改时间起
+zzbqshForm.xgsjjs=修改时间止
+
+zzbqsh.added=添加“证照变迁上海”信息成功！
+zzbqsh.updated=更改“证照变迁上海”信息成功！
+zzbqsh.deleted=删除“证照变迁上海”信息成功！
+zzbqsh.saved=保存“证照变迁上海”信息成功！
+error.zzbqsh.saved=保存“证照变迁上海”信息时出现错误，该记录可能已经被删除！
+error.zzbqsh.selected=选择的“证照变迁上海”可能已经被删除！
+error.zzbqsh.deleted=“证照变迁上海”可能已经被删除！
+
+# -- zzbqsh list page --
+zzbqshList.title=当前位置：证书证明>证照变迁[上海]>查询结果页面
+zzbqshList.heading=证照变迁上海
+
+# -- zzbqsh detail page --
+zzbqshDetail.title=当前位置：证书证明>证照变迁[上海]>查看页面
+zzbqshDetail.heading=“证照变迁上海”信息
+
+# -- zzbqsh Query page --
+zzbqshQuery.title=当前位置：证书证明>证照变迁[上海]>查询页面
+
+# -- zzbqsh form page --
+zzbqshForm1.title=当前位置：证书证明>证照变迁[上海]>新建向导一页面
+zzbqshForm2.title=当前位置：证书证明>证照变迁[上海]>新建向导二页面
+zzbqshForm3.title=当前位置：证书证明>证照变迁[上海]>新建向导三页面
+zzbqshEdit.title=当前位置：证书证明>证照变迁[上海]>修改页面
+
+pass.succ=修改密码成功，您的新密码已经生效！
+pass.noteq=确认新密码不一致，请重新输入！
+pass.oldf=输入的旧密码错误，请重新输入！
+pass.newf=输入的新密码错误，请重新输入！
+pass.sysf=系统错误，请重新登陆！
+
+commFind.title=通用查询向导 一
+commList.title=通用查询向导 二
+commlist.jsp=数据信息列表
+#--ndhzdzb form ---
+ndhzdzbForm.id = id
+ndhzdzbForm.hzlb = 汇总类别
+ndhzdzbForm.sql = 长期生汇总sql语句
+ndhzdzbForm.sql2 = 短期生汇总sql语句
+ndhzdzbForm.sql3 = 访问团组汇总sql语句
+ndhzdzbForm.sfsql3 = 是否使用访问团组汇总数据
+ndhzdzbForm.hzndq = 汇总年度起
+ndhzdzbForm.hzndz = 汇总年度止
+ndhzdzbForm.ifexcel = 是否生成Excel文件
+ndhzdzbForm.sfpie = 是否显示饼图
+ndhzdzbForm.sfpole = 是否显示柱状图
+ndhzdzbForm.sfline = 是否显示折线图
+ndhzdzbForm.xlmc = 系列名称
+ndhzdzbForm.xgr=修改人
+ndhzdzbForm.xgsj=修改时间
+
+ndhzdzbForm.errorZongtu=总图生成错误！
+ndhzdzbForm.errorBarchart=柱图生成错误！
+ndhzdzbForm.errorPieChart=饼图生成错误！
+ndhzdzbForm.errorLineChart=趋势图生成错误！
+ndhzdzbForm.msg1=汇总年度指自然年度（XXXX年1月1日0时0分0秒——XXXX年12月31日23时59分59秒）
+ndhzdzbForm.msg2=本报表统计不检查数据是否符合教育部制订的规范
+#--zsjl form ---
+zsjlForm.zszl = 证书种类
+zsjlForm.sccs = 生成次数
+error.zsjl.saved = 证书记录未能成功保存
+zsjl.saved = 证书记录成功保存
+
+#--ndhzdzb list ---
+ndhzdzbList.title=当前位置：年度汇总定制报表>查询结果页面
+ndhzdzbList.heading=年度汇总类别
+
+# -- zzbqsh detail page --
+ndhzdzbDetail.title=“年度汇总类别”详细信息
+ndhzdzbDetail.heading=“年度汇总类别”信息
+
+ndhzdzbQuery.title=当前位置：年度汇总定制报表>查询页面
+
+
+
+bjForm.dwid=使用单位ID
+bjForm.jcdwid=使用单位编码
+bjForm.jcdwmc=使用单位编码名称
+
+#-- sjsb --
+sjsbForm.sbnd=上报年度
+sjsbList.title=当前位置：年度数据上报>查询结果页面
+sjsbDetail.heading=年度数据上报
+sjsbDetail.title=当前位置：年度数据上报>查询页面
+sjsbForm.msg1=上报年度指自然年度（XXXX年1月1日0时0分0秒——XXXX年12月31日23时59分59秒）
+sjsbForm.msg2=本模块用于导出上报年度在校学生的基本信息和短期团组信息。
+sjsbForm.msg3=导出信息按照是否与教育部制订的规范相符，分为基本信息规范数据、基本信息不规范数据、短期团组规范数据、短期团组不规范数据四部分，分别保存在不同的Excel文件中；若某部分数据不存在，则不生成其对应的文件。
+sjsbForm.msg4=规范数据可直接上报；请按照教育部制订规范修正不规范数据，再将这部分数据上报。
+
+# -- sbsy form --
+sbsyForm.bz=备注
+sbsyForm.cfwz=存放地址
+sbsyForm.fwdw=发文单位
+sbsyForm.fwmc=上报年度
+sbsyForm.id=Id
+sbsyForm.sbjzrq=上报截止日期
+sbsyForm.sbjzrqjs=上报截止日期结束
+sbsyForm.sbjzrqks=上报截止日期开始
+sbsyForm.sbksrq=上报开始日期
+sbsyForm.sbksrqjs=上报开始日期结束
+sbsyForm.sbksrqks=上报开始日期开始
+sbsyForm.xgr=修改人
+sbsyForm.xgsj=修改时间
+sbsyForm.xgsjjs=修改时间结束
+sbsyForm.xgsjks=修改时间开始
+
+sbsy.added=添加“指定上报内容”信息成功！
+sbsy.updated=更改“指定上报内容”信息成功！
+sbsy.deleted=删除“指定上报内容”信息成功！
+sbsy.saved=保存“指定上报内容”信息成功！
+error.sbsy.create=创建上报用户出错，请与系统管理员联系！
+error.sbsy.saved=保存“指定上报内容”错误，该数据已经存在或者已经被其他人删除！
+error.sbsy.selected=选择的“指定上报内容”可能已经被删除！
+error.sbsy.deleted=“指定上报内容”可能已经被删除！
+
+# -- sbsy list page --
+sbsyList.title="指定上报内容"列表
+sbsyList.heading=指定上报内容
+
+# -- sbsy detail page --
+sbsyDetail.title="指定上报内容"详细信息
+sbsyDetail.heading=“指定上报内容”信息
+
+# -- yxztsy form --
+yxztsyForm.id=Id
+yxztsyForm.dwmc=单位名称
+yxztsyForm.sbdw=上报单位编码
+yxztsyForm.sbsyid=发文信息
+yxztsyForm.sjsbzt=数据上报状态
+yxztsyForm.xgr=基层上报人
+yxztsyForm.xgsj=基层院校上报时间
+yxztsyForm.scxgr=教育部审核人
+yxztsyForm.scxgsj=教育部审核时间
+yxztsyForm.xgsjjs=修改时间结束
+yxztsyForm.xgsjks=修改时间开始
+yxztsyForm.sjsbzt.a=上报成功
+yxztsyForm.sjsbzt.b=允许上报
+yxztsyForm.sjsbzt.c=禁止上报
+yxztsyForm.jwshxgsj=教委审核时间
+yxztsyForm.jwsbxgsj=教委上报时间
+yxztsyForm.jwshxgr=教委审核人
+yxztsyForm.jwsbxgr=教委上报人
+yxztsy.added=添加“院校上报状态”信息成功！
+yxztsy.updated=更改“院校上报状态”信息成功！
+yxztsy.deleted=删除“院校上报状态”信息成功！
+yxztsy.saved=保存“院校上报状态”信息成功！
+error.yxztsy.saved=保存“院校上报状态”错误，该数据已经存在或者已经被其他人删除！！
+error.yxztsy.selected=“院校上报状态”可能已经被删除！
+
+# -- yxztsy list page --
+yxztsyList.title="院校上报状态"列表
+yxztsyList.heading=院校上报状态
+
+# -- yxztsy detail page --
+yxztsyDetail.title="院校上报状态"详细信息
+yxztsyDetail.heading=“院校上报状态”信息
+
+# -- sydw form --
+sydwForm.dwbm=单位编码
+sydwForm.dwmc=单位名称
+sydwForm.fdwbm=上级单位编码
+sydwForm.fdwmc=上级单位名称
+sydwForm.id=Id
+sydwForm.sfbs=是否部属
+sydwForm.ssbm=省市编码
+sydwForm.ssmc=省市名称
+sydwForm.xgr=修改人
+sydwForm.xgsj=修改时间
+sydwForm.xgsjjs=修改时间结束
+sydwForm.xgsjks=修改时间开始
+sydwForm.sydwcsh=使用单位初始化
+
+sydw.added=添加“使用单位”信息成功！
+sydw.updated=更改“使用单位”信息成功！
+sydw.deleted=删除“使用单位”信息成功！
+sydw.saved=保存“使用单位”信息成功！
+error.sydw.saved=保存“使用单位”错误，该数据已经存在或者已经被其他人删除！
+error.sydw.selected=“使用单位”可能已经被删除！
+sydw.error=添加使用单位信息错误，请确保父单位名称通过放大镜获取！
+
+# -- sydw list page --
+sydwList.title="使用单位态"列表
+sydwList.heading=使用单位
+
+# -- sydw detail page --
+sydwDetail.title="使用单位"详细信息
+sydwDetail.heading=“使用单位”信息
+
+# -- Sjhz list page --
+DataCollect.title="数据汇总"详细信息
+DataCollect.heading=数据汇总
+error.DataCollect.checkcomm=输入院校名称错误或不在所选教委范围内,请重新输入.
+
+# -- Tsbb list page --
+specialGJ.title="按国别统计情况表"详细信息
+specialXslb.title="按学生类别统计情况表"详细信息
+specialSS.title="按地区统计情况表"详细信息
+specialYX.title="按院校统计情况表"详细信息
+
+#-- sbgz Form --
+sbgzForm.scdwbm=上层单位编码
+sbgzForm.scdwmc=上层单位名称
+sbgzForm.jcsydwtotal=管辖单位总数
+sbgzForm.sjsbzttotal=教委已审核数
+sbgzForm.jybqrzttotal=教育部已确认数
+sbgzForm.jybqrztmc=教育部确认状态
+sbgzForm.jybqrzt=教育部确认状态编码
+sbgzForm.jwsjsbzt=教委处理状态编码
+sbgzForm.jwsjsbztmc=教委处理状态
+sbgzForm.sbsj=基层院校上报时间
+success.sbgz.updateSjsbzt=院校上报状态更新。
+error.sbgz.updateSjsbzt=院校未上报或教委未审核或已进行了重复确认或撤消。
+# -- sydw detail page --
+sydwDetail.title="上报跟踪"详细信息
+sydwDetail.heading="上报跟踪"信息
+
+# -- sbgz list page --
+jwsjsblist.title="上报跟踪"列表
+jwsjsblist.heading=上报跟踪
+
+
+
+# -- dwInfo form --
+dwInfoForm.id=Id
+dwInfoForm.xgr=修改人
+dwInfoForm.xgsj=修改时间
+dwInfoForm.xgsjks=修改时间开始
+dwInfoForm.xgsjjs=修改时间结束
+dwInfoForm.email=Email
+dwInfoForm.lxr=联系人
+dwInfoForm.fzr=负责人
+dwInfoForm.cellphone=手机
+dwInfoForm.bgdh=办公电话
+dwInfoForm.fax=传真
+dwInfoForm.website=网址
+dwInfoForm.txdz=通讯地址
+dwInfoForm.yzbm=邮政编码
+
+dwInfo.added=添加＂单位信息＂成功！
+dwInfo.updated=更改＂单位信息＂成功！
+dwInfo.deleted=删除＂单位信息＂成功！
+dwInfo.saved=保存＂单位信息＂成功！
+error.dwInfo.saved=保存＂单位信息＂失败，该信息可能已经存在或被删除。　
+error.dwInfo.selected=选择的细腻系可能已经被删除
+
+# -- dwInfo list page --
+dwInfoList.title=单位信息列表
+dwInfoList.heading=单位信息
+
+# -- dwInfo detail page --
+dwInfoDetail.title=＂单位信息＂详细信息
+dwInfoDetail.heading=单位信息
+
+# -- fwjl form --
+fwjlForm.xzqmc=行政区名称
+fwjlForm.dwmc=单位名称
+
+fwjlForm.method=访问方法
+fwjlForm.source_ip=访问来源ip
+fwjlForm.username=操作员用户名
+fwjlForm.target_url=访问目标url地址
+fwjlForm.visit_time=访问时间 
+fwjlForm.fwcs=访问次数
+fwjlForm.fwcsks=访问次数大于等于
+fwjlForm.fwcsjs=访问次数小于等于
+fwjlForm.first_visit=首次访问时间
+fwjlForm.last_visit=末次访问时间
+fwjlForm.fwrq=访问日期
+fwjlForm.fwrqks=访问日期开始
+fwjlForm.fwrqjs=访问日期截止
+
+fwjl.added=fwjl has been added successfully.
+fwjl.updated=fwjl has been updated successfully.
+fwjl.deleted=fwjl has been deleted successfully.
+fwjl.saved=fwjl has been saved successfully.
+error.fwjl.saved=
+error.fwjl.selected=selected fwjl may be missed.
+
+# -- fwjl list page --
+fwjlList.title="访问记录"信息列表
+fwjlList.heading=访问记录
+
+# -- fwjl detail page --
+fwjlDetail.title=访问记录详细信息
+fwjlDetail.heading=访问记录
+
+# --visitData detail page --
+visitDetail.title= 当前位置：访问监控>查看页面
+visitDetail.heading=“访问监控”信息
+
+

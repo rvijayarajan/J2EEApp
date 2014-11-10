@@ -1,0 +1,71 @@
+package org.appfuse.webapp.action;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+import org.apache.commons.beanutils.BeanUtils;
+import org.apache.struts.action.ActionForm;
+import org.apache.struts.action.ActionForward;
+import org.apache.struts.action.ActionMapping;
+import org.apache.struts.action.ActionMessage;
+import org.apache.struts.action.ActionMessages;
+
+import org.appfuse.model.Goods;
+
+import org.appfuse.service.GoodsManager;
+import org.appfuse.webapp.form.GoodsForm;
+
+
+
+/**
+ * 
+ * @author Szy
+ * @struts.action name="goodsForm" path="/goods" scope="request"
+ *  validate="false" parameter="method" 
+ *  
+ * @struts.action-forward name="edit_new" path="/WEB-INF/pages/basedata/goodsForm.jsp"
+ * @struts.action-forward name="edit_view" path="/WEB-INF/pages/basedata/goodsView.jsp"
+ */
+
+public class GoodsAction extends BaseAction {
+	
+    public ActionForward add(ActionMapping mapping, ActionForm form,
+			HttpServletRequest request, HttpServletResponse response)
+			throws Exception {
+		if (log.isDebugEnabled()) {
+			log.debug("Entering 'add' method");
+		}
+		// add else do
+		Goods goods = new Goods();
+		GoodsForm goodfrm=(GoodsForm) convert(goods);
+		updateFormBean(mapping, request, goodfrm);
+
+		return mapping.findForward("edit_new");
+	}
+    
+    
+    public ActionForward save(ActionMapping mapping, ActionForm form,
+			HttpServletRequest request, HttpServletResponse response)
+			throws Exception {
+    	Goods goods = new Goods();
+      	GoodsForm frmgoods =(GoodsForm)form;
+      	frmgoods.setGoodsID("");
+      	goods=(Goods)convert(frmgoods);
+      	//goods.setGoodname(frmgoods.getGoodname());
+      	
+      	
+    	GoodsManager mgr=(GoodsManager)getBean("goodsManager");
+        try { 
+        	long l = mgr.saveGoods(goods);
+        	System.out.print(l);
+        }catch(Exception e){
+        	e.printStackTrace();
+        	
+        }
+    	
+    	return mapping.findForward("edit_view");
+    	
+    }
+}
+

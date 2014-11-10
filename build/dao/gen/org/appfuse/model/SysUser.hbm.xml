@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="org.appfuse.model.SysUser"
+        table="SYSUSER"
+        dynamic-update="false"
+        dynamic-insert="false"
+        select-before-update="false"
+        optimistic-lock="version"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Long"
+            unsaved-value="null"
+        >
+            <generator class="sequence">
+                <param name="sequence">Seq_sysuser</param>
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-SysUser.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="userName"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="username"
+        />
+
+        <many-to-one
+            name="roleApp"
+            class="org.appfuse.model.RoleApp"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            access="property"
+            column="rolename"
+        />
+
+        <property
+            name="pass"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="Password"
+            length="6"
+        />
+
+        <property
+            name="realName"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="realName"
+            length="20"
+        />
+
+        <property
+            name="phone"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="phone"
+            length="20"
+        />
+
+        <property
+            name="email"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="Mailbox"
+            length="20"
+        />
+
+        <property
+            name="rfidLabel"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="RFID"
+            length="16"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-SysUser.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

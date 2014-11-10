@@ -1,0 +1,1 @@
+<controller processorClass="org.appfuse.webapp.util.CustomRequestProcessor"  nocache="true" inputForward="true" maxFileSize="64M"/>

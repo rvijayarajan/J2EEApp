@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MenuConfig>
+    <Displayers>
+        <Displayer name="ListMenu" type="net.sf.navigator.displayer.ListMenuDisplayer"/>
+    </Displayers>
+    
+	<Menus>
+        <Menu name="JcdwMenu" title="jcdwList.title" page="/jcdws.html?method=edit"/>
+		<Menu name="SysuserMenu" title="sysuserList.title" page="/editSysuser.html?method=gotoFind"/>
+		<!-- ====================   Administrator Menu   =========================== -->
+		<Menu name="AdminMenu" title="sjzd.title" description="Admin Menu" roles="admin">
+        	<Item name="BxlxMenu" title="bxlxList.title" page="/bxlxs.html?method=edit"/>
+	        <Item name="BzMenu" title="bzList.title" page="/bzs.html?method=edit"/>
+    	    <Item name="CcMenu" title="ccList.title" page="/ccs.html?method=edit"/>
+        	<Item name="FylbMenu" title="fylbList.title" page="/fylbs.html?method=edit"/>
+	        <Item name="GjMenu" title="gjList.title" page="/gjs.html?method=edit"/>
+    	    <!-- Item name="GrfsxxlbMenu" title="grfsxxlbList.title" page="/grfsxxlbs.html?method=edit"/-->
+        	<Item name="HskcjMenu" title="hskcjList.title" page="/hskcjs.html?method=edit"/>
+	        <Item name="HzlbMenu" title="hzlbList.title" page="/hzlbs.html?method=edit"/>
+    	    <Item name="HzzjzlMenu" title="hzzjzlList.title" page="/hzzjzls.html?method=edit"/>
+        	
+	        <Item name="JflbMenu" title="jflbList.title" page="/jflbs.html?method=edit"/>
+    	    <Item name="JflyMenu" title="jflyList.title" page="/jflys.html?method=edit"/>
+        	<Item name="JglbMenu" title="jglbList.title" page="/jglbs.html?method=edit"/>
+	        <Item name="JxjlbMenu" title="jxjlbList.title" page="/jxjlbs.html?method=edit"/>
+    	    <Item name="KcMenu" title="kcList.title" page="/kcs.html?method=edit"/>
+        	<Item name="LclbMenu" title="lclbList.title" page="/lclbs.html?method=edit"/>
+	        <!-- Item name="MyMenu" title="myList.title" page="/mys.html?method=edit"/-->
+    	    <!-- Item name="NodeMenu" title="nodeList.title" page="/nodes.html?method=edit"/-->
+        	<Item name="QzlbMenu" title="qzlbList.title" page="/qzlbs.html?method=edit"/>
+	        <!-- Item name="XgrylbMenu" title="xgrylbList.title" page="/xgrylbs.html?method=edit"/-->
+    	    <Item name="XlMenu" title="xlList.title" page="/xls.html?method=edit"/>
+        	<Item name="XqMenu" title="xqList.title" page="/xqs.html?method=edit"/>
+	        <Item name="XslbMenu" title="xslbList.title" page="/xslbs.html?method=edit"/>
+    	    <Item name="XsztMenu" title="xsztList.title" page="/xszts.html?method=edit"/>
+        	<!-- Item name="XzqMenu" title="xzqList.title" page="/xzqs.html?method=edit"/-->
+	        <Item name="YdMenu" title="ydList.title" page="/yds.html?method=edit"/>
+    	    <Item name="YxMenu" title="yxList.title" page="/yxs.html?method=edit"/>
+        	<Item name="YxzyMenu" title="yxzyList.title" page="/yxzys.html?method=edit"/>
+	        <Item name="ZdxslbMenu" title="zdxslbList.title" page="/zdxslbs.html?method=edit"/>
+    	    <!-- Item name="ZjMenu" title="zjList.title" page="/zjs.html?method=edit"/-->
+        	<Item name="ZszlMenu" title="zszlList.title" page="/zszls.html?method=edit"/>
+	        <Item name="ZymlMenu" title="zymlList.title" page="/zymls.html?method=edit"/>
+	        <Item name="BjMenu" title="bjList.title" page="/bjs.html?method=edit"/>
+			<Item name="TlqxMenu" title="tlqxList.title" page="/tlqxs.html?method=edit"/>
+        	<!-- Item name="ZyMenu" title="zyList.title" page="/zys.html?method=edit"/-->
+		</Menu>
+
+        <!-- ====================   User Menu   =========================== -->
+        
+		<Menu name="JbxxMenu" title="jbxxList.title" page="/jbxxs.html"/>
+		
+		
+		<Menu name="FpxhMenu" title="fpxh.title" page="/jbxxs.html?fn=fpxh" />
+		
+		<Menu name="BxMenu" title="bxList.title" page="/commonqry.html?module=editBx.html"/>
+		<Menu name="JcMenu" title="jcList.title" page="/commonqry.html?module=editJc.html"/>
+		<Menu name="JxjMenu" title="jxjList.title" page="/commonqry.html?module=editJxj.html"/>
+		<Menu name="YdjlMenu" title="ydjlList.title" page="/commonqry.html?module=editYdjl.html"/>
+		<Menu name="ZsMenu" title="zsList.title" page="/commonqry.html?module=editZs.html"/>
+		<Menu name="ZzMenu" title="zzList.title" page="/commonqry.html?module=editZz.html"/>
+		<Menu name="JkMenu" title="jkList.title" page="/commonqry.html?module=editJk.html"/>
+		<Menu name="LcxsMenu" title="lcxsList.title" page="/commonqry.html?module=editLcxs.html"/>
+		<Menu name="LhjlMenu" title="lhjlList.title" page="/commonqry.html?module=editLhjl.html"/>
+		<Menu name="DqtzMenu" title="dqtzList.title" page="/dqtzs.html?method=edit"/>
+        <Menu name="JsMenu" title="jsList.title" page="/jss.html?method=edit"/>
+	    
+		<Menu name="HdjlMenu" title="hdjl.title" >
+			<Item name="JthdMenu" title="jthdList.title" page="/jthds.html?method=edit"/>
+			<Item name="JthdxsjlMenu" title="jthdxsjlList.title" page="/commonqry.html?module=editJthdxsjl.html"/>
+    		<Item name="RchdMenu" title="rchdList.title" page="/rchds.html?method=edit"/>
+			<Item name="RchdxsjlMenu" title="rchdxsjlList.title" page="/commonqry.html?module=editRchdxsjl.html"/>
+        	<Item name="XshdMenu" title="xshdList.title" page="/xshds.html?method=edit"/>
+			<Item name="XshdxsjlMenu" title="xshdxsjlList.title" page="/commonqry.html?module=editXshdxsjl.html"/>
+		</Menu>
+
+		
+		<Menu name="TfsjMenu" title="tfsjList.title">   
+			<Item name="TfsjMenu" title="tfsjList.title" page="/tfsjs.html?method=edit"/>   
+			<Item name="TfsjxsjlMenu" title="tfsjxsjlList.title" page="//commonqry.html?module=editTfsjxsjl.html"/>
+		</Menu>  
+
+		<Menu name="XylMenu" title="xylList.title" page="/commonqry.html?module=editXyl.html"/>
+		<Menu name="ZcMenu" title="zcList.title" page="/commonqry.html?module=editZc.html"/>
+		<Menu name="JfwbMenu" title="jfwbList.title" page="/commonqry.html?module=editJfwb.html"/>
+		<Menu name="FbMenu" title="fbList.title" page="/commonqry.html?module=editFb.html"/>
+		<Menu name="JfmxMenu" title="jfmxList.title" page="/editJfmx.html?method=step1"/>
+		<Menu name="XkMenu" title="xkList.title" page="/editXk.html?method=step1"/>
+		
+
+		<Menu name="TjMenu" title="tj.title" >
+			<Item name="HzsqMenu" title="hzsqList.title" page="/hzsqs.html"/>
+        	<Item name="BbmbMenu" title="bbmbList.title" page="/bbmbs.html"/>
+        	<Item name="DqshzMenu" title="dqshzList.title" page="/dqshzs.html"/>
+        	<Item name="DqsmbMenu" title="dqsmbList.title" page="/dqsmbs.html"/>
+			<Item name="NdhzdzbMenu" title="ndhzdzbList.title" page="/ndhzdzb.html"/>
+			<Item name="SjsbMenu" title="sjsbDetail.title" page="/editSjsb.html?method=gotoFind"/>
+		</Menu>
+	</Menus>
+</MenuConfig>

@@ -1,0 +1,1310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dataset>
+  <table name='app_user'>
+    <column>username</column>
+    <column>password</column>
+    <column>first_name</column>
+    <column>last_name</column>
+    <column>address</column>
+    <column>city</column>
+    <column>country</column>
+    <column>email</column>
+    <column>phone_number</column>
+    <column>postal_code</column>
+    <column>province</column>
+    <column>website</column>
+    <column>password_hint</column>
+    <column>version</column>
+    <row>
+      <value>tomcat</value>
+      <value>536c0b339345616c1b33caf454454d8b8a190d6c</value>
+      <value>Tomcat</value>
+      <value>User</value>
+      <value></value>
+      <value>Denver</value>
+      <value>US</value>
+      <value>matt_raible@yahoo.com</value>
+      <value></value>
+      <value>80210</value>
+      <value>CO</value>
+      <value>http://jakarta.apache.org/tomcat</value>
+      <value><![CDATA[A male kitty.]]></value>
+      <value>1</value>
+    </row>
+    <row>
+      <value>mraible</value>
+      <value>536c0b339345616c1b33caf454454d8b8a190d6c</value>
+      <value>Matt</value>
+      <value>Raible</value>
+      <value></value>
+      <value>Denver</value>
+      <value>US</value>
+      <value>matt@raibledesigns.com</value>
+      <value></value>
+      <value>80210</value>
+      <value>CO</value>
+      <value>http://raibledesigns.com</value>
+      <value><![CDATA[Not a female kitty.]]></value>
+      <value>1</value>
+    </row>
+  </table>
+  <table name='role'>
+    <column>name</column>
+    <column>description</column>
+    <column>version</column>
+    <row>
+      <value>admin</value>
+      <value><![CDATA[Administrator role (can edit Users)]]></value>
+      <value>1</value>
+    </row>
+    <row>
+      <value>tomcat</value>
+      <value><![CDATA[Default role for all Users]]></value>
+      <value>1</value>
+    </row>
+  </table>
+  <table name='user_role'>
+    <column>username</column>
+    <column>role_name</column>
+    <row>
+      <value>tomcat</value>
+      <value>tomcat</value>
+    </row>
+    <row>
+      <value>mraible</value>
+      <value>admin</value>
+    </row>
+  </table>
+  <table name='bm_tlqx'>
+
+    <column>id</column>
+
+    <column>bm</column>
+
+    <column>mc</column>
+
+    <column>xgr</column>
+
+    <column>xgsj</column>
+
+    <row>
+      <value>1</value>
+      <value>bm</value>
+      <value>mc</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>2</value>
+      <value>bm</value>
+      <value>mc</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>3</value>
+      <value>bm</value>
+      <value>mc</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+  </table>
+  <table name='bm_zy'>
+
+    <column>id</column>
+
+    <column>bm</column>
+
+    <column>mc</column>
+
+    <column>xgr</column>
+
+    <column>xgsj</column>
+
+    <row>
+      <value>1</value>
+      <value>bm</value>
+      <value>mc</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>2</value>
+      <value>bm</value>
+      <value>mc</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>3</value>
+      <value>bm</value>
+      <value>mc</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+  </table>
+  <table name='t_bx'>
+
+    <column>id</column>
+
+    <column>pid</column>
+
+    <column>bxdh</column>
+
+    <column>yxqx</column>
+
+    <column>bxgsmc</column>
+
+    <column>bxgslxfs</column>
+
+    <column>bxje</column>
+
+    <column>xzmc</column>
+
+    <column>bxqj</column>
+
+    <column>bz</column>
+
+    <column>xgr</column>
+
+    <column>xgsj</column>
+
+    <row>
+      <value>1</value>
+      <value>50</value>
+      <value>bxdh</value>
+      <value>yxqx</value>
+      <value>bxgsmc</value>
+      <value>bxgslxfs</value>
+      <value>bxje</value>
+      <value>xzmc</value>
+      <value>50</value>
+      <value>bz</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>2</value>
+      <value>50</value>
+      <value>bxdh</value>
+      <value>yxqx</value>
+      <value>bxgsmc</value>
+      <value>bxgslxfs</value>
+      <value>bxje</value>
+      <value>xzmc</value>
+      <value>50</value>
+      <value>bz</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>3</value>
+      <value>50</value>
+      <value>bxdh</value>
+      <value>yxqx</value>
+      <value>bxgsmc</value>
+      <value>bxgslxfs</value>
+      <value>bxje</value>
+      <value>xzmc</value>
+      <value>50</value>
+      <value>bz</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+  </table>
+  <table name='t_jc'>
+
+    <column>id</column>
+
+    <column>pid</column>
+
+    <column>rq</column>
+
+    <column>lb</column>
+
+    <column>ms</column>
+
+    <column>bz</column>
+
+    <column>xgr</column>
+
+    <column>xgsj</column>
+
+    <row>
+      <value>1</value>
+      <value>50</value>
+      <value>rq</value>
+      <value>lb</value>
+      <value>ms</value>
+      <value>bz</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>2</value>
+      <value>50</value>
+      <value>rq</value>
+      <value>lb</value>
+      <value>ms</value>
+      <value>bz</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>3</value>
+      <value>50</value>
+      <value>rq</value>
+      <value>lb</value>
+      <value>ms</value>
+      <value>bz</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+  </table>
+  <table name='t_jxj'>
+
+    <column>id</column>
+
+    <column>pid</column>
+
+    <column>xn</column>
+
+    <column>xq</column>
+
+    <column>jxjmc</column>
+
+    <column>ffzh</column>
+
+ 
+    <column>ffrq</column>
+
+    <column>bz</column>
+
+    <column>xgr</column>
+
+    <column>xgsj</column>
+
+    <row>
+      <value>1</value>
+      <value>50</value>
+      <value>xn</value>
+      <value>xq</value>
+      <value>jxjmc</value>
+      <value>ffzh</value>
+      <value>ffrq</value>
+      <value>bz</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>2</value>
+      <value>50</value>
+      <value>xn</value>
+      <value>xq</value>
+      <value>jxjmc</value>
+      <value>ffzh</value>
+      <value>ffrq</value>
+      <value>bz</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>3</value>
+      <value>50</value>
+      <value>xn</value>
+      <value>xq</value>
+      <value>jxjmc</value>
+      <value>ffzh</value>
+      <value>ffrq</value>
+      <value>bz</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+  </table>
+  <table name='t_ydjl'>
+
+    <column>id</column>
+
+    <column>pid</column>
+
+    <column>yd</column>
+
+    <column>zxrq</column>
+
+    <column>yyms</column>
+
+    <column>bz</column>
+
+    <column>xgr</column>
+
+    <column>xgsj</column>
+
+    <row>
+      <value>1</value>
+      <value>50</value>
+      <value>50</value>
+      <value>zxrq</value>
+      <value>yyms</value>
+      <value>bz</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>2</value>
+      <value>50</value>
+      <value>50</value>
+      <value>zxrq</value>
+      <value>yyms</value>
+      <value>bz</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>3</value>
+      <value>50</value>
+      <value>50</value>
+      <value>zxrq</value>
+      <value>yyms</value>
+      <value>bz</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+  </table>
+  <table name='t_zz'>
+
+    <column>id</column>
+
+    <column>pid</column>
+
+    <column>hzhm</column>
+
+    <column>hzlb</column>
+
+    <column>hz_qfrq</column>
+
+    <column>hz_dqrq</column>
+
+    <column>qzlb</column>
+
+    <column>qzhm</column>
+
+    <column>qz_qfrq</column>
+
+    <column>qz_dqrq</column>
+
+    <column>jlxk_hm</column>
+
+    <column>jlxk_qfrq</column>
+
+    <column>jlxk_dqrq</column>
+
+    <column>hxzhm</column>
+
+    <column>hxz_qfrq</column>
+
+    <column>hxz_dqrq</column>
+
+    <column>zzzhm</column>
+
+    <column>zzz_qfrq</column>
+
+    <column>zzz_dqrq</column>
+
+    <column>qzqfjg</column>
+
+    <column>qzrjcs</column>
+
+    <column>xgr</column>
+
+    <column>xgsj</column>
+
+    <row>
+      <value>1</value>
+      <value>50</value>
+      <value>hzhm</value>
+      <value>50</value>
+      <value>hz_qfrq</value>
+      <value>hz_dqrq</value>
+      <value>50</value>
+      <value>qzhm</value>
+      <value>qz_qfrq</value>
+      <value>qz_dqrq</value>
+      <value>jlxk_hm</value>
+      <value>jlxk_qfrq</value>
+      <value>jlxk_dqrq</value>
+      <value>hxzhm</value>
+      <value>hxz_qfrq</value>
+      <value>hxz_dqrq</value>
+      <value>zzzhm</value>
+      <value>zzz_qfrq</value>
+      <value>zzz_dqrq</value>
+      <value>qzqfjg</value>
+      <value>50</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>2</value>
+      <value>50</value>
+      <value>hzhm</value>
+      <value>50</value>
+      <value>hz_qfrq</value>
+      <value>hz_dqrq</value>
+      <value>50</value>
+      <value>qzhm</value>
+      <value>qz_qfrq</value>
+      <value>qz_dqrq</value>
+      <value>jlxk_hm</value>
+      <value>jlxk_qfrq</value>
+      <value>jlxk_dqrq</value>
+      <value>hxzhm</value>
+      <value>hxz_qfrq</value>
+      <value>hxz_dqrq</value>
+      <value>zzzhm</value>
+      <value>zzz_qfrq</value>
+      <value>zzz_dqrq</value>
+      <value>qzqfjg</value>
+      <value>50</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>3</value>
+      <value>50</value>
+      <value>hzhm</value>
+      <value>50</value>
+      <value>hz_qfrq</value>
+      <value>hz_dqrq</value>
+      <value>50</value>
+      <value>qzhm</value>
+      <value>qz_qfrq</value>
+      <value>qz_dqrq</value>
+      <value>jlxk_hm</value>
+      <value>jlxk_qfrq</value>
+      <value>jlxk_dqrq</value>
+      <value>hxzhm</value>
+      <value>hxz_qfrq</value>
+      <value>hxz_dqrq</value>
+      <value>zzzhm</value>
+      <value>zzz_qfrq</value>
+      <value>zzz_dqrq</value>
+      <value>qzqfjg</value>
+      <value>50</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+  </table>
+  <table name='t_jk'>
+
+    <column>id</column>
+
+    <column>pid</column>
+
+    <column>djrq</column>
+
+    <column>jkzk</column>
+
+    <column>bz</column>
+
+    <column>xgr</column>
+
+    <column>xgsj</column>
+
+    <row>
+      <value>1</value>
+      <value>50</value>
+      <value>djrq</value>
+      <value>jkzk</value>
+      <value>bz</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>2</value>
+      <value>50</value>
+      <value>djrq</value>
+      <value>jkzk</value>
+      <value>bz</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>3</value>
+      <value>50</value>
+      <value>djrq</value>
+      <value>jkzk</value>
+      <value>bz</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+  </table>
+  <table name='t_jthd_xsjl'>
+
+    <column>id</column>
+
+    <column>pid</column>
+
+    <column>hd</column>
+
+    <column>bz</column>
+
+    <column>xgr</column>
+
+    <column>xgsj</column>
+
+    <row>
+      <value>1</value>
+      <value>50</value>
+      <value>50</value>
+      <value>bz</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>2</value>
+      <value>50</value>
+      <value>50</value>
+      <value>bz</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>3</value>
+      <value>50</value>
+      <value>50</value>
+      <value>bz</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+  </table>
+  <table name='t_lcxs'>
+
+    <column>id</column>
+
+    <column>sqbh</column>
+
+    <column>lclb</column>
+
+    <column>x20_no</column>
+
+    <column>hzhm</column>
+
+    <column>zm</column>
+
+    <column>gj</column>
+
+    <column>x</column>
+
+    <column>m</column>
+
+    <column>zwxm</column>
+
+    <column>xb</column>
+
+    <column>csrq</column>
+
+    <column>csdd</column>
+
+    <column>my</column>
+
+    <column>zj</column>
+
+    <column>hyzk</column>
+
+    <column>jfly</column>
+
+    <column>xl</column>
+
+    <column>xslb</column>
+
+    <column>sqsj</column>
+
+    <column>bdsj</column>
+
+    <column>xx_ksrq</column>
+
+    <column>bz</column>
+
+    <column>xgr</column>
+
+    <column>xgsj</column>
+
+    <row>
+      <value>1</value>
+      <value>sqbh</value>
+      <value>lclb</value>
+      <value>x20_no</value>
+      <value>hzhm</value>
+      <value>zm</value>
+      <value>gj</value>
+      <value>x</value>
+      <value>m</value>
+      <value>zwxm</value>
+      <value>xb</value>
+      <value>csrq</value>
+      <value>csdd</value>
+      <value>my</value>
+      <value>zj</value>
+      <value>hyzk</value>
+      <value>jfly</value>
+      <value>xl</value>
+      <value>50</value>
+      <value>sqsj</value>
+      <value>bdsj</value>
+      <value>xx_ksrq</value>
+      <value>bz</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>2</value>
+      <value>sqbh</value>
+      <value>lclb</value>
+      <value>x20_no</value>
+      <value>hzhm</value>
+      <value>zm</value>
+      <value>gj</value>
+      <value>x</value>
+      <value>m</value>
+      <value>zwxm</value>
+      <value>xb</value>
+      <value>csrq</value>
+      <value>csdd</value>
+      <value>my</value>
+      <value>zj</value>
+      <value>hyzk</value>
+      <value>jfly</value>
+      <value>xl</value>
+      <value>50</value>
+      <value>sqsj</value>
+      <value>bdsj</value>
+      <value>xx_ksrq</value>
+      <value>bz</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>3</value>
+      <value>sqbh</value>
+      <value>lclb</value>
+      <value>x20_no</value>
+      <value>hzhm</value>
+      <value>zm</value>
+      <value>gj</value>
+      <value>x</value>
+      <value>m</value>
+      <value>zwxm</value>
+      <value>xb</value>
+      <value>csrq</value>
+      <value>csdd</value>
+      <value>my</value>
+      <value>zj</value>
+      <value>hyzk</value>
+      <value>jfly</value>
+      <value>xl</value>
+      <value>50</value>
+      <value>sqsj</value>
+      <value>bdsj</value>
+      <value>xx_ksrq</value>
+      <value>bz</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+  </table>
+  <table name='t_lhjl'>
+
+    <column>id</column>
+
+    <column>pid</column>
+
+    <column>lhrq</column>
+
+    <column>lkrq</column>
+
+    <column>sy</column>
+
+    <column>ms</column>
+
+    <column>xgr</column>
+
+    <column>xgsj</column>
+
+    <row>
+      <value>1</value>
+      <value>50</value>
+      <value>lhrq</value>
+      <value>lkrq</value>
+      <value>sy</value>
+      <value>ms</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>2</value>
+      <value>50</value>
+      <value>lhrq</value>
+      <value>lkrq</value>
+      <value>sy</value>
+      <value>ms</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>3</value>
+      <value>50</value>
+      <value>lhrq</value>
+      <value>lkrq</value>
+      <value>sy</value>
+      <value>ms</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+  </table>
+  <table name='t_rchd_xsjl'>
+
+    <column>id</column>
+
+    <column>pid</column>
+
+    <column>hd</column>
+
+    <column>bz</column>
+
+    <column>xgr</column>
+
+    <column>xgsj</column>
+
+    <row>
+      <value>1</value>
+      <value>50</value>
+      <value>50</value>
+      <value>bz</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>2</value>
+      <value>50</value>
+      <value>50</value>
+      <value>bz</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>3</value>
+      <value>50</value>
+      <value>50</value>
+      <value>bz</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+  </table>
+  <table name='t_tfsj_xsjl'>
+
+    <column>id</column>
+
+    <column>pid</column>
+
+    <column>tfsj</column>
+
+    <column>jlsj</column>
+
+    <column>bx</column>
+
+    <column>xgr</column>
+
+    <column>xgsj</column>
+
+    <row>
+      <value>1</value>
+      <value>50</value>
+      <value>50</value>
+      <value>jlsj</value>
+      <value>bx</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>2</value>
+      <value>50</value>
+      <value>50</value>
+      <value>jlsj</value>
+      <value>bx</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>3</value>
+      <value>50</value>
+      <value>50</value>
+      <value>jlsj</value>
+      <value>bx</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+  </table>
+  <table name='t_xshd_xsjl'>
+
+    <column>id</column>
+
+    <column>pid</column>
+
+    <column>hd</column>
+
+    <column>bz</column>
+
+    <column>xgr</column>
+
+    <column>xgsj</column>
+
+    <row>
+      <value>1</value>
+      <value>50</value>
+      <value>50</value>
+      <value>bz</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>2</value>
+      <value>50</value>
+      <value>50</value>
+      <value>bz</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>3</value>
+      <value>50</value>
+      <value>50</value>
+      <value>bz</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+  </table>
+  <table name='t_xyl'>
+
+    <column>id</column>
+
+    <column>pid</column>
+
+    <column>dwmc</column>
+
+    <column>zw</column>
+
+    <column>lxdz</column>
+
+    <column>lxdh</column>
+
+    <column>email</column>
+
+    <column>xgr</column>
+
+    <column>xgsj</column>
+
+    <row>
+      <value>1</value>
+      <value>50</value>
+      <value>dwmc</value>
+      <value>zw</value>
+      <value>lxdz</value>
+      <value>lxdh</value>
+      <value>email</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>2</value>
+      <value>50</value>
+      <value>dwmc</value>
+      <value>zw</value>
+      <value>lxdz</value>
+      <value>lxdh</value>
+      <value>email</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>3</value>
+      <value>50</value>
+      <value>dwmc</value>
+      <value>zw</value>
+      <value>lxdz</value>
+      <value>lxdh</value>
+      <value>email</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+  </table>
+  <table name='t_zc'>
+
+    <column>id</column>
+
+    <column>pid</column>
+
+    <column>xn</column>
+
+    <column>xq</column>
+
+    <column>zcsj</column>
+
+    <column>xgr</column>
+
+    <column>xgsj</column>
+
+    <row>
+      <value>1</value>
+      <value>50</value>
+      <value>xn</value>
+      <value>xq</value>
+      <value>zcsj</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>2</value>
+      <value>50</value>
+      <value>xn</value>
+      <value>xq</value>
+      <value>zcsj</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>3</value>
+      <value>50</value>
+      <value>xn</value>
+      <value>xq</value>
+      <value>zcsj</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+  </table>
+  <table name='t_jfwb'>
+
+    <column>id</column>
+
+    <column>pid</column>
+
+    <column>xgr</column>
+
+    <column>xgsj</column>
+
+    <row>
+      <value>1</value>
+      <value>50</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>2</value>
+      <value>50</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>3</value>
+      <value>50</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+  </table>
+  <table name='t_fb'>
+
+    <column>id</column>
+
+    <column>pid</column>
+
+    <column>bj</column>
+
+    <column>xq</column>
+
+    <column>xn</column>
+
+    <column>xgr</column>
+
+    <column>xgsj</column>
+
+    <row>
+      <value>1</value>
+      <value>50</value>
+      <value>50</value>
+      <value>50</value>
+      <value>xn</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>2</value>
+      <value>50</value>
+      <value>50</value>
+      <value>50</value>
+      <value>xn</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>3</value>
+      <value>50</value>
+      <value>50</value>
+      <value>50</value>
+      <value>xn</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+  </table>
+  <table name='t_sbsy'>
+
+    <column>bz</column>
+
+    <column>cfwz</column>
+
+    <column>fwdw</column>
+
+    <column>id</column>
+
+    <column>sbjzrq</column>
+
+    <column>sbksrq</column>
+
+    <column>xgr</column>
+
+    <column>xgsj</column>
+
+    <row>
+      <value>bz</value>
+      <value>cfwz</value>
+      <value>fwdw</value>
+      <value>1</value>
+      <value>sbjzrq</value>
+      <value>sbksrq</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>bz</value>
+      <value>cfwz</value>
+      <value>fwdw</value>
+      <value>2</value>
+      <value>sbjzrq</value>
+      <value>sbksrq</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>bz</value>
+      <value>cfwz</value>
+      <value>fwdw</value>
+      <value>3</value>
+      <value>sbjzrq</value>
+      <value>sbksrq</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+  </table>
+  <table name='t_yxztsy'>
+
+    <column>dwmc</column>
+
+    <column>id</column>
+
+    <column>sbdw</column>
+
+    <column>sbsyid</column>
+
+    <column>sjsbzt</column>
+
+    <column>xgr</column>
+
+    <column>xgsj</column>
+
+    <row>
+      <value>dwmc</value>
+      <value>1</value>
+      <value>sbdw</value>
+      <value>50</value>
+      <value>sjsbzt</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>dwmc</value>
+      <value>2</value>
+      <value>sbdw</value>
+      <value>50</value>
+      <value>sjsbzt</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>dwmc</value>
+      <value>3</value>
+      <value>sbdw</value>
+      <value>50</value>
+      <value>sjsbzt</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+  </table>
+  <table name='t_tjbzsy'>
+
+    <column>bm</column>
+
+    <column>cjsj</column>
+
+    <column>id</column>
+
+    <column>ms</column>
+
+    <column>sxsj</column>
+
+    <column>xgr</column>
+
+    <column>xgsj</column>
+
+    <row>
+      <value>bm</value>
+      <value>cjsj</value>
+      <value>1</value>
+      <value>ms</value>
+      <value>sxsj</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>bm</value>
+      <value>cjsj</value>
+      <value>2</value>
+      <value>ms</value>
+      <value>sxsj</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>bm</value>
+      <value>cjsj</value>
+      <value>3</value>
+      <value>ms</value>
+      <value>sxsj</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+  </table>
+  <table name='t_yxztsy'>
+
+    <column>id</column>
+
+    <column>tjbzsypid</column>
+
+    <column>xgr</column>
+
+    <column>xgsj</column>
+
+    <column>yxsypid</column>
+
+    <row>
+      <value>1</value>
+      <value>50</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+      <value>50</value>
+    </row>
+    <row>
+      <value>2</value>
+      <value>50</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+      <value>50</value>
+    </row>
+    <row>
+      <value>3</value>
+      <value>50</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+      <value>50</value>
+    </row>
+  </table>
+  <table name='t_sydw'>
+
+    <column>dwbm</column>
+
+    <column>dwmc</column>
+
+    <column>fdwbm</column>
+
+    <column>id</column>
+
+    <column>sfbs</column>
+
+    <column>ssbm</column>
+
+    <column>xgr</column>
+
+    <column>xgsj</column>
+
+    <row>
+      <value>dwbm</value>
+      <value>dwmc</value>
+      <value>fdwbm</value>
+      <value>1</value>
+      <value>sfbs</value>
+      <value>ssbm</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>dwbm</value>
+      <value>dwmc</value>
+      <value>fdwbm</value>
+      <value>2</value>
+      <value>sfbs</value>
+      <value>ssbm</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>dwbm</value>
+      <value>dwmc</value>
+      <value>fdwbm</value>
+      <value>3</value>
+      <value>sfbs</value>
+      <value>ssbm</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+  </table>
+  <table name='t_ss'>
+
+    <column>bm</column>
+
+    <column>id</column>
+
+    <column>mc</column>
+
+    <column>xgr</column>
+
+    <column>mc</column>
+
+    <row>
+      <value>bm</value>
+      <value>1</value>
+      <value>mc</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>bm</value>
+      <value>2</value>
+      <value>mc</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+    <row>
+      <value>bm</value>
+      <value>3</value>
+      <value>mc</value>
+      <value>xgr</value>
+      <value>xgsj</value>
+    </row>
+  </table>
+</dataset>

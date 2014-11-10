@@ -1,0 +1,11 @@
+/BaseDAOHibernate.java/1.1/Mon Aug  2 01:51:57 2010//
+/GoodsDAOHibernate.java/1.3/Tue Aug 10 10:14:53 2010//
+/KillSQLInject.java/1.1/Mon Aug  2 01:51:58 2010//
+/LookupDAOHibernate.java/1.1/Mon Aug  2 01:51:57 2010//
+/OpRegisterDAOHibernate.java/1.2/Mon Aug  9 08:54:51 2010//
+/RoleAppDAOHibernate.java/1.1/Mon Aug  2 01:51:58 2010//
+/RoleDAOHibernate.java/1.1/Mon Aug  2 01:51:58 2010//
+/SysUserDAOHibernate.java/1.1/Mon Aug  2 01:51:57 2010//
+/UserDAOHibernate.java/1.1/Mon Aug  2 01:51:58 2010//
+/Visit_LogHibernate.java/1.1/Mon Aug  2 01:51:57 2010//
+/applicationContext-hibernate.xml/1.3/Tue Aug 10 09:32:08 2010//

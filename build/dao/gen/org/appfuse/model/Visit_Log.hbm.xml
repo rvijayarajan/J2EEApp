@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="org.appfuse.model.Visit_Log"
+        table="t_visit_log"
+        dynamic-update="true"
+        dynamic-insert="true"
+        select-before-update="false"
+        optimistic-lock="version"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Long"
+            unsaved-value="null"
+        >
+            <generator class="sequence">
+                <param name="sequence">SEQ_T_VISIT_LOG_ID</param>
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Visit_Log.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="method"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="method"
+            length="200"
+        />
+
+        <property
+            name="request_Id"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="request_Id"
+            length="200"
+        />
+
+        <property
+            name="source_URL"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="Source_URL"
+            length="200"
+        />
+
+        <property
+            name="target_URL"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="Target_URL"
+            length="200"
+        />
+
+        <property
+            name="username"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="username"
+            length="60"
+        />
+
+        <property
+            name="visit_Time"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="Visit_Time"
+            length="30"
+        />
+
+        <property
+            name="source_IP"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="source_IP"
+            length="30"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Visit_Log.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

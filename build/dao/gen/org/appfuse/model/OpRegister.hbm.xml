@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="org.appfuse.model.OpRegister"
+        table="OP_REGISTER"
+        dynamic-update="true"
+        dynamic-insert="true"
+        select-before-update="false"
+        optimistic-lock="version"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Long"
+            unsaved-value="null"
+        >
+            <generator class="increment">
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-OpRegister.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="pid"
+            type="java.lang.Long"
+            update="true"
+            insert="true"
+            access="property"
+            column="PID"
+        />
+
+        <property
+            name="cdmc"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="menuName"
+            length="20"
+            not-null="true"
+        />
+
+        <property
+            name="loc"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="url"
+            length="200"
+            not-null="true"
+        />
+
+        <property
+            name="cdjb"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="cdjb"
+        />
+
+        <property
+            name="hasDisp"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="HASDISPLAY"
+            length="1"
+            not-null="true"
+        />
+
+        <property
+            name="hasControl"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="HASCONTROL"
+            length="1"
+            not-null="true"
+        />
+
+        <property
+            name="hasUse"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="HASUSE"
+            length="1"
+            not-null="true"
+        />
+
+        <property
+            name="iconUrl"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="ICON"
+            length="400"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-OpRegister.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

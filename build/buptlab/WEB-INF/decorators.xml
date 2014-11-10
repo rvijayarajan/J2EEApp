@@ -1,0 +1,34 @@
+<decorators defaultdir="/decorators">
+    <excludes>
+		<pattern>/download/*</pattern>
+		<pattern>/frameset.*</pattern>
+		<pattern>/MenuTree.*</pattern>
+		<pattern>/menu.*</pattern>
+		 <pattern>/index*.*</pattern>
+		<pattern>/head.*</pattern>
+		<pattern>/newModi*.*</pattern>
+    </excludes> 
+    <decorator name="default" page="default.jsp">
+        <pattern>/*</pattern>
+    </decorator>
+    
+    <!-- add by ltf -->
+    <decorator name="second" page="second.jsp" />
+	<decorator name="none" page="none.jsp" />
+    
+	<decorator name="bbmb" page="bbmb.jsp" />
+	<decorator name="zc_fb_jf" page="zc_fb_jf.jsp" />
+	<decorator name="login" page="login.jsp" />
+	<decorator name="fpxh" page="fpxh.jsp" />
+	<decorator name="mainmenu" page="mainmenu.jsp" />
+	<decorator name="topdisable" page="topdisable.jsp"/>
+	<decorator name="fj" page="fj.jsp" />
+	<decorator name="nomenu" page="nomenu.jsp" />
+	<decorator name="nomsg" page="nomsg.jsp" />
+	<decorator name="zzgj" page="zzgj.jsp" />
+	<decorator name="sydw" page="sydw.jsp"/>
+	<decorator name="jcdw" page="jcdw.jsp"/>
+	<decorator name="yxztqry" page="yxztqry.jsp"/>
+	<decorator name="zzgjnomenu" page="zzgjnomenu.jsp" />
+	<decorator name="sjhz" page="sjhz.jsp" />
+</decorators>
