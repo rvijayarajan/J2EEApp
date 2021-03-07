@@ -1059,7 +1059,7 @@
     <!-- ============================================================== -->
     <!-- Tomcat tasks - remove these if you don't have Tomcat installed -->
     <!-- ============================================================== -->
-    <taskdef file="${ant-contrib.dir}/tomcatTasks.properties">
+    <!-- <taskdef file="${ant-contrib.dir}/tomcatTasks.properties">
         <classpath>
             <pathelement path="${tomcat.home}/server/lib/catalina-ant.jar"/>
         </classpath>
@@ -1106,7 +1106,7 @@
         <list url="${tomcat.manager.url}"
             username="${tomcat.username}"
             password="${tomcat.password}"/>
-    </target>
+    </target> -->
 
     <!-- =================================================================== -->
     <!--            Creates documentation from wiki                          -->

@@ -26,8 +26,8 @@ public class Goods  extends BaseObject implements  Serializable{
 	protected float Weight;
 	protected String xgr;
 	protected String xgsj;
-	protected String xgsjks; //修改时间起
-	protected String xgsjjs; //修改时间止
+	protected String xgsjks; 
+	protected String xgsjjs; 
 	
     /**
      * @struts.validator type="required"

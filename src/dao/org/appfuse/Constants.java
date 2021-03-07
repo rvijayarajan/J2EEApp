@@ -107,35 +107,35 @@ public class Constants {
     
     //add new vary
 
-     public static final String SEL_IDS = "sel_ids"; //选中的ID的数组
+     public static final String SEL_IDS = "sel_ids"; 
 
-    public static final String POS = "pos"; //数组的位置
+    public static final String POS = "pos"; 
 
-    public static final String IMG_STATE = "img_state"; //图标的状态
+    public static final String IMG_STATE = "img_state"; 
     
-    public static final String ID = "id"; //记忆的ID
+    public static final String ID = "id"; 
 
-    public static final String IDS = "ids"; //记忆的ID的数组
+    public static final String IDS = "ids"; 
 
-    public static final String NEXT = "next"; //只显示下一条图标
+    public static final String NEXT = "next"; 
 
-    public static final String PRIOR = "prior"; //只显示上一条图标
+    public static final String PRIOR = "prior"; 
 
-    public static final String NONE = "none"; //上一条、下一条都不显示
+    public static final String NONE = "none"; 
 
-    public static final String BOTH = "both"; //上一条、下一条都显示
+    public static final String BOTH = "both"; 
 
-    public static final String FROM = "from"; //返回到哪里，如果0，则返回list页面，否则，返回其他
+    public static final String FROM = "from"; 
 
-    public static final String DEL = "del"; //如果用户点击的是“删除”按钮
+    public static final String DEL = "del"; 
 
     public static final String VIEW = "view";
 
     public static final String LIST = "list";
 
-    public static final String DEL_MANY = "del_many"; //如果用户点击的是“删除”按钮
+    public static final String DEL_MANY = "del_many"; 
     
-    public static final String DEl_MANY_ONE = "del_many_one"; //批量修改时删除一条
+    public static final String DEl_MANY_ONE = "del_many_one"; 
 
     public static final String VIEW_MANY = "view_many";
 
@@ -145,11 +145,11 @@ public class Constants {
 
     public static final String EDIT_MANY = "edit_many";
     
-    public static final String LIKE = "%";  //百分号
+    public static final String LIKE = "%";  
     
-    public static final String PID = "pid"; //父表的id
+    public static final String PID = "pid"; 
     
-    public static final String FORM = "form"; //session中存储的form的属性名
+    public static final String FORM = "form"; 
     
      
 	public static final String before = "10";

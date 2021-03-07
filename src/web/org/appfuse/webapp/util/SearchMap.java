@@ -51,7 +51,7 @@ public class SearchMap extends BaseAction {
 	}
 
 
-	/**�����
+	/**
 	 * 
 	 * @param map
 	 * @param request
