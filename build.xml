@@ -546,6 +546,11 @@
                 </then>
             </elseif>
         </if>
+        <copy todir="${dist.dir}">
+            <fileset dir=".">
+                <include name="appspec.yml"/>
+            </fileset>   
+        </copy>
         <copy todir="${dist.dir}/webapps/metadata/conf">
             <fileset dir="metadata/conf">
                 <include name="tomcat-context.xml"/>
@@ -560,9 +565,15 @@
             </fileset>  
         </copy>
         <zip zipfile="${dist.dir}/buptlab.zip">
-            <zipfileset prefix="${webapp.name}" dir="${dist.dir}/webapps">
+            <zipfileset dir="${dist.dir}">
+                <patternset id="srcfiles">
+                    <include name="*.yml"/> 
+                </patternset>
+            </zipfileset>
+            <zipfileset dir="${dist.dir}/webapps">
                 <patternset id="srcfiles">
                     <include name="**"/> 
+                    <include name="*.war"/> 
                 </patternset>
             </zipfileset>
         </zip>
