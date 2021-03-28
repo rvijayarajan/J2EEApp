@@ -7,7 +7,7 @@ files:
     destination: /tomcat/apache-tomcat-4.1.40/common/lib
   - source: lib/jta.jar
     destination: /tomcat/apache-tomcat-4.1.40/common/lib
-  - source: webapps/buptlab.war
+  - source: buptlab.war
     destination: /tomcat/apache-tomcat-4.1.40/webapps
 hooks:
   AfterInstall:
