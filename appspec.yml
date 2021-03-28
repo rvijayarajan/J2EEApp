@@ -1,0 +1,24 @@
+version: 0.0
+os: linux
+files:
+  - source: metadata/conf/tomcat-context.xml
+    destination: /tomcat/apache-tomcat-4.1.40/webapps/buptlab.xml
+  - source: lib/ojdbc14.jar
+    destination: /tomcat/apache-tomcat-4.1.40/common/lib
+  - source: lib/jta.jar
+    destination: /tomcat/apache-tomcat-4.1.40/common/lib
+  - source: webapps/buptlab.war
+    destination: /tomcat/apache-tomcat-4.1.40/webapps
+hooks:
+  AfterInstall:
+    - location: scripts/change_permissions.sh
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: scripts/start_server.sh
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: scripts/stop_server.sh
+      timeout: 300
+      runas: root

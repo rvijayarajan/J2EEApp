@@ -546,6 +546,36 @@
                 </then>
             </elseif>
         </if>
+        <copy todir="${dist.dir}/webapps/metadata/conf">
+            <fileset dir="metadata/conf">
+                <include name="tomcat-context.xml"/>
+            </fileset>   
+        </copy>
+        <copy todir="${dist.dir}/webapps/lib">
+            <fileset dir="lib">
+                <include name="ojdbc14.jar"/>
+            </fileset>   
+            <fileset dir="lib/HIBERNATE-2.1.6/lib">
+                <include name="jta.jar"/>
+            </fileset>  
+        </copy>
+        <zip zipfile="${dist.dir}/buptlab.zip">
+            <zipfileset prefix="${webapp.name}" dir="${dist.dir}/webapps">
+                <patternset id="srcfiles">
+                    <include name="**"/> 
+                </patternset>
+            </zipfileset>
+        </zip>
+        <tar tarfile="${dist.dir}/buptlab.tar">
+            <tarfileset dir="${dist.dir}/webapps" mode="${tar.mode}"
+                prefix="${webapp.name}"
+                username="${tar.user}" group="${tar.group}">
+                <patternset id="srcfiles">
+                    <include name="**"/> 
+                </patternset>
+            </tarfileset>
+        </tar>
+        <gzip zipfile="${dist.dir}/buptlab.tar.gz" src="${dist.dir}/buptlab.tar"/>
         <!-- Change the path so webapp can find .hbm in zhyf-dao.jar -->
         <replace file="${webapp.target}/WEB-INF/applicationContext-${dao.type}.xml">
             <replacetoken>file:dist</replacetoken>
