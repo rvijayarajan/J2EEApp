@@ -557,8 +557,8 @@
             </fileset>   
         </copy>
         <copy todir="${dist.dir}/webapps/lib">
-            <fileset dir="lib">
-                <include name="ojdbc14.jar"/>
+            <fileset dir="lib/mysql-connector-java-5.1.49">
+                <include name="mysql-connector-java-5.1.49.jar"/>
             </fileset>   
             <fileset dir="lib/HIBERNATE-2.1.6/lib">
                 <include name="jta.jar"/>
@@ -622,7 +622,7 @@
         <war destfile="${webapp.dist}/${webapp.war}"
             webxml="${webapp.target}/WEB-INF/web.xml" compress="true">
             <fileset dir="${webapp.target}" excludes="**/web.xml,**/*-resources.xml"/>
-            <metainf dir="${webapp.dist}" includes="context.xml"/>
+            <metainf dir="${webapp.dist}" includes="metadata/conf/tomcat-context.xml"/>
 
             <classes dir="${build.dir}/web/classes">
                 <exclude name="**/database.properties"/>
