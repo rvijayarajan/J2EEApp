@@ -551,7 +551,7 @@
                 <include name="appspec.yml"/>
             </fileset>   
         </copy>
-        <copy todir="${dist.dir}/webapps/metadata/conf">
+        <copy tofile="${dist.dir}/webapps/metadata/conf/context.xml">
             <fileset dir="metadata/conf">
                 <include name="tomcat-context.xml"/>
             </fileset>   
