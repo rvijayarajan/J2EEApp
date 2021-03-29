@@ -64,9 +64,9 @@
     <!-- NOTE: If you want to use a DataSourceRealm, the Resource must be a
                global resource -->
     <Realm className="org.apache.catalina.realm.JDBCRealm" debug="99"
-          driverName="@DB-DRIVERNAME@"
-       connectionURL="@DB-URL@"
-      connectionName="@DB-USERNAME@" connectionPassword="@DB-PASSWORD@"
+          driverName="com.mysql.jdbc.Driver"
+       connectionURL="jdbc:mysql://buptdb.coyjoq1hfkzq.us-west-1.rds.amazonaws.com/buptdb?autoReconnect=true"
+      connectionName="root" connectionPassword="lovelyday123"
            userTable="app_user" userNameCol="username" userCredCol="password"
        userRoleTable="user_role" roleNameCol="role_name" />
     <Resource name="jdbc/buptlabDB" auth="Container" type="javax.sql.DataSource"/>
@@ -101,16 +101,16 @@
         <!-- MySQL dB username and password for dB connections  -->
         <parameter>
             <name>username</name>
-            <value>@DB-USERNAME@</value>
+            <value>root</value>
         </parameter>
         <parameter>
             <name>password</name>
-            <value>@DB-PASSWORD@</value>
+            <value>lovelyday123</value>
         </parameter>
         <!-- Class name for JDBC driver -->
         <parameter>
             <name>driverClassName</name>
-            <value>@DB-DRIVERNAME@</value>
+            <value>com.mysql.jdbc.Driver</value>
         </parameter>
         <!-- Autocommit setting.  This setting is required to make
              Hibernate work.  Or you can remove calls to commit(). -->
@@ -125,7 +125,7 @@
              -->
         <parameter>
             <name>url</name>
-            <value>@DB-URL@</value>
+            <value>jdbc:mysql://buptdb.coyjoq1hfkzq.us-west-1.rds.amazonaws.com/buptdb?autoReconnect=true</value>
         </parameter>
         <!-- Recover abandoned connections -->
         <parameter>
