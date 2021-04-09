@@ -65,7 +65,7 @@
                global resource -->
     <Realm className="org.apache.catalina.realm.JDBCRealm" debug="99"
           driverName="com.mysql.jdbc.Driver"
-       connectionURL="jdbc:mysql://buptdb.coyjoq1hfkzq.us-west-1.rds.amazonaws.com/buptdb?autoReconnect=true"
+       connectionURL="jdbc:mysql:fabric://buptdb.coyjoq1hfkzq.us-west-1.rds.amazonaws.com/buptdb?autoReconnect=true"
       connectionName="root" connectionPassword="lovelyday123"
            userTable="app_user" userNameCol="username" userCredCol="password"
        userRoleTable="user_role" roleNameCol="role_name" />
@@ -125,7 +125,7 @@
              -->
         <parameter>
             <name>url</name>
-            <value>jdbc:mysql://buptdb.coyjoq1hfkzq.us-west-1.rds.amazonaws.com/buptdb?autoReconnect=true</value>
+            <value>jdbc:mysql:fabric://buptdb.coyjoq1hfkzq.us-west-1.rds.amazonaws.com/buptdb?autoReconnect=true</value>
         </parameter>
         <!-- Recover abandoned connections -->
         <parameter>
