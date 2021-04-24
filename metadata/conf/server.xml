@@ -301,7 +301,7 @@
               </parameter>
               <parameter>
                   <name>url</name>
-                  <value>jdbc:postgresql://buptpostgresdb.coyjoq1hfkzq.us-west-1.rds.amazonaws.com/buptpostgresdb?autoReconnect=true</value>
+                  <value>jdbc:postgresql://buptpostgresdb.coyjoq1hfkzq.us-west-1.rds.amazonaws.com/postgres?autoReconnect=true</value>
               </parameter>
               <parameter>
                   <name>removeAbandoned</name>
