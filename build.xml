@@ -551,14 +551,14 @@
                 <include name="appspec.yml"/>
             </fileset>   
         </copy>
-        <copy tofile="${dist.dir}/webapps/metadata/conf/context.xml">
+        <copy tofile="${dist.dir}/webapps/metadata/conf/server.xml">
             <fileset dir="metadata/conf">
-                <include name="tomcat-context.xml"/>
+                <include name="server.xml"/>
             </fileset>   
         </copy>
         <copy todir="${dist.dir}/webapps/lib">
-            <fileset dir="lib/mysql-connector-java-5.1.49">
-                <include name="mysql-connector-java-5.1.49.jar"/>
+            <fileset dir="lib/postgresql-jdbc-7.4">
+                <include name="postgresql-jdbc3-7.4.jar"/>
             </fileset>   
             <fileset dir="lib/HIBERNATE-2.1.6/lib">
                 <include name="jta.jar"/>

@@ -1,9 +1,9 @@
 version: 0.0
 os: linux
 files:
-  - source: metadata/conf/context.xml
-    destination: /tomcat/apache-tomcat-4.1.40/webapps/buptlab/META-INF
-  - source: lib/mysql-connector-java-5.1.49.jar
+  - source: metadata/conf/server.xml
+    destination: /tomcat/apache-tomcat-4.1.40/conf
+  - source: lib/postgresql-jdbc3-7.4.jar
     destination: /tomcat/apache-tomcat-4.1.40/common/lib
   - source: lib/jta.jar
     destination: /tomcat/apache-tomcat-4.1.40/common/lib
