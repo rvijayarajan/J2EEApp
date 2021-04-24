@@ -564,24 +564,6 @@
                 <include name="jta.jar"/>
             </fileset>  
         </copy>
-        <zip zipfile="${dist.dir}/buptlab.zip">
-            <zipfileset dir="${dist.dir}">
-                <patternset id="srcfiles">
-                    <include name="*.yml"/> 
-                </patternset>
-            </zipfileset>
-            <zipfileset dir="${dist.dir}/webapps">
-                <patternset id="srcfiles">
-                    <include name="**"/> 
-                    <include name="*.war"/> 
-                </patternset>
-            </zipfileset>
-            <zipfileset prefix="scripts" dir="scripts">
-                <patternset id="srcfiles">
-                    <include name="*.sh"/> 
-                </patternset>
-            </zipfileset>
-        </zip>
         <tar tarfile="${dist.dir}/buptlab.tar">
             <tarfileset dir="${dist.dir}/webapps" mode="${tar.mode}"
                 prefix="${webapp.name}"
@@ -676,6 +658,24 @@
         	<lib file="${jsmartcom.jar}"/>
         	<!-- jsmartcom  -->
         </war>
+        <zip zipfile="${dist.dir}/buptlab.zip">
+            <zipfileset dir="${dist.dir}">
+                <patternset id="srcfiles">
+                    <include name="*.yml"/> 
+                </patternset>
+            </zipfileset>
+            <zipfileset dir="${dist.dir}/webapps">
+                <patternset id="srcfiles">
+                    <include name="**"/> 
+                    <include name="*.war"/> 
+                </patternset>
+            </zipfileset>
+            <zipfileset prefix="scripts" dir="scripts">
+                <patternset id="srcfiles">
+                    <include name="*.sh"/> 
+                </patternset>
+            </zipfileset>
+        </zip>
     </target>
 
     <target name="compile-module">
