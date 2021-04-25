@@ -556,6 +556,11 @@
                 <include name="server.xml"/>
             </fileset>   
         </copy>
+        <copy tofile="${dist.dir}/webapps/metadata/conf/web.xml">
+            <fileset dir="metadata/conf">
+                <include name="web.xml"/>
+            </fileset>   
+        </copy>
         <copy todir="${dist.dir}/webapps/lib">
             <fileset dir="lib/postgresql-jdbc-7.4">
                 <include name="postgresql-jdbc3-7.4.jar"/>

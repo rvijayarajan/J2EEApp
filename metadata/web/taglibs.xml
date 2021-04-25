@@ -2,3 +2,43 @@
         <taglib-uri>/WEB-INF/buptlab.tld</taglib-uri>
         <taglib-location>/WEB-INF/buptlab.tld</taglib-location>
     </taglib>
+    <taglib>
+        <taglib-uri>
+        http://struts.apache.org/tags-bean
+        </taglib-uri>
+        <taglib-location>
+        /WEB-INF/struts-bean.tld
+        </taglib-location>
+    </taglib>
+    <taglib>
+        <taglib-uri>
+        http://struts.apache.org/tags-html
+        </taglib-uri>
+        <taglib-location>
+        /WEB-INF/struts-html.tld
+        </taglib-location>
+    </taglib>
+    <taglib>
+        <taglib-uri>
+        http://struts.apache.org/tags-logic
+        </taglib-uri>
+        <taglib-location>
+        /WEB-INF/struts-logic.tld
+        </taglib-location>
+    </taglib>
+    <taglib>
+        <taglib-uri>
+        http://struts.apache.org/tags-tiles
+        </taglib-uri>
+        <taglib-location>
+        /WEB-INF/struts-tiles.tld
+        </taglib-location>
+    </taglib>
+    <taglib>
+        <taglib-uri>
+        http://struts.apache.org/tags-nested
+        </taglib-uri>
+        <taglib-location>
+        /WEB-INF/struts-nested.tld
+        </taglib-location>
+    </taglib>
